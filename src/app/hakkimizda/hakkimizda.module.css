@@ -1,0 +1,250 @@
+/* ======= ABOUT PAGE ======= */
+
+.aboutSection {
+  padding: 96px 0;
+  background: var(--white);
+}
+
+.aboutSectionInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Story */
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 96px;
+}
+
+.storyImageWrap {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  position: relative;
+  box-shadow: var(--shadow-xl);
+}
+
+.storyText p {
+  font-size: 1rem;
+  color: var(--gray-500);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* Values */
+.valuesSection {
+  background: var(--gray-50);
+  border-radius: var(--radius-xl);
+  padding: 72px;
+  margin-bottom: 96px;
+}
+
+.valuesSectionHeader {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.valueCard {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  text-align: center;
+  border: 1px solid var(--gray-200);
+  transition: all var(--transition-base);
+}
+
+.valueCard:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+  border-color: var(--primary-100);
+}
+
+.valueCardIcon {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.valueCardTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.valueCardDesc {
+  font-size: 0.88rem;
+  color: var(--gray-500);
+  line-height: 1.65;
+}
+
+/* Team */
+.teamSection {
+  margin-bottom: 0;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.teamCard {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--gray-200);
+  transition: all var(--transition-base);
+  text-align: center;
+}
+
+.teamCard:hover {
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-4px);
+}
+
+.teamAvatar {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, var(--primary-50) 0%, var(--primary-100) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.teamBody {
+  padding: 20px 16px;
+}
+
+.teamName {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 4px;
+}
+
+.teamRole {
+  font-size: 0.82rem;
+  color: var(--gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* Milestones */
+.milestonesSection {
+  padding: 96px 0;
+  background: var(--primary);
+}
+
+.milestonesSectionInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.milestonesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 56px;
+}
+
+.milestone {
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0 24px;
+}
+
+.milestone:last-child {
+  border-right: none;
+}
+
+.milestoneYear {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #4db8ff;
+  margin-bottom: 8px;
+}
+
+.milestoneText {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.6;
+}
+
+/* Certificates */
+.certsSection {
+  padding: 96px 0;
+  background: var(--white);
+}
+
+.certsSectionInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.certsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.certCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  background: var(--gray-50);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-200);
+  transition: all var(--transition-base);
+}
+
+.certCard:hover {
+  border-color: var(--primary-200);
+  box-shadow: var(--shadow-md);
+}
+
+.certIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.certName {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.certBody {
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  margin-top: 2px;
+}
+
+@media (max-width: 1024px) {
+  .storyGrid { grid-template-columns: 1fr; }
+  .storyImageWrap { display: none; }
+  .valuesGrid, .teamGrid, .milestonesGrid, .certsGrid { grid-template-columns: repeat(2, 1fr); }
+  .milestone { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 24px; }
+  .valuesSection { padding: 48px 32px; }
+}
+
+@media (max-width: 640px) {
+  .valuesGrid, .teamGrid, .milestonesGrid, .certsGrid { grid-template-columns: 1fr; }
+}
