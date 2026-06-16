@@ -1,8 +1,11 @@
 {
   "nav": {
     "home": "Home",
+    "corporate": "Azienda",
     "gases": "Gas Industriali",
     "about": "Chi Siamo",
+    "kvkk": "Privacy KVKK",
+    "gallery": "Galleria",
     "contact": "Contatti",
     "allProducts": "Tutti i Gas Industriali"
   },
@@ -146,5 +149,42 @@
     "ctaTitle": "Richiedi un Preventivo",
     "ctaDesc": "prodotto. Puoi richiedere rapidamente un preventivo per conoscere i prezzi personalizzati e le condizioni di fornitura.",
     "ctaButton": "Contattaci"
+  },
+  "kvkkPage": {
+    "title": "Testo Informativa KVKK",
+    "subtitle": "Informativa e i tuoi diritti ai sensi della legge sulla protezione dei dati personali.",
+    "intro": "In qualità di Tinsa Gaz, attribuiamo grande importanza alla sicurezza dei tuoi dati personali. In conformità con la Legge n. 6698 sulla Protezione dei Dati Personali (\"KVKK\"), desideriamo informarti in qualità di titolare del trattamento.",
+    "sections": {
+      "controller": {
+        "title": "1. Titolare del Trattamento",
+        "content": "Tinsa Gaz is the data controller under the law and processes your personal data in accordance with the legislation."
+      },
+      "purpose": {
+        "title": "2. Finalità del Trattamento dei Dati Personnali",
+        "content": "I tuoi dati personali sono trattati per finalità di gestione delle relazioni con i clienti, presentazione dei nostri prodotti e servizi, tracciamento degli ordini e delle fatture e adempimento dei nostri obblighi legali."
+      },
+      "transfer": {
+        "title": "3. Trasferimento dei Dati Personali Trattati",
+        "content": "I tuoi dati personali possono essere trasferiti a istituzioni pubbliche legalmente autorizzate, ai nostri partner commerciali e ai relativi fornitori di servizi allo scopo di adempiere agli obblighi legali."
+      },
+      "method": {
+        "title": "4. Metodo e Base Giuridica per la Raccolta dei Dati",
+        "content": "I tuoi dati personali sono raccolti tramite i moduli di contatto sul nostro sito web, e-mail e contratti fisici, sulla base di adempimento di obblighi legali e dei nostri legittimi interessi."
+      },
+      "rights": {
+        "title": "5. Diritti dell'Interessato",
+        "content": "Ai sensi dell'Articolo 11 della KVKK, hai il diritto di sapere se i tuoi dati personali sono trattati, richiedere informazioni se trattati, sapere se sono utilizzati in conformità con la loro finalità, e richiedere la rettifica o la cancellazione dei tuoi dati."
+      }
+    }
+  },
+  "galleryPage": {
+    "title": "Galleria Fotografica",
+    "subtitle": "Scatti delle nostre strutture, laboratori e soluzioni industriali.",
+    "captions": {
+      "filling_station": "Stazione di Riempimento Gas di Precisione",
+      "quality_control": "Laboratorio di Analisi & Controllo Qualità Gas",
+      "logistics": "Area Logistica di Spedizione & Stoccaggio",
+      "laser_cutting": "Saldatura Industriale & Taglio Laser"
+    }
   }
 }

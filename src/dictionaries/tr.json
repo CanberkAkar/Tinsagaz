@@ -1,8 +1,11 @@
 {
   "nav": {
     "home": "Anasayfa",
+    "corporate": "Kurumsal",
     "gases": "Sınai Gazlar",
     "about": "Hakkımızda",
+    "kvkk": "KVKK Aydınlatma",
+    "gallery": "Galeri",
     "contact": "İletişim",
     "allProducts": "Tüm Sınai Gazlar"
   },
@@ -146,5 +149,42 @@
     "ctaTitle": "Teklif Alın",
     "ctaDesc": "ürünü için özel fiyat ve tedarik koşullarını öğrenmek üzere hızlıca teklif isteyebilirsiniz.",
     "ctaButton": "İletişime Geçin"
+  },
+  "kvkkPage": {
+    "title": "KVKK Aydınlatma Metni",
+    "subtitle": "Kişisel Verilerin Korunması Kanunu kapsamında haklarınız ve bilgilendirme metni.",
+    "intro": "Tinsa Gaz olarak, kişisel verilerinizin güvenliğine büyük önem veriyoruz. 6698 sayılı Kişisel Verilerin Korunması Kanunu (\"KVKK\") uyarınca, veri sorumlusu sıfatıyla sizleri bilgilendirmek isteriz.",
+    "sections": {
+      "controller": {
+        "title": "1. Veri Sorumlusu",
+        "content": "Tinsa Gaz, kanun kapsamında veri sorumlusu olup kişisel verilerinizi mevzuata uygun olarak işlemektedir."
+      },
+      "purpose": {
+        "title": "2. Kişisel Verilerin İşlenme Amacı",
+        "content": "Kişisel verileriniz; müşteri ilişkileri süreçlerinin yönetilmesi, ürün ve hizmetlerimizin sunulması, sipariş ve fatura işlemlerinin takibi ile yasal yükümlülüklerimizin yerine getirilmesi amacıyla işlenmektedir."
+      },
+      "transfer": {
+        "title": "3. İşlenen Kişisel Verilerin Aktarılması",
+        "content": "Kişisel verileriniz; kanunen yetkili kamu kurumlarına, iş ortaklarımıza ve yasal yükümlülüklerin yerine getirilmesi amacıyla ilgili hizmet sağlayıcılarımıza aktarılabilmektedir."
+      },
+      "method": {
+        "title": "4. Veri Toplamanın Yöntemi ve Hukuki Sebebi",
+        "content": "Kişisel verileriniz, web sitemizdeki iletişim formları, e-postalar ve fiziksel sözleşmeler vasıtasıyla, kanuni yükümlülüklerin ifası ve meşru menfaatlerimiz hukuki sebeplerine dayalı olarak toplanmaktadır."
+      },
+      "rights": {
+        "title": "5. Veri Sahibinin Hakları",
+        "content": "KVKK 11. maddesi uyarınca; kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, işlenme amacına uygun kullanılıp kullanılmadığını öğrenme ve verilerin düzeltilmesini veya silinmesini isteme hakkına sahipsiniz."
+      }
+    }
+  },
+  "galleryPage": {
+    "title": "Fotoğraf Galerisi",
+    "subtitle": "Tesislerimiz, laboratuvarımız ve endüstriyel çözümlerimizden kesitler.",
+    "captions": {
+      "filling_station": "Hassas Gaz Dolum İstasyonu",
+      "quality_control": "Gaz Analiz ve Kalite Kontrol Laboratuvarı",
+      "logistics": "Lojistik Sevkiyat ve Depolama Alanı",
+      "laser_cutting": "Endüstriyel Kaynak ve Lazer Kesim"
+    }
   }
 }

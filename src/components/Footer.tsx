@@ -69,7 +69,8 @@ export default function Footer({ lang, footerDict, navDict }: { lang: Locale; fo
   const localizedNavLinks = [
     { href: `/${lang}`, label: navDict.home },
     { href: `/${lang}/urunler`, label: productsLabels[lang] || "Ürünler" },
-    { href: `/${lang}/hakkimizda`, label: navDict.about },
+    { href: `/${lang}/kurumsal/hakkimizda`, label: navDict.about },
+    { href: `/${lang}/kurumsal/galeri`, label: navDict.gallery },
     { href: `/${lang}/iletisim`, label: navDict.contact },
   ];
 
@@ -191,11 +192,8 @@ export default function Footer({ lang, footerDict, navDict }: { lang: Locale; fo
             © {year} Tinsagaz Endüstriyel Çözümler A.Ş. {footerDict.rights}
           </p>
           <div className={styles.footerBottomLinks}>
-            <Link href={`/${lang}/gizlilik-politikasi`} className={styles.footerBottomLink}>
-              {footerDict.privacy}
-            </Link>
-            <Link href={`/${lang}/kullanim-sartlari`} className={styles.footerBottomLink}>
-              {footerDict.terms}
+            <Link href={`/${lang}/kurumsal/kvkk`} className={styles.footerBottomLink}>
+              {navDict.kvkk}
             </Link>
           </div>
         </div>

@@ -1,8 +1,11 @@
 {
   "nav": {
     "home": "Home",
+    "corporate": "Corporate",
     "gases": "Industrial Gases",
     "about": "About Us",
+    "kvkk": "KVKK Privacy",
+    "gallery": "Gallery",
     "contact": "Contact",
     "allProducts": "All Industrial Gases"
   },
@@ -146,5 +149,42 @@
     "ctaTitle": "Get a Quote",
     "ctaDesc": "product. You can quickly request a quote to learn about custom pricing and supply conditions.",
     "ctaButton": "Contact Us"
+  },
+  "kvkkPage": {
+    "title": "KVKK Clarification Text",
+    "subtitle": "Information text and your rights under the Personal Data Protection Law.",
+    "intro": "As Tinsa Gaz, we attach great importance to the security of your personal data. In accordance with the Personal Data Protection Law No. 6698 (\"KVKK\"), we would like to inform you as the data controller.",
+    "sections": {
+      "controller": {
+        "title": "1. Data Controller",
+        "content": "Tinsa Gaz is the data controller under the law and processes your personal data in accordance with the legislation."
+      },
+      "purpose": {
+        "title": "2. Purpose of Processing Personal Data",
+        "content": "Your personal data is processed for the purposes of managing customer relations, presenting our products and services, tracking order and invoice transactions, and fulfilling our legal obligations."
+      },
+      "transfer": {
+        "title": "3. Transfer of Processed Personal Data",
+        "content": "Your personal data may be transferred to legally authorized public institutions, our business partners, and related service providers for the purpose of fulfilling legal obligations."
+      },
+      "method": {
+        "title": "4. Method and Legal Reason for Data Collection",
+        "content": "Your personal data is collected via contact forms on our website, emails, and physical contracts, based on legal reasons of performance of legal obligations and our legitimate interests."
+      },
+      "rights": {
+        "title": "5. Rights of the Data Subject",
+        "content": "Pursuant to Article 11 of the KVKK, you have the right to learn whether your personal data is processed, to request information if processed, to learn whether it is used in accordance with its purpose, and to request correction or deletion of your data."
+      }
+    }
+  },
+  "galleryPage": {
+    "title": "Photo Gallery",
+    "subtitle": "Views from our facilities, laboratory, and industrial solutions.",
+    "captions": {
+      "filling_station": "Precision Gas Filling Station",
+      "quality_control": "Gas Analysis & Quality Control Laboratory",
+      "logistics": "Logistics Dispatch & Warehousing Area",
+      "laser_cutting": "Industrial Welding & Laser Cutting"
+    }
   }
 }

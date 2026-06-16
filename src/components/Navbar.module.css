@@ -611,4 +611,35 @@
   font-weight: 600;
 }
 
+.dropdownLinkSimple {
+  display: block;
+  padding: 12px 20px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--gray-700);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.dropdownLinkSimple:hover {
+  background: var(--primary-50);
+  color: var(--primary) !important;
+}
+
+.mobileSubmenuLinkSimple {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--gray-600);
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.mobileSubmenuLinkSimple:hover {
+  color: var(--primary) !important;
+  background: var(--primary-50) !important;
+}
+
 

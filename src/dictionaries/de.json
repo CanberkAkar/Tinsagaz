@@ -1,8 +1,11 @@
 {
   "nav": {
     "home": "Startseite",
+    "corporate": "Unternehmen",
     "gases": "Industriegase",
     "about": "Über Uns",
+    "kvkk": "KVKK Datenschutz",
+    "gallery": "Galerie",
     "contact": "Kontakt",
     "allProducts": "Alle Industriegase"
   },
@@ -146,5 +149,42 @@
     "ctaTitle": "Angebot einholen",
     "ctaDesc": "Produkt. Sie können schnell ein Angebot anfordern, um sich über kundenspezifische Preise und Lieferbedingungen zu informieren.",
     "ctaButton": "Kontaktieren Sie uns"
+  },
+  "kvkkPage": {
+    "title": "KVKK-Aufklärungstext",
+    "subtitle": "Informationstext und Ihre Rechte im Rahmen des Gesetzes zum Schutz personenbezogener Daten.",
+    "intro": "Als Tinsa Gaz legen wir großen Wert auf die Sicherheit Ihrer personenbezogenen Daten. In Übereinstimmung mit dem Gesetz zum Schutz personenbezogener Daten Nr. 6698 (\"KVKK\") möchten wir Sie als Datenverantwortlicher informieren.",
+    "sections": {
+      "controller": {
+        "title": "1. Datenverantwortlicher",
+        "content": "Tinsa Gaz ist der Datenverantwortliche im Sinne des Gesetzes und verarbeitet Ihre personenbezogenen Daten in Übereinstimmung mit den gesetzlichen Bestimmungen."
+      },
+      "purpose": {
+        "title": "2. Zweck der Verarbeitung personenbezogener Daten",
+        "content": "Ihre personenbezogenen Daten werden verarbeitet, um Kundenbeziehungen zu verwalten, unsere Produkte und Dienstleistungen anzubieten, Bestell- und Rechnungsabwicklungen zu verfolgen und unsere gesetzlichen Verpflichtungen zu erfüllen."
+      },
+      "transfer": {
+        "title": "3. Übermittlung verarbeiteter personenbezogener Daten",
+        "content": "Ihre personenbezogenen Daten können an gesetzlich befugte öffentliche Institutionen, unsere Geschäftspartner und relevante Dienstleister zum Zweck der Erfüllung gesetzlicher Verpflichtungen übermittelt werden."
+      },
+      "method": {
+        "title": "4. Methode und rechtlicher Grund für die Datenerhebung",
+        "content": "Ihre personenbezogenen Daten werden über Kontaktformulare auf unserer Website, E-Mails und physische Verträge erhoben, basierend auf den rechtlichen Grundlagen zur Erfüllung gesetzlicher Verpflichtungen und unseren berechtigten Interessen."
+      },
+      "rights": {
+        "title": "5. Rechte der betroffenen Person",
+        "content": "Gemäß Artikel 11 des KVKK haben Sie das Recht zu erfahren, ob Ihre personenbezogenen Daten verarbeitet werden, Informationen anzufordern, falls sie verarbeitet werden, zu erfahren, ob sie zweckentsprechend verwendet werden, und die Berichtigung oder Löschung Ihrer Daten zu verlangen."
+      }
+    }
+  },
+  "galleryPage": {
+    "title": "Fotogalerie",
+    "subtitle": "Einblicke in unsere Anlagen, Labore und industriellen Lösungen.",
+    "captions": {
+      "filling_station": "Präzisions-Gasabfüllstation",
+      "quality_control": "Gasanalytik- und Qualitätskontrolllabor",
+      "logistics": "Logistikversand und Lagerbereich",
+      "laser_cutting": "Industrielles Schweißen und Laserschneiden"
+    }
   }
 }

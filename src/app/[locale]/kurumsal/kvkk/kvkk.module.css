@@ -1,0 +1,83 @@
+.kvkkSection {
+  padding: 80px 24px;
+  background-color: var(--navy-dark, #0a1128);
+  min-height: 50vh;
+}
+
+.kvkkInner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.introCard {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 24px 32px;
+  margin-bottom: 40px;
+  color: var(--gray-300, #d1d5db);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.sectionsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sectionCard {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 32px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.sectionCard:hover {
+  transform: translateY(-2px);
+  border-color: rgba(77, 184, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(77, 184, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.sectionTitle {
+  font-size: 1.35rem;
+  color: var(--primary-light, #4db8ff);
+  margin-bottom: 16px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.sectionDivider {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(77, 184, 255, 0.4) 0%, rgba(77, 184, 255, 0) 100%);
+  margin-bottom: 20px;
+}
+
+.sectionContent {
+  color: var(--gray-300, #d1d5db);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 768px) {
+  .kvkkSection {
+    padding: 48px 16px;
+  }
+  
+  .introCard {
+    padding: 20px 24px;
+    font-size: 1rem;
+  }
+  
+  .sectionCard {
+    padding: 24px;
+  }
+}

@@ -1,8 +1,11 @@
 {
   "nav": {
     "home": "Accueil",
+    "corporate": "Entreprise",
     "gases": "Gaz Industriels",
     "about": "À Propos",
+    "kvkk": "Confidentialité KVKK",
+    "gallery": "Galerie",
     "contact": "Contact",
     "allProducts": "Tous les Gaz Industriels"
   },
@@ -146,5 +149,42 @@
     "ctaTitle": "Obtenir un Devis",
     "ctaDesc": "produit. Vous pouvez rapidement demander un devis pour en savoir plus sur les tarifs personnalisés et les conditions d'approvisionnement.",
     "ctaButton": "Contactez-nous"
+  },
+  "kvkkPage": {
+    "title": "Texte de Clarification KVKK",
+    "subtitle": "Texte d'information et vos droits en vertu de la loi sur la protection des données personnelles.",
+    "intro": "En tant que Tinsa Gaz, nous accordons une grande importance à la sécurité de vos données personnelles. Conformément à la loi n° 6698 sur la protection des données personnelles (\"KVKK\"), nous aimerions vous informer en tant que responsable du traitement.",
+    "sections": {
+      "controller": {
+        "title": "1. Responsable du Traitement",
+        "content": "Tinsa Gaz est le responsable du traitement en vertu de la loi et traite vos données personnelles conformément à la législation."
+      },
+      "purpose": {
+        "title": "2. Finalité du Traitement des Données Personnelles",
+        "content": "Vos données personnelles sont traitées dans le but de gérer les relations clients, de présenter nos produits et services, de suivre les commandes et factures, et de remplir nos obligations légales."
+      },
+      "transfer": {
+        "title": "3. Transfert des Données Personnelles Traitées",
+        "content": "Vos données personnelles peuvent être transférées à des institutions publiques légalement autorisées, à nos partenaires commerciaux et aux prestataires de services associés dans le but de remplir nos obligations légales."
+      },
+      "method": {
+        "title": "4. Méthode et Motif Juridique de la Collecte des Données",
+        "content": "Vos données personnelles sont collectées via les formulaires de contact sur notre site web, par e-mail et via des contrats physiques, sur la base de motifs juridiques liés à l'exécution d'obligations légales et à nos intérêts légitimes."
+      },
+      "rights": {
+        "title": "5. Droits de la Personne Concernée",
+        "content": "Conformément à l'article 11 de la KVKK, vous avez le droit de savoir si vos données personnelles sont traitées, de demander des informations si elles le sont, de savoir si elles sont utilisées conformément à leur finalité, et de demander la rectification ou la suppression de vos données."
+      }
+    }
+  },
+  "galleryPage": {
+    "title": "Galerie Photos",
+    "subtitle": "Aperçu de nos installations, laboratoire et solutions industrielles.",
+    "captions": {
+      "filling_station": "Station de Remplissage de Gaz de Précision",
+      "quality_control": "Laboratoire d'Analyse et de Contrôle Qualité du Gaz",
+      "logistics": "Zone d'Expédition Logistique et d'Entreposage",
+      "laser_cutting": "Soudage Industriel et Découpe Laser"
+    }
   }
 }

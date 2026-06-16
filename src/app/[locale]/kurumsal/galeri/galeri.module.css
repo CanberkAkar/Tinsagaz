@@ -1,0 +1,127 @@
+.gallerySection {
+  padding: 80px 24px;
+  background-color: var(--navy-dark, #0a1128);
+}
+
+.galleryInner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.galleryItem {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.galleryItem:hover {
+  transform: translateY(-8px);
+  border-color: rgba(77, 184, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(77, 184, 255, 0.15);
+}
+
+.imageWrapper {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  width: 100%;
+}
+
+.galleryImage {
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.galleryItem:hover .galleryImage {
+  transform: scale(1.08);
+}
+
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to top,
+    rgba(10, 17, 40, 0.95) 0%,
+    rgba(10, 17, 40, 0.4) 60%,
+    rgba(10, 17, 40, 0.1) 100%
+  );
+  opacity: 0.85;
+  transition: opacity 0.4s ease;
+  display: flex;
+  align-items: flex-end;
+  padding: 32px;
+}
+
+.galleryItem:hover .imageOverlay {
+  opacity: 0.95;
+}
+
+.overlayContent {
+  width: 100%;
+  transform: translateY(16px);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.galleryItem:hover .overlayContent {
+  transform: translateY(0);
+}
+
+.overlayCategory {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--primary-light, #4db8ff);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.overlayTitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.overlayLine {
+  height: 2px;
+  background-color: var(--primary-light, #4db8ff);
+  width: 0;
+  margin-top: 16px;
+  transition: width 0.4s ease;
+}
+
+.galleryItem:hover .overlayLine {
+  width: 80px;
+}
+
+@media (max-width: 768px) {
+  .galleryGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  .gallerySection {
+    padding: 48px 16px;
+  }
+
+  .imageOverlay {
+    padding: 24px;
+  }
+  
+  .overlayTitle {
+    font-size: 1.2rem;
+  }
+}

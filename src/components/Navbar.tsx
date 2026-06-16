@@ -30,9 +30,16 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
+  const [mobileDropdowns, setMobileDropdowns] = useState<Record<string, boolean>>({});
   const [mobileSinaiOpen, setMobileSinaiOpen] = useState(false);
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
+
+  const toggleMobileDropdown = (key: string) => {
+    setMobileDropdowns((prev) => ({
+      ...prev,
+      [key]: !prev[key],
+    }));
+  };
 
   const localizedGases = getGasesData(lang);
   const productsLabel = productsLabels[lang] || "Ürünler";
@@ -40,6 +47,26 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
   const navLinks = [
     { href: `/${lang}`, label: navDict.home },
     {
+      key: "corporate",
+      href: `/${lang}/kurumsal/hakkimizda`,
+      label: navDict.corporate || "Kurumsal",
+      dropdown: [
+        {
+          label: navDict.about,
+          href: `/${lang}/kurumsal/hakkimizda`,
+        },
+        {
+          label: navDict.kvkk,
+          href: `/${lang}/kurumsal/kvkk`,
+        },
+        {
+          label: navDict.gallery,
+          href: `/${lang}/kurumsal/galeri`,
+        },
+      ],
+    },
+    {
+      key: "products",
       href: `/${lang}/urunler`,
       label: productsLabel,
       dropdown: [
@@ -53,7 +80,6 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
         },
       ],
     },
-    { href: `/${lang}/hakkimizda`, label: navDict.about },
     { href: `/${lang}/iletisim`, label: navDict.contact },
   ];
 
@@ -70,7 +96,7 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
   // Close mobile menu on route change
   useEffect(() => {
     setMenuOpen(false);
-    setMobileDropdownOpen(false);
+    setMobileDropdowns({});
     setMobileSinaiOpen(false);
     setLangDropdownOpen(false);
   }, [pathname]);
@@ -135,19 +161,27 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
                     <ul className={styles.dropdownMenu} role="list">
                       {link.dropdown.map((subItem) => (
                         <li key={subItem.label} className={styles.dropdownItem}>
-                          <Link href={subItem.href} className={styles.dropdownLink}>
-                            {subItem.label}
-                            <span className={styles.submenuArrow}>▶</span>
-                          </Link>
-                          <ul className={styles.submenuMenu} role="list">
-                            {subItem.submenu.map((nested) => (
-                              <li key={nested.href}>
-                                <Link href={nested.href} className={styles.submenuLink}>
-                                  {nested.label}
-                                </Link>
-                              </li>
-                            ))}
-                          </ul>
+                          {'submenu' in subItem ? (
+                            <>
+                              <Link href={subItem.href} className={styles.dropdownLink}>
+                                {subItem.label}
+                                <span className={styles.submenuArrow}>▶</span>
+                              </Link>
+                              <ul className={styles.submenuMenu} role="list">
+                                {subItem.submenu.map((nested) => (
+                                  <li key={nested.href}>
+                                    <Link href={nested.href} className={styles.submenuLink}>
+                                      {nested.label}
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            </>
+                          ) : (
+                            <Link href={subItem.href} className={styles.dropdownLinkSimple}>
+                              {subItem.label}
+                            </Link>
+                          )}
                         </li>
                       ))}
                     </ul>
@@ -237,13 +271,13 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
                       className={`${styles.navbarLink} ${styles.mobileDropdownToggle} ${
                         pathname.startsWith(link.href) ? styles.active : ""
                       }`}
-                      onClick={() => setMobileDropdownOpen((v) => !v)}
-                      aria-expanded={mobileDropdownOpen}
+                      onClick={() => toggleMobileDropdown(link.key || link.label)}
+                      aria-expanded={!!mobileDropdowns[link.key || link.label]}
                     >
                       {link.label}
                       <span
                         className={`${styles.mobileDropdownArrow} ${
-                          mobileDropdownOpen ? styles.rotated : ""
+                          mobileDropdowns[link.key || link.label] ? styles.rotated : ""
                         }`}
                       >
                         ▼
@@ -251,56 +285,70 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
                     </button>
                     <div
                       className={`${styles.mobileSubmenu} ${
-                        mobileDropdownOpen ? styles.mobileSubmenuOpen : ""
+                        mobileDropdowns[link.key || link.label] ? styles.mobileSubmenuOpen : ""
                       }`}
                     >
                       {link.dropdown.map((subItem) => (
                         <div key={subItem.label} className={styles.mobileSubmenuCol}>
-                          <button
-                            className={styles.mobileSubmenuHeaderToggle}
-                            onClick={() => setMobileSinaiOpen((v) => !v)}
-                            aria-expanded={mobileSinaiOpen}
-                          >
-                            {subItem.label}
-                            <span
-                              className={`${styles.mobileSubmenuArrow} ${
-                                mobileSinaiOpen ? styles.rotated : ""
-                              }`}
-                            >
-                              ▼
-                            </span>
-                          </button>
-                          <div
-                            className={`${styles.mobileNestedMenu} ${
-                              mobileSinaiOpen ? styles.mobileNestedMenuOpen : ""
-                            }`}
-                          >
-                            {subItem.submenu.map((nested) => (
-                              <Link
-                                key={nested.href}
-                                href={nested.href}
-                                className={styles.mobileNestedMenuLink}
-                                onClick={() => setMenuOpen(false)}
+                          {'submenu' in subItem ? (
+                            <>
+                              <button
+                                className={styles.mobileSubmenuHeaderToggle}
+                                onClick={() => setMobileSinaiOpen((v) => !v)}
+                                aria-expanded={mobileSinaiOpen}
                               >
-                                {nested.label}
-                              </Link>
-                            ))}
-                          </div>
+                                {subItem.label}
+                                <span
+                                  className={`${styles.mobileSubmenuArrow} ${
+                                    mobileSinaiOpen ? styles.rotated : ""
+                                  }`}
+                                >
+                                  ▼
+                                </span>
+                              </button>
+                              <div
+                                className={`${styles.mobileNestedMenu} ${
+                                  mobileSinaiOpen ? styles.mobileNestedMenuOpen : ""
+                                }`}
+                              >
+                                {subItem.submenu.map((nested) => (
+                                  <Link
+                                    key={nested.href}
+                                    href={nested.href}
+                                    className={styles.mobileNestedMenuLink}
+                                    onClick={() => setMenuOpen(false)}
+                                  >
+                                    {nested.label}
+                                  </Link>
+                                ))}
+                              </div>
+                            </>
+                          ) : (
+                            <Link
+                              href={subItem.href}
+                              className={styles.mobileSubmenuLinkSimple}
+                              onClick={() => setMenuOpen(false)}
+                            >
+                              {subItem.label}
+                            </Link>
+                          )}
                         </div>
                       ))}
-                      <Link
-                        href={link.href}
-                        className={styles.mobileSubmenuLink}
-                        style={{
-                          fontWeight: "600",
-                          borderTop: "1px solid var(--gray-200)",
-                          paddingTop: "12px",
-                          marginTop: "4px",
-                        }}
-                        onClick={() => setMenuOpen(false)}
-                      >
-                        {navDict.allProducts}
-                      </Link>
+                      {link.key === "products" && (
+                        <Link
+                          href={link.href}
+                          className={styles.mobileSubmenuLink}
+                          style={{
+                            fontWeight: "600",
+                            borderTop: "1px solid var(--gray-200)",
+                            paddingTop: "12px",
+                            marginTop: "4px",
+                          }}
+                          onClick={() => setMenuOpen(false)}
+                        >
+                          {navDict.allProducts}
+                        </Link>
+                      )}
                     </div>
                   </>
                 ) : (

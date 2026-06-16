@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import sharedStyles from "../shared.module.css";
+import sharedStyles from "../../shared.module.css";
 import styles from "./hakkimizda.module.css";
-import { Locale, getDictionary } from "../dictionaries";
+import { Locale, getDictionary } from "../../dictionaries";
 
 type Props = {
   params: Promise<{ locale: string }>;
