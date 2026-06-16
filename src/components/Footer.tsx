@@ -78,10 +78,6 @@ export default function Footer({ lang, footerDict, navDict }: { lang: Locale; fo
   const products = [
     { href: `/${lang}/urunler/gazlar/sinai-gazlar`, label: navDict.gases },
     { href: `/${lang}/urunler/gazlar/medikal-gazlar`, label: navDict.medicalGases || "Medikal Gazlar" },
-    { href: `/${lang}/urunler#celik`, label: labels.celik },
-    { href: `/${lang}/urunler#elektrik`, label: labels.elektrik },
-    { href: `/${lang}/urunler#tup`, label: labels.tup },
-    { href: `/${lang}/urunler#agir-makine`, label: labels.makine },
   ];
 
   return (
