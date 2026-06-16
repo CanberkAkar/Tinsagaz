@@ -1,0 +1,150 @@
+{
+  "nav": {
+    "home": "Anasayfa",
+    "gases": "Sınai Gazlar",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "allProducts": "Tüm Sınai Gazlar"
+  },
+  "footer": {
+    "desc": "Tıbbi ve endüstriyel gaz, elektrik, çelik, tüp ve ağır makine üretiminde Türkiye'nin güvenilir çözüm ortağı. Kalite, güvenlik ve inovasyon önceliğimizdir.",
+    "quick": "Hızlı Erişim",
+    "products": "Ürünlerimiz",
+    "contact": "İletişim",
+    "rights": "Tüm hakları saklıdır.",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları",
+    "address": "Küçük Çiğli, 8780/11. Sk. no:19, 35620 Çiğli/İzmir",
+    "hours": "Pzt–Per: 08:30–17:45, Cum: 08:00–17:45"
+  },
+  "home": {
+    "hero": {
+      "badge": "Türkiye'nin Güvenilir Çözüm Ortağı",
+      "titlePart1": "Endüstriyel ve",
+      "titleAccent": "Medikal",
+      "titlePart2": "Gazda Liderlik",
+      "desc": "Tinsagaz olarak tıbbi gaz, endüstriyel gaz, elektrik, çelik, tüp ve ağır makine üretimi alanlarında 30 yılı aşkın deneyimle sektöre hizmet veriyoruz. Kalite, güvenlik ve inovasyon her zaman önceliğimiz.",
+      "cta1": "Ürünlerimizi İncele",
+      "cta2": "Bize Ulaşın",
+      "scrollDown": "Aşağı kaydır"
+    },
+    "services": {
+      "label": "Hizmetlerimiz",
+      "title": "Kapsamlı Endüstriyel Çözümler",
+      "desc": "Medikal gazlardan ağır makinelere, elektrik sistemlerinden çelik ürünlerine kadar geniş ürün yelpazemizle tüm sektörlere hizmet veriyoruz.",
+      "medikalTitle": "Medikal Gazlar",
+      "medikalDesc": "Yüksek saflıkta tıbbi oksijen, azot protoksit (N₂O), karbondioksit ve tıbbi hava gazları. Sağlık kuruluşları ve klinikler için ISO 13485 sertifikalı kesintisiz medikal gaz çözümleri.",
+      "endustriyelTitle": "Endüstriyel Gazlar",
+      "endustriyelDesc": "Yüksek saflıkta argon, azot, helyum, hidrojen, asetilen ve özel karışım kaynak gazları. Kaynak, plazma/lazer kesim ve endüstriyel üretim prosesleri için optimum saflıkta sınai gazlar.",
+      "celikTitle": "Çelik Ürünleri",
+      "celikDesc": "Yapısal çelik, çelik profiller (HEA, HEB, IPE), saclar ve sanayi tipi çelik çekme ürünleri. TS EN standartlarına uygun, yüksek mukavemetli çelik çözümleri.",
+      "elektrikTitle": "Elektrik Sistemleri",
+      "elektrikDesc": "Güç dağıtım panoları, trafolar, AG-OG elektrik şebekeleri ve kontrol altyapı çözümleri. Endüstriyel tesisler için IEC 61439 standartlarında anahtar teslim enerji sistemleri.",
+      "tupTitle": "Tüp Sistemleri",
+      "tupDesc": "Yüksek basınçlı gaz tüpleri (200-300 bar), dikişsiz çelik silindirler, manifold üniteleri (MCP/MTP) ve regülatörler. TSE standartlarında test edilmiş, periyodik muayene garantili tüp ekipmanları.",
+      "makineTitle": "Ağır Makineler",
+      "makineDesc": "Endüstriyel vidalı kompresörler, pompa sistemleri, köprülü tavan vinçleri ve özel imalat sanayi makineleri. Verimli ve yüksek performanslı ağır ekipman mühendisliği.",
+      "moreInfo": "Daha Fazla Bilgi →"
+    },
+    "stats": {
+      "experience": "Yıl Tecrübe",
+      "customers": "Mutlu Müşteri",
+      "projects": "Tamamlanan Proje",
+      "export": "Ülkeye İhracat"
+    },
+    "whyUs": {
+      "label": "Neden Tinsagaz?",
+      "title": "Güvenilirlik ve Kalitenin Simgesi",
+      "desc": "Müşterilerimizin güvenini kazanmak için her adımda en yüksek standartları uyguluyoruz. Kalite kontrolden lojistiğe, satış sonrası destekten ar-ge'ye kadar her aşamada mükemmeliyeti hedefliyoruz.",
+      "point1Title": "30 Yılı Aşkın Güvenilir Tecrübe",
+      "point1Desc": "Çeyrek asrı aşan sektörel tecrübemiz ve EIGA (Avrupa Endüstriyel Gazlar Birliği) standartlarıyla uyumlu süreçlerimizle binlerce projeyi başarıyla yürüttük.",
+      "point2Title": "TSE ve ISO Belgeli Kalite Güvencesi",
+      "point2Desc": "Tüm gaz dolumlarında TSE standartlarında %100 Tam Dolum ve saflık analizi garantisi sunuyoruz.",
+      "point3Title": "Kesintisiz Lojistik ve Hızlı Teslimat",
+      "point3Desc": "Kendi lojistik filomuz ve geniş dağıtım ağımız ile dökme sıvı gazlardan tüp sevkiyatlarına kadar tüm siparişleri zamanında adrese teslim ediyoruz.",
+      "point4Title": "7/24 Teknik Destek & Bakım Hizmetleri",
+      "point4Desc": "Gaz dağıtım hatları kurulumu, basınç kontrol ve regülasyon sistemleri devreye alma süreçlerinde 7/24 kesintisiz teknik destek ve periyodik bakım sunuyoruz."
+    },
+    "cta": {
+      "title": "Projeniz İçin Teklif Alın",
+      "desc": "Uzman ekibimiz ihtiyaçlarınızı en iyi şekilde değerlendirerek size özel çözümler sunar. Hemen iletişime geçin!",
+      "action1": "Teklif Al",
+      "action2": "Ürünleri Gör"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Hakkımızda",
+      "desc": "1994'ten bu yana Türk sanayisine güç veren, güvenilirlik ve kaliteyle öne çıkan bir kuruluşuz. Hikayemizi ve değerlerimizi keşfedin."
+    },
+    "story": {
+      "label": "Hikayemiz",
+      "title": "30 Yılı Aşkın Tecrübe",
+      "p1": "1994 yılında İzmir'de küçük bir atölye olarak yola çıkan Tinsagaz, bugün Türkiye'nin önde gelen endüstriyel ve medikal gaz üreticilerinden biri haline gelmiştir.",
+      "p2": "Medikal gazlar, endüstriyel gazlar, elektrik sistemleri, çelik ürünleri, tüp sistemleri ve ağır makineler gibi geniş bir ürün yelpazesiyle farklı sektörlere hizmet veren firmamız, her geçen yıl kapasitesini ve hizmet kalitesini artırmaktadır.",
+      "p3": "Bugün 12 ülkeye ihracat yapan, 5.000'i aşkın müşteriye hizmet sunan ve 50.000'den fazla başarılı projeye imza atan Tinsagaz; kalite, güvenlik, inovasyon ve müşteri memnuniyetini temel değerleri olarak benimsemiştir.",
+      "cta": "Bizimle İletişime Geçin"
+    },
+    "values": {
+      "label": "Temel Değerlerimiz",
+      "title": "Bizi Farklı Kılan Değerler",
+      "v1Title": "Kalite Standartları",
+      "v1Desc": "TSE, ISO ve EIGA (Avrupa Endüstriyel Gazlar Birliği) standartlarında sertifikalı üretim.",
+      "v2Title": "Sıfır Hata ve İş Güvenliği",
+      "v2Desc": "Yüksek basınçlı gaz tüpü dolumlarında sıfır tolerans iş güvenliği politikası.",
+      "v3Title": "Teknolojik İnovasyon",
+      "v3Desc": "Manifold sistemleri (MCP/MTP) ve yerinde gaz hazırlama teknolojilerinde sürekli Ar-Ge.",
+      "v4Title": "Tam Dolum Güvencesi",
+      "v4Desc": "Müşterilerimize sunduğumuz her tüpte eksiksiz gaz miktarı ve saflık analizi garantisi."
+    },
+    "team": {
+      "label": "Ekibimiz",
+      "title": "Deneyimli Liderlik Kadrosu"
+    },
+    "milestones": {
+      "label": "Yolculuğumuz",
+      "title": "Kilometre Taşlarımız"
+    },
+    "certs": {
+      "label": "Kalite Güvencesi",
+      "title": "Sertifikalarımız"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "İletişim",
+      "desc": "Bizimle iletişime geçin. İhtiyaçlarınızı dinlemek ve en uygun endüstriyel çözümleri sunmak için buradayız."
+    },
+    "form": {
+      "title": "Mesaj Gönderin",
+      "name": "Adınız Soyadınız",
+      "email": "E-posta Adresiniz",
+      "phone": "Telefon Numaranız",
+      "message": "Mesajınız",
+      "send": "Gönder"
+    },
+    "info": {
+      "title": "İletişim Bilgileri",
+      "addressTitle": "Adres",
+      "phoneTitle": "Telefon",
+      "emailTitle": "E-posta",
+      "hoursTitle": "Çalışma Saatleri"
+    }
+  },
+  "gasesList": {
+    "hero": {
+      "title": "Sınai Gazlar",
+      "desc": "Endüstriyel üretim süreçlerinizde yüksek verimlilik ve kalite sağlayan, uluslararası standartlarda üretilmiş sınai (endüstriyel) gazlarımız."
+    },
+    "detailAction": "Detayları İncele →"
+  },
+  "gasDetail": {
+    "description": "Ürün Açıklaması",
+    "features": "Öne Çıkan Özellikler",
+    "usage": "Kullanım Alanları",
+    "specs": "Teknik Özellikler",
+    "ctaTitle": "Teklif Alın",
+    "ctaDesc": "ürünü için özel fiyat ve tedarik koşullarını öğrenmek üzere hızlıca teklif isteyebilirsiniz.",
+    "ctaButton": "İletişime Geçin"
+  }
+}

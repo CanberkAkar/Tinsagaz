@@ -1,0 +1,150 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "gases": "Industriegase",
+    "about": "Über Uns",
+    "contact": "Kontakt",
+    "allProducts": "Alle Industriegase"
+  },
+  "footer": {
+    "desc": "Türkeis zuverlässiger Lösungspartner bei der Produktion von medizinischen und industriellen Gasen, Elektrizität, Stahl, Flaschensystemen und schweren Maschinen. Qualität, Sicherheit und Innovation sind unsere Prioritäten.",
+    "quick": "Schnellzugriff",
+    "products": "Unsere Produkte",
+    "contact": "Kontakt",
+    "rights": "Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzrichtlinie",
+    "terms": "Nutzungsbedingungen",
+    "address": "Kucuk Cigli, 8780/11. St. no:19, 35620 Cigli/Izmir",
+    "hours": "Mo–Do: 08:30–17:45, Fr: 08:00–17:45"
+  },
+  "home": {
+    "hero": {
+      "badge": "Türkeis vertrauenswürdiger Lösungspartner",
+      "titlePart1": "Führung bei",
+      "titleAccent": "Industrie-",
+      "titlePart2": "und Medizingasen",
+      "desc": "Als Tinsagaz bedienen wir den Sektor mit mehr als 30 Jahren Erfahrung in den Bereichen Medizinisches Gas, Industriegas, Elektrizität, Stahl, Flaschensysteme und schwere Maschinen. Qualität, Sicherheit und Innovation stehen bei uns immer an erster Stelle.",
+      "cta1": "Unsere Produkte ansehen",
+      "cta2": "Kontaktieren Sie uns",
+      "scrollDown": "Nach unten scrollen"
+    },
+    "services": {
+      "label": "Unsere Produkte & Dienstleistungen",
+      "title": "Umfassende industrielle Lösungen",
+      "desc": "Wir bedienen alle Sektoren mit unserer breiten Produktpalette, von medizinischen Gasen bis zu schweren Maschinen, von elektrischen Systemen bis zu Stahlprodukten.",
+      "medikalTitle": "Medizinische Gase",
+      "medikalDesc": "Hochreiner medizinischer Sauerstoff, Distickstoffmonoxid (N₂O), Kohlendioxid und medizinische Luftgase. Zertifizierte medizinische Gaslösungen nach ISO 13485 für Gesundheitseinrichtungen und Kliniken.",
+      "endustriyelTitle": "Industriegase",
+      "endustriyelDesc": "Hochreines Argon, Stickstoff, Helium, Wasserstoff, Acetylen und spezielle Schweißgasmischungen. Industriegase mit optimaler Reinheit für Schweiß-, Plasma-/Laserschneid- und industrielle Produktionsprozesse.",
+      "celikTitle": "Stahlprodukte",
+      "celikDesc": "Baustahl, Stahlprofile (HEA, HEB, IPE), Bleche und nahtlose Industriestahlprodukte. Hochfeste Stahllösungen gemäß TS EN-Normen.",
+      "elektrikTitle": "Elektrische Systeme",
+      "elektrikDesc": "Energieverteilerfelder, Transformatoren, NS-MS-Stromnetze und Kontrollinfrastrukturlösungen. Schlüsselfertige Energiesysteme nach IEC 61439-Standards für Industrieanlagen.",
+      "tupTitle": "Flaschensysteme",
+      "tupDesc": "Hochdruckgasflaschen (200-300 bar), nahtlose Stahlflaschen, Flaschenbündel (MCP/MTP) und Regler. Geprüft nach TSE-Normen mit regelmäßiger Inspektionsgarantie.",
+      "makineTitle": "Schwere Maschinen",
+      "makineDesc": "Industrielle Schraubenkompressoren, Pumpensysteme, Brückenkrananlagen und kundenspezifische Industriemaschinen. Effiziente und leistungsstarke Schwermaschinentechnik.",
+      "moreInfo": "Mehr Infos →"
+    },
+    "stats": {
+      "experience": "Jahre Erfahrung",
+      "customers": "Zufriedene Kunden",
+      "projects": "Abgeschlossene Projekte",
+      "export": "Exportländer"
+    },
+    "whyUs": {
+      "label": "Warum Tinsagaz?",
+      "title": "Symbol für Zuverlässigkeit und Qualität",
+      "desc": "Wir wenden bei jedem Schritt die höchsten Standards an, um das Vertrauen unserer Kunden zu gewinnen. Wir streben in jeder Phase nach Exzellenz, von der Qualitätskontrolle bis zur Logistik, vom Kundendienst bis zur F&E.",
+      "point1Title": "Über 30 Jahre vertrauenswürdige Erfahrung",
+      "point1Desc": "Mit unserer über ein Vierteljahrhundert langen Branchenerfahrung und Prozessen, die vollständig auf die EIGA-Standards (European Industrial Gases Association) abgestimmt sind, haben wir Tausende von Projekten erfolgreich durchgeführt.",
+      "point2Title": "TSE- und ISO-zertifizierte Qualitätssicherung",
+      "point2Desc": "Wir garantieren eine 100%ige Füllung und Reinheitsanalyse nach TSE-Standards bei allen Gasfüllungen.",
+      "point3Title": "Unterbrechungsfreie Logistik & schnelle Lieferung",
+      "point3Desc": "Mit unserer eigenen Logistikflotte und unserem breiten Vertriebsnetz liefern wir alle Bestellungen, von flüssigen Gasen in großen Mengen bis hin zu Flaschen, pünktlich aus.",
+      "point4Title": "Technischer Support & Wartung rund um die Uhr",
+      "point4Desc": "Wir bieten einen technischen Support rund um die Uhr und eine regelmäßige Wartung für Gasverteilungsleitungsinstallationen, Drucksteuerungs- und Regelungssysteme."
+    },
+    "cta": {
+      "title": "Fordern Sie ein Angebot für Ihr Projekt an",
+      "desc": "Unser Expertenteam bewertet Ihre Bedürfnisse bestmöglich und bietet Ihnen maßgeschneiderte Lösungen. Kontaktieren Sie uns jetzt!",
+      "action1": "Angebot anfordern",
+      "action2": "Produkte ansehen"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Über Uns",
+      "desc": "Seit 1994 sind wir ein führendes Unternehmen, das die türkische Industrie antreibt und sich durch Zuverlässigkeit und Qualität auszeichnet. Entdecken Sie unsere Geschichte und Werte."
+    },
+    "story": {
+      "label": "Unsere Geschichte",
+      "title": "Über 30 Jahre Erfahrung",
+      "p1": "Tinsagaz begann 1994 als kleine Werkstatt in Izmir und hat sich heute zu einem der führenden Hersteller von Industrie- und Medizinischen Gasen in der Türkei entwickelt.",
+      "p2": "Unser Unternehmen bedient verschiedene Sektoren mit einem breiten Produktportfolio wie medizinischen Gasen, Industriegasen, elektrischen Systemen, Stahlprodukten, Flaschensystemen und schweren Maschinen und steigert jedes Jahr seine Kapazität und Servicequalität.",
+      "p3": "Tinsagaz exportiert in 12 Länder, bedient mehr als 5.000 Kunden und blickt auf über 50.000 erfolgreiche Projekte zurück. Qualität, Sicherheit, Innovation und Kundenzufriedenheit sind unsere Kernwerte.",
+      "cta": "Kontaktieren Sie uns"
+    },
+    "values": {
+      "label": "Unsere Grundwerte",
+      "title": "Werte, die uns auszeichnen",
+      "v1Title": "Qualitätsstandards",
+      "v1Desc": "Zertifizierte Produktion nach TSE-, ISO- und EIGA-Normen (European Industrial Gases Association).",
+      "v2Title": "Null-Fehler & Arbeitssicherheit",
+      "v2Desc": "Null-Toleranz-Arbeitssicherheitsrichtlinie bei Hochdruckgasflaschenfüllprozessen.",
+      "v3Title": "Technologische Innovation",
+      "v3Desc": "Kontinuierliche F&E in Flaschenbündeln (MCP/MTP) und Vor-Ort-Gaserzeugungstechnologien.",
+      "v4Title": "Garantie der vollständigen Füllung",
+      "v4Desc": "Garantie für das vollständige Gasvolumen und die Reinheitsanalyse bei jeder von uns gelieferten Flasche."
+    },
+    "team": {
+      "label": "Unser Team",
+      "title": "Erfahrenes Führungsteam"
+    },
+    "milestones": {
+      "label": "Unsere Reise",
+      "title": "Unsere Meilensteine"
+    },
+    "certs": {
+      "label": "Qualitätssicherung",
+      "title": "Unsere Zertifikate"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Kontaktieren Sie uns",
+      "desc": "Nehmen Sie Kontakt mit uns auf. Wir sind hier, um auf Ihre Bedürfnisse zu hören und die am besten geeigneten industriellen Lösungen anzubieten."
+    },
+    "form": {
+      "title": "Schreiben Sie uns",
+      "name": "Ihr Name & Nachname",
+      "email": "Ihre E-Mail-Adresse",
+      "phone": "Ihre Telefonnummer",
+      "message": "Ihre Nachricht",
+      "send": "Senden"
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "addressTitle": "Adresse",
+      "phoneTitle": "Telefon",
+      "emailTitle": "E-Mail",
+      "hoursTitle": "Arbeitszeiten"
+    }
+  },
+  "gasesList": {
+    "hero": {
+      "title": "Industriegase",
+      "desc": "Unsere Industriegase werden nach internationalen Standards hergestellt und bieten eine hohe Effizienz und Qualität in Ihren industriellen Prozessen."
+    },
+    "detailAction": "Details anzeigen →"
+  },
+  "gasDetail": {
+    "description": "Produktbeschreibung",
+    "features": "Hauptmerkmale",
+    "usage": "Anwendungsbereiche",
+    "specs": "Technische Spezifikationen",
+    "ctaTitle": "Angebot einholen",
+    "ctaDesc": "Produkt. Sie können schnell ein Angebot anfordern, um sich über kundenspezifische Preise und Lieferbedingungen zu informieren.",
+    "ctaButton": "Kontaktieren Sie uns"
+  }
+}

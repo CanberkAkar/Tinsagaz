@@ -1,0 +1,150 @@
+{
+  "nav": {
+    "home": "Home",
+    "gases": "Industrial Gases",
+    "about": "About Us",
+    "contact": "Contact",
+    "allProducts": "All Industrial Gases"
+  },
+  "footer": {
+    "desc": "Turkey's reliable solution partner in the production of medical and industrial gases, electricity, steel, cylinder systems, and heavy machinery. Quality, safety, and innovation are our priorities.",
+    "quick": "Quick Access",
+    "products": "Our Products",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "address": "Kucuk Cigli, 8780/11. St. no:19, 35620 Cigli/Izmir",
+    "hours": "Mon–Thu: 08:30–17:45, Fri: 08:00–17:45"
+  },
+  "home": {
+    "hero": {
+      "badge": "Turkey's Trusted Solution Partner",
+      "titlePart1": "Leadership in",
+      "titleAccent": "Industrial",
+      "titlePart2": "and Medical Gases",
+      "desc": "As Tinsagaz, we serve the sector with more than 30 years of experience in the fields of medical gas, industrial gas, electricity, steel, cylinder systems, and heavy machinery. Quality, safety, and innovation are always our priority.",
+      "cta1": "Explore Our Products",
+      "cta2": "Contact Us",
+      "scrollDown": "Scroll down"
+    },
+    "services": {
+      "label": "Our Products & Services",
+      "title": "Comprehensive Industrial Solutions",
+      "desc": "We serve all sectors with our wide product range, from medical gases to heavy machinery, from electrical systems to steel products.",
+      "medikalTitle": "Medical Gases",
+      "medikalDesc": "High purity medical oxygen, nitrous oxide (N₂O), carbon dioxide, and medical air gases. Certified ISO 13485 continuous medical gas solutions for healthcare facilities and clinics.",
+      "endustriyelTitle": "Industrial Gases",
+      "endustriyelDesc": "High purity argon, nitrogen, helium, hydrogen, acetylene, and special welding mixture gases. Optimum purity industrial gases for welding, plasma/laser cutting, and industrial production.",
+      "celikTitle": "Steel Products",
+      "celikDesc": "Structural steel, steel profiles (HEA, HEB, IPE), plates, and industrial seamless steel products. High-strength steel solutions in accordance with TS EN standards.",
+      "elektrikTitle": "Electrical Systems",
+      "elektrikDesc": "Power distribution panels, transformers, LV-MV electrical grids, and control infrastructure solutions. Turnkey energy systems in IEC 61439 standards for industrial facilities.",
+      "tupTitle": "Cylinder Systems",
+      "tupDesc": "High-pressure gas cylinders (200-300 bar), seamless steel cylinders, manifold cylinder packs (MCP/MTP), and regulators. Tested under TSE standards with periodic inspection warranty.",
+      "makineTitle": "Heavy Machinery",
+      "makineDesc": "Industrial rotary screw compressors, pump systems, overhead crane systems, and custom industrial machinery. Efficient and high-performance heavy equipment engineering.",
+      "moreInfo": "More Info →"
+    },
+    "stats": {
+      "experience": "Years of Experience",
+      "customers": "Happy Customers",
+      "projects": "Completed Projects",
+      "export": "Exporting Countries"
+    },
+    "whyUs": {
+      "label": "Why Tinsagaz?",
+      "title": "Symbol of Reliability and Quality",
+      "desc": "We apply the highest standards at every step to earn the trust of our customers. We target excellence in every stage from quality control to logistics, from after-sales support to R&D.",
+      "point1Title": "Over 30 Years of Trusted Experience",
+      "point1Desc": "We have successfully executed thousands of projects with our quarter-century of sectoral experience and processes fully aligned with EIGA (European Industrial Gases Association) standards.",
+      "point2Title": "TSE and ISO Certified Quality Assurance",
+      "point2Desc": "We guarantee 100% full capacity filling and purity analysis according to TSE standards in all gas fillings.",
+      "point3Title": "Uninterrupted Logistics & Fast Delivery",
+      "point3Desc": "With our own logistics fleet and wide distribution network, we deliver all orders from bulk liquid gases to cylinders on time.",
+      "point4Title": "24/7 Technical Support & Maintenance",
+      "point4Desc": "We offer 24/7 continuous technical support and periodic maintenance for gas distribution line installations, pressure control, and regulation systems."
+    },
+    "cta": {
+      "title": "Get a Quote for Your Project",
+      "desc": "Our expert team evaluates your needs in the best way and offers custom solutions for you. Contact us now!",
+      "action1": "Get a Quote",
+      "action2": "View Products"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "desc": "Since 1994, we are a leading organization driving Turkish industry, standing out with reliability and quality. Discover our story and values."
+    },
+    "story": {
+      "label": "Our Story",
+      "title": "Over 30 Years of Experience",
+      "p1": "Starting as a small workshop in Izmir in 1994, Tinsagaz has become one of Turkey's leading industrial and medical gas producers today.",
+      "p2": "Serving different sectors with a wide product portfolio such as medical gases, industrial gases, electrical systems, steel products, cylinder systems, and heavy machinery, our company increases its capacity and service quality every year.",
+      "p3": "Exporting to 12 countries, serving more than 5,000 customers, and achieving over 50,000 successful projects, Tinsagaz has adopted quality, safety, innovation, and customer satisfaction as its core values.",
+      "cta": "Get in Touch with Us"
+    },
+    "values": {
+      "label": "Our Core Values",
+      "title": "Values That Set Us Apart",
+      "v1Title": "Quality Standards",
+      "v1Desc": "Certified production in TSE, ISO, and EIGA (European Industrial Gases Association) standards.",
+      "v2Title": "Zero Defect & Work Safety",
+      "v2Desc": "Zero-tolerance work safety policy in high-pressure gas cylinder filling processes.",
+      "v3Title": "Technological Innovation",
+      "v3Desc": "Continuous R&D in manifold packs (MCP/MTP) and on-site gas generation technologies.",
+      "v4Title": "Full Fill Guarantee",
+      "v4Desc": "Complete gas volume and purity analysis warranty in every cylinder we supply."
+    },
+    "team": {
+      "label": "Our Team",
+      "title": "Experienced Leadership Team"
+    },
+    "milestones": {
+      "label": "Our Journey",
+      "title": "Our Milestones"
+    },
+    "certs": {
+      "label": "Quality Assurance",
+      "title": "Our Certificates"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Us",
+      "desc": "Get in touch with us. We are here to listen to your needs and offer the most suitable industrial solutions."
+    },
+    "form": {
+      "title": "Send a Message",
+      "name": "Your Name & Surname",
+      "email": "Your Email Address",
+      "phone": "Your Phone Number",
+      "message": "Your Message",
+      "send": "Send"
+    },
+    "info": {
+      "title": "Contact Information",
+      "addressTitle": "Address",
+      "phoneTitle": "Phone",
+      "emailTitle": "Email",
+      "hoursTitle": "Working Hours"
+    }
+  },
+  "gasesList": {
+    "hero": {
+      "title": "Industrial Gases",
+      "desc": "Our industrial gases are produced according to international standards, providing high efficiency and quality in your industrial processes."
+    },
+    "detailAction": "View Details →"
+  },
+  "gasDetail": {
+    "description": "Product Description",
+    "features": "Key Features",
+    "usage": "Usage Areas",
+    "specs": "Technical Specifications",
+    "ctaTitle": "Get a Quote",
+    "ctaDesc": "product. You can quickly request a quote to learn about custom pricing and supply conditions.",
+    "ctaButton": "Contact Us"
+  }
+}

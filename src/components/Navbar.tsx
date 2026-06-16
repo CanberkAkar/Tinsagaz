@@ -3,36 +3,59 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import styles from "./Navbar.module.css";
-import { gasesData } from "../app/urunler/gazlar/sinai-gazlar/gasesData";
+import { Locale } from "../app/[locale]/dictionaries";
+import { getGasesData } from "../app/[locale]/urunler/gazlar/sinai-gazlar/gasesData";
 
-const navLinks = [
-  { href: "/", label: "Anasayfa" },
-  {
-    href: "/urunler",
-    label: "Ürünler",
-    dropdown: [
-      {
-        label: "Sınai Gazlar",
-        href: "/urunler/gazlar/sinai-gazlar",
-        submenu: gasesData.map((gas) => ({
-          href: `/urunler/gazlar/sinai-gazlar/${gas.slug}`,
-          label: gas.title,
-        })),
-      },
-    ],
-  },
-  { href: "/hakkimizda", label: "Hakkımızda" },
-  { href: "/iletisim", label: "İletişim" },
+const productsLabels: Record<string, string> = {
+  tr: "Ürünler",
+  en: "Products",
+  de: "Produkte",
+  fr: "Produits",
+  it: "Prodotti",
+  ja: "製品",
+};
+
+const languages = [
+  { code: "tr", name: "TR", label: "Türkçe", flag: "🇹🇷" },
+  { code: "en", name: "EN", label: "English", flag: "🇬🇧" },
+  { code: "de", name: "DE", label: "Deutsch", flag: "🇩🇪" },
+  { code: "fr", name: "FR", label: "Français", flag: "🇫🇷" },
+  { code: "it", name: "IT", label: "Italiano", flag: "🇮🇹" },
+  { code: "ja", name: "JA", label: "日本語", flag: "🇯🇵" },
 ];
 
-export default function Navbar() {
+export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }) {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
   const [mobileSinaiOpen, setMobileSinaiOpen] = useState(false);
+  const [langDropdownOpen, setLangDropdownOpen] = useState(false);
+
+  const localizedGases = getGasesData(lang);
+  const productsLabel = productsLabels[lang] || "Ürünler";
+
+  const navLinks = [
+    { href: `/${lang}`, label: navDict.home },
+    {
+      href: `/${lang}/urunler`,
+      label: productsLabel,
+      dropdown: [
+        {
+          label: navDict.gases,
+          href: `/${lang}/urunler/gazlar/sinai-gazlar`,
+          submenu: localizedGases.map((gas) => ({
+            href: `/${lang}/urunler/gazlar/sinai-gazlar/${gas.slug}`,
+            label: gas.title,
+          })),
+        },
+      ],
+    },
+    { href: `/${lang}/hakkimizda`, label: navDict.about },
+    { href: `/${lang}/iletisim`, label: navDict.contact },
+  ];
 
   const handleScroll = useCallback(() => {
     setScrolled(window.scrollY > 20);
@@ -49,7 +72,18 @@ export default function Navbar() {
     setMenuOpen(false);
     setMobileDropdownOpen(false);
     setMobileSinaiOpen(false);
+    setLangDropdownOpen(false);
   }, [pathname]);
+
+  const getLanguageLink = (targetLocale: string) => {
+    if (!pathname) return `/${targetLocale}`;
+    const segments = pathname.split("/");
+    // segments[0] is "", segments[1] is the current locale
+    segments[1] = targetLocale;
+    return segments.join("/");
+  };
+
+  const activeLang = languages.find((l) => l.code === lang) || languages[0];
 
   return (
     <>
@@ -62,7 +96,7 @@ export default function Navbar() {
       >
         <div className={styles.navbarInner}>
           {/* Logo */}
-          <Link href="/" className={styles.navbarLogo} aria-label="Tinsagaz Anasayfa">
+          <Link href={`/${lang}`} className={styles.navbarLogo} aria-label="Tinsagaz Anasayfa">
             <Image
               src="/logo-tinsagaz.png"
               alt="Tinsagaz Logo"
@@ -130,13 +164,46 @@ export default function Navbar() {
                           ? styles.activeScrolled
                           : styles.active
                         : ""
-                    } ${link.href === "/iletisim" ? styles.navbarCta : ""}`}
+                    } ${link.href.endsWith("/iletisim") ? styles.navbarCta : ""}`}
                   >
                     {link.label}
                   </Link>
                 )}
               </li>
             ))}
+
+            {/* Language Selector Dropdown */}
+            <li className={`${styles.navbarItem} ${styles.langSelectorItem}`}>
+              <button
+                className={`${styles.navbarLink} ${styles.langSelectorBtn} ${
+                  scrolled ? styles.navbarLinkScrolled : ""
+                }`}
+                onClick={() => setLangDropdownOpen((v) => !v)}
+                onBlur={() => setTimeout(() => setLangDropdownOpen(false), 200)}
+                aria-label="Select Language"
+              >
+                <span className={styles.dropdownFlag}>{activeLang.flag}</span>
+                <span className={styles.langName}>{activeLang.name}</span>
+                <span className={styles.langChevron}>▼</span>
+              </button>
+              {langDropdownOpen && (
+                <ul className={styles.langDropdownMenu} role="list">
+                  {languages.map((l) => (
+                    <li key={l.code}>
+                      <Link
+                        href={getLanguageLink(l.code)}
+                        className={`${styles.langDropdownLink} ${
+                          l.code === lang ? styles.langActive : ""
+                        }`}
+                      >
+                        <span className={styles.dropdownFlag}>{l.flag}</span>
+                        <span>{l.label}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
           </ul>
 
           {/* Hamburger */}
@@ -160,72 +227,119 @@ export default function Navbar() {
         className={`${styles.navbarMobile} ${menuOpen ? styles.open : ""}`}
         aria-hidden={!menuOpen}
       >
-        {navLinks.map((link) => (
-          <div key={link.label} className={styles.mobileNavItem}>
-            {link.dropdown ? (
-              <>
-                <button
-                  className={`${styles.navbarLink} ${styles.mobileDropdownToggle} ${
-                    pathname.startsWith(link.href) ? styles.active : ""
-                  }`}
-                  onClick={() => setMobileDropdownOpen((v) => !v)}
-                  aria-expanded={mobileDropdownOpen}
-                >
-                  {link.label}
-                  <span className={`${styles.mobileDropdownArrow} ${mobileDropdownOpen ? styles.rotated : ""}`}>
-                    ▼
-                  </span>
-                </button>
-                <div className={`${styles.mobileSubmenu} ${mobileDropdownOpen ? styles.mobileSubmenuOpen : ""}`}>
-                  {link.dropdown.map((subItem) => (
-                    <div key={subItem.label} className={styles.mobileSubmenuCol}>
-                      <button
-                        className={styles.mobileSubmenuHeaderToggle}
-                        onClick={() => setMobileSinaiOpen((v) => !v)}
-                        aria-expanded={mobileSinaiOpen}
+        <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
+          <div style={{ paddingBottom: "24px" }}>
+            {navLinks.map((link) => (
+              <div key={link.label} className={styles.mobileNavItem}>
+                {link.dropdown ? (
+                  <>
+                    <button
+                      className={`${styles.navbarLink} ${styles.mobileDropdownToggle} ${
+                        pathname.startsWith(link.href) ? styles.active : ""
+                      }`}
+                      onClick={() => setMobileDropdownOpen((v) => !v)}
+                      aria-expanded={mobileDropdownOpen}
+                    >
+                      {link.label}
+                      <span
+                        className={`${styles.mobileDropdownArrow} ${
+                          mobileDropdownOpen ? styles.rotated : ""
+                        }`}
                       >
-                        {subItem.label}
-                        <span className={`${styles.mobileSubmenuArrow} ${mobileSinaiOpen ? styles.rotated : ""}`}>
-                          ▼
-                        </span>
-                      </button>
-                      <div className={`${styles.mobileNestedMenu} ${mobileSinaiOpen ? styles.mobileNestedMenuOpen : ""}`}>
-                        {subItem.submenu.map((nested) => (
-                          <Link
-                            key={nested.href}
-                            href={nested.href}
-                            className={styles.mobileNestedMenuLink}
-                            onClick={() => setMenuOpen(false)}
+                        ▼
+                      </span>
+                    </button>
+                    <div
+                      className={`${styles.mobileSubmenu} ${
+                        mobileDropdownOpen ? styles.mobileSubmenuOpen : ""
+                      }`}
+                    >
+                      {link.dropdown.map((subItem) => (
+                        <div key={subItem.label} className={styles.mobileSubmenuCol}>
+                          <button
+                            className={styles.mobileSubmenuHeaderToggle}
+                            onClick={() => setMobileSinaiOpen((v) => !v)}
+                            aria-expanded={mobileSinaiOpen}
                           >
-                            {nested.label}
-                          </Link>
-                        ))}
-                      </div>
+                            {subItem.label}
+                            <span
+                              className={`${styles.mobileSubmenuArrow} ${
+                                mobileSinaiOpen ? styles.rotated : ""
+                              }`}
+                            >
+                              ▼
+                            </span>
+                          </button>
+                          <div
+                            className={`${styles.mobileNestedMenu} ${
+                              mobileSinaiOpen ? styles.mobileNestedMenuOpen : ""
+                            }`}
+                          >
+                            {subItem.submenu.map((nested) => (
+                              <Link
+                                key={nested.href}
+                                href={nested.href}
+                                className={styles.mobileNestedMenuLink}
+                                onClick={() => setMenuOpen(false)}
+                              >
+                                {nested.label}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                      <Link
+                        href={link.href}
+                        className={styles.mobileSubmenuLink}
+                        style={{
+                          fontWeight: "600",
+                          borderTop: "1px solid var(--gray-200)",
+                          paddingTop: "12px",
+                          marginTop: "4px",
+                        }}
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        {navDict.allProducts}
+                      </Link>
                     </div>
-                  ))}
+                  </>
+                ) : (
                   <Link
                     href={link.href}
-                    className={styles.mobileSubmenuLink}
-                    style={{ fontWeight: "600", borderTop: "1px solid var(--gray-200)", paddingTop: "12px", marginTop: "4px" }}
+                    className={`${styles.navbarLink} ${
+                      pathname === link.href ? styles.active : ""
+                    } ${link.href.endsWith("/iletisim") ? styles.navbarCta : ""}`}
                     onClick={() => setMenuOpen(false)}
                   >
-                    Tüm Ürünler
+                    {link.label}
                   </Link>
-                </div>
-              </>
-            ) : (
-              <Link
-                href={link.href}
-                className={`${styles.navbarLink} ${
-                  pathname === link.href ? styles.active : ""
-                } ${link.href === "/iletisim" ? styles.navbarCta : ""}`}
-                onClick={() => setMenuOpen(false)}
-              >
-                {link.label}
-              </Link>
-            )}
+                )}
+              </div>
+            ))}
           </div>
-        ))}
+
+          {/* Mobile Language Selector */}
+          <div className={styles.mobileLangSelector}>
+            <div className={styles.mobileLangLabel}>
+              {lang === "tr" ? "Dil / Language" : "Language"}
+            </div>
+            <div className={styles.mobileLangList}>
+              {languages.map((l) => (
+                <Link
+                  key={l.code}
+                  href={getLanguageLink(l.code)}
+                  className={`${styles.mobileLangBtn} ${
+                    l.code === lang ? styles.mobileLangActive : ""
+                  }`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  <span style={{ fontSize: "1.1rem" }}>{l.flag}</span>
+                  <span>{l.name}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

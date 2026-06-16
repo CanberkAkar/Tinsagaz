@@ -2,31 +2,57 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import sharedStyles from "../../../shared.module.css";
 import styles from "./sinai-gazlar.module.css";
-import { gasesData } from "./gasesData";
+import { getGasesData } from "./gasesData";
+import { Locale, getDictionary } from "../../../dictionaries";
 
-export const metadata: Metadata = {
-  title: "Sınai Gazlar | Tinsagaz Endüstriyel Çözümler",
-  description:
-    "Endüstriyel kesme, kaynak, tavlama, metalurji ve laboratuvar prosesleriniz için yüksek saflıkta sınai gaz çözümleri. Saf Argon, Endüstriyel Oksijen, Azot ve daha fazlası.",
+type Props = {
+  params: Promise<{ locale: string }>;
 };
 
-export default function SinaiGazlarPage() {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const currentLocale = locale as Locale;
+  const dict = await getDictionary(currentLocale);
+
+  return {
+    title: `${dict.gasesList.hero.title} | Tinsagaz`,
+    description: dict.gasesList.hero.desc,
+  };
+}
+
+export default async function SinaiGazlarPage({ params }: Props) {
+  const { locale } = await params;
+  const currentLocale = locale as Locale;
+  const dict = await getDictionary(currentLocale);
+  const localizedGases = getGasesData(currentLocale);
+
+  const productsLabel = locale === "tr"
+    ? "Ürünler"
+    : locale === "en"
+    ? "Products"
+    : locale === "de"
+    ? "Produkte"
+    : locale === "fr"
+    ? "Produits"
+    : locale === "it"
+    ? "Prodotti"
+    : "製品";
+
   return (
     <>
       {/* Page Hero */}
       <section className={sharedStyles.pageHero} aria-label="Sınai Gazlar Başlık">
         <div className={sharedStyles.pageHeroInner}>
           <nav className={sharedStyles.pageBreadcrumb} aria-label="Sayfa konumu">
-            <Link href="/" className={sharedStyles.pageBreadcrumbLink}>Anasayfa</Link>
+            <Link href={`/${locale}`} className={sharedStyles.pageBreadcrumbLink}>{dict.nav.home}</Link>
             <span className={sharedStyles.pageBreadcrumbSep}>›</span>
-            <Link href="/urunler" className={sharedStyles.pageBreadcrumbLink}>Ürünler</Link>
+            <Link href={`/${locale}/urunler`} className={sharedStyles.pageBreadcrumbLink}>{productsLabel}</Link>
             <span className={sharedStyles.pageBreadcrumbSep}>›</span>
-            <span>Sınai Gazlar</span>
+            <span>{dict.gasesList.hero.title}</span>
           </nav>
-          <h1 className={sharedStyles.pageHeroTitle}>Sınai Gazlar</h1>
+          <h1 className={sharedStyles.pageHeroTitle}>{dict.gasesList.hero.title}</h1>
           <p className={sharedStyles.pageHeroDesc}>
-            Endüstriyel üretim süreçlerinizde yüksek verimlilik ve kalite sağlayan,
-            uluslararası standartlarda üretilmiş sınai (endüstriyel) gazlarımız.
+            {dict.gasesList.hero.desc}
           </p>
         </div>
       </section>
@@ -34,7 +60,7 @@ export default function SinaiGazlarPage() {
       {/* Gases List Section */}
       <section className={styles.gasesSection} aria-label="Sınai gazlar ürün listesi">
         <div className={styles.grid}>
-          {gasesData.map((gas) => (
+          {localizedGases.map((gas) => (
             <article key={gas.slug} className={styles.card}>
               <div className={styles.cardHeader}>
                 <span className={styles.iconWrap} role="img" aria-label={gas.title}>
@@ -58,11 +84,11 @@ export default function SinaiGazlarPage() {
                 )}
 
                 <Link
-                  href={`/urunler/gazlar/sinai-gazlar/${gas.slug}`}
+                  href={`/${locale}/urunler/gazlar/sinai-gazlar/${gas.slug}`}
                   id={`gas-link-${gas.slug}`}
                   className={styles.cardAction}
                 >
-                  Detayları İncele →
+                  {dict.gasesList.detailAction}
                 </Link>
               </div>
             </article>

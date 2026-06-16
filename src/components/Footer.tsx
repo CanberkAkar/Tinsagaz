@@ -1,32 +1,94 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Footer.module.css";
+import { Locale } from "../app/[locale]/dictionaries";
 
-const navLinks = [
-  { href: "/", label: "Anasayfa" },
-  { href: "/urunler", label: "Ürünler" },
-  { href: "/hakkimizda", label: "Hakkımızda" },
-  { href: "/iletisim", label: "İletişim" },
-];
+const productsLabels: Record<string, string> = {
+  tr: "Ürünler",
+  en: "Products",
+  de: "Produkte",
+  fr: "Produits",
+  it: "Prodotti",
+  ja: "製品",
+};
 
-const products = [
-  { href: "/urunler#medikal-gaz", label: "Medikal Gazlar" },
-  { href: "/urunler#endustriyel-gaz", label: "Endüstriyel Gazlar" },
-  { href: "/urunler#celik", label: "Çelik Ürünleri" },
-  { href: "/urunler#elektrik", label: "Elektrik Çözümleri" },
-  { href: "/urunler#tup", label: "Tüp Sistemleri" },
-  { href: "/urunler#agir-makine", label: "Ağır Makineler" },
-];
+const serviceLabels: Record<string, Record<string, string>> = {
+  tr: {
+    medikal: "Medikal Gazlar",
+    endustriyel: "Endüstriyel Gazlar",
+    celik: "Çelik Ürünleri",
+    elektrik: "Elektrik Çözümleri",
+    tup: "Tüp Sistemleri",
+    makine: "Ağır Makineler",
+  },
+  en: {
+    medikal: "Medical Gases",
+    endustriyel: "Industrial Gases",
+    celik: "Steel Products",
+    elektrik: "Electrical Solutions",
+    tup: "Cylinder Systems",
+    makine: "Heavy Machinery",
+  },
+  de: {
+    medikal: "Medizinische Gase",
+    endustriyel: "Industriegase",
+    celik: "Stahlprodukte",
+    elektrik: "Elektro-Lösungen",
+    tup: "Flaschensysteme",
+    makine: "Schwere Maschinen",
+  },
+  fr: {
+    medikal: "Gaz Médicaux",
+    endustriyel: "Gaz Industriels",
+    celik: "Produits en Acier",
+    elektrik: "Solutions Électriques",
+    tup: "Systèmes de Bouteilles",
+    makine: "Machines Lourdes",
+  },
+  it: {
+    medikal: "Gas Medicali",
+    endustriyel: "Gas Industriali",
+    celik: "Prodotti in Acciaio",
+    elektrik: "Soluzioni Elettriche",
+    tup: "Sistemi di Bombole",
+    makine: "Macchinari Pesanti",
+  },
+  ja: {
+    medikal: "医療用ガス",
+    endustriyel: "産業用ガス",
+    celik: "鉄鋼製品",
+    elektrik: "電気ソリューション",
+    tup: "高圧シリンダーシステム",
+    makine: "重機械",
+  },
+};
 
-export default function Footer() {
+export default function Footer({ lang, footerDict, navDict }: { lang: Locale; footerDict: any; navDict: any }) {
   const year = new Date().getFullYear();
+
+  const localizedNavLinks = [
+    { href: `/${lang}`, label: navDict.home },
+    { href: `/${lang}/urunler`, label: productsLabels[lang] || "Ürünler" },
+    { href: `/${lang}/hakkimizda`, label: navDict.about },
+    { href: `/${lang}/iletisim`, label: navDict.contact },
+  ];
+
+  const labels = serviceLabels[lang] || serviceLabels.tr;
+  const products = [
+    { href: `/${lang}/urunler#medikal-gaz`, label: labels.medikal },
+    { href: `/${lang}/urunler#endustriyel-gaz`, label: labels.endustriyel },
+    { href: `/${lang}/urunler#celik`, label: labels.celik },
+    { href: `/${lang}/urunler#elektrik`, label: labels.elektrik },
+    { href: `/${lang}/urunler#tup`, label: labels.tup },
+    { href: `/${lang}/urunler#agir-makine`, label: labels.makine },
+  ];
 
   return (
     <footer className={styles.footer} role="contentinfo">
       <div className={styles.footerTop}>
         {/* Brand */}
         <div className={styles.footerBrand}>
-          <Link href="/" className={styles.footerLogo}>
+          <Link href={`/${lang}`} className={styles.footerLogo}>
             <Image
               src="/logo-tinsagaz.png"
               alt="Tinsagaz Logo"
@@ -36,9 +98,7 @@ export default function Footer() {
             />
           </Link>
           <p className={styles.footerDesc}>
-            Tıbbi ve endüstriyel gaz, elektrik, çelik, tüp ve ağır makine
-            üretiminde Türkiye'nin güvenilir çözüm ortağı. Kalite, güvenlik ve
-            inovasyon önceliğimizdir.
+            {footerDict.desc}
           </p>
           <div className={styles.footerSocials}>
             <a
@@ -76,9 +136,9 @@ export default function Footer() {
 
         {/* Quick Links */}
         <div>
-          <h3 className={styles.footerColTitle}>Hızlı Erişim</h3>
+          <h3 className={styles.footerColTitle}>{footerDict.quick}</h3>
           <ul className={styles.footerLinks} role="list">
-            {navLinks.map((link) => (
+            {localizedNavLinks.map((link) => (
               <li key={link.href}>
                 <Link href={link.href} className={styles.footerLink}>
                   {link.label}
@@ -90,7 +150,7 @@ export default function Footer() {
 
         {/* Products */}
         <div>
-          <h3 className={styles.footerColTitle}>Ürünlerimiz</h3>
+          <h3 className={styles.footerColTitle}>{footerDict.products}</h3>
           <ul className={styles.footerLinks} role="list">
             {products.map((p) => (
               <li key={p.href}>
@@ -104,10 +164,10 @@ export default function Footer() {
 
         {/* Contact */}
         <div>
-          <h3 className={styles.footerColTitle}>İletişim</h3>
+          <h3 className={styles.footerColTitle}>{footerDict.contact}</h3>
           <div className={styles.footerContactItem}>
             <span className={styles.footerContactIcon}>📍</span>
-            <span>Küçük Çiğli, 8780/11. Sk. no:19, 35620 Çiğli/İzmir</span>
+            <span>{footerDict.address}</span>
           </div>
           <div className={styles.footerContactItem}>
             <span className={styles.footerContactIcon}>📞</span>
@@ -119,7 +179,7 @@ export default function Footer() {
           </div>
           <div className={styles.footerContactItem}>
             <span className={styles.footerContactIcon}>🕐</span>
-            <span>Pzt–Per: 08:30–17:45, Cum: 08:00–17:45</span>
+            <span>{footerDict.hours}</span>
           </div>
         </div>
       </div>
@@ -128,14 +188,14 @@ export default function Footer() {
       <div className={styles.footerBottom}>
         <div className={styles.footerBottomInner}>
           <p className={styles.footerCopy}>
-            © {year} Tinsagaz Endüstriyel Çözümler A.Ş. Tüm hakları saklıdır.
+            © {year} Tinsagaz Endüstriyel Çözümler A.Ş. {footerDict.rights}
           </p>
           <div className={styles.footerBottomLinks}>
-            <Link href="/gizlilik-politikasi" className={styles.footerBottomLink}>
-              Gizlilik Politikası
+            <Link href={`/${lang}/gizlilik-politikasi`} className={styles.footerBottomLink}>
+              {footerDict.privacy}
             </Link>
-            <Link href="/kullanim-sartlari" className={styles.footerBottomLink}>
-              Kullanım Şartları
+            <Link href={`/${lang}/kullanim-sartlari`} className={styles.footerBottomLink}>
+              {footerDict.terms}
             </Link>
           </div>
         </div>

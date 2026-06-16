@@ -3,41 +3,103 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import sharedStyles from "../../../../shared.module.css";
 import styles from "../sinai-gazlar.module.css";
-import { gasesData } from "../gasesData";
+import { getGasesData } from "../gasesData";
+import { locales, Locale, getDictionary } from "../../../../dictionaries";
 
 type Props = {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ locale: string; slug: string }>;
 };
 
 export async function generateStaticParams() {
-  return gasesData.map((gas) => ({
-    slug: gas.slug,
-  }));
+  const params: { locale: string; slug: string }[] = [];
+  for (const locale of locales) {
+    const localeGasesData = getGasesData(locale);
+    for (const gas of localeGasesData) {
+      params.push({
+        locale,
+        slug: gas.slug,
+      });
+    }
+  }
+  return params;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
-  const gas = gasesData.find((g) => g.slug === slug);
+  const { locale, slug } = await params;
+  const currentLocale = locale as Locale;
+  const localeGasesData = getGasesData(currentLocale);
+  const gas = localeGasesData.find((g) => g.slug === slug);
   
   if (!gas) {
     return {
-      title: "Gaz Bulunamadı | Tinsagaz",
+      title: locale === "tr" ? "Gaz Bulunamadı | Tinsagaz" : "Gas Not Found | Tinsagaz",
     };
   }
 
+  const gasesLabel = locale === "tr"
+    ? "Sınai Gazlar"
+    : locale === "en"
+    ? "Industrial Gases"
+    : locale === "de"
+    ? "Industriegase"
+    : locale === "fr"
+    ? "Gaz Industriels"
+    : locale === "it"
+    ? "Gas Industriali"
+    : "産業用ガス";
+
   return {
-    title: `${gas.title} | Sınai Gazlar | Tinsagaz`,
+    title: `${gas.title} | ${gasesLabel} | Tinsagaz`,
     description: gas.desc,
   };
 }
 
 export default async function GasDetailPage({ params }: Props) {
-  const { slug } = await params;
-  const gas = gasesData.find((g) => g.slug === slug);
+  const { locale, slug } = await params;
+  const currentLocale = locale as Locale;
+  const dict = await getDictionary(currentLocale);
+  const localeGasesData = getGasesData(currentLocale);
+  const gas = localeGasesData.find((g) => g.slug === slug);
 
   if (!gas) {
     notFound();
   }
+
+  const productsLabel = locale === "tr"
+    ? "Ürünler"
+    : locale === "en"
+    ? "Products"
+    : locale === "de"
+    ? "Produkte"
+    : locale === "fr"
+    ? "Produits"
+    : locale === "it"
+    ? "Prodotti"
+    : "製品";
+
+  const supplyModelsTitle = locale === "tr"
+    ? "Tedarik ve Depolama Modelleri"
+    : locale === "en"
+    ? "Supply and Storage Models"
+    : locale === "de"
+    ? "Versorgungs- und Lagermodelle"
+    : locale === "fr"
+    ? "Modèles d'Approvisionnement et de Stockage"
+    : locale === "it"
+    ? "Modelli di Fornitura e Stoccaggio"
+    : "供給および保管モデル";
+
+  const safetyStandardLabel = locale === "tr"
+    ? "⚠️ Güvenlik Standardı"
+    : locale === "en"
+    ? "⚠️ Safety Standard"
+    : locale === "de"
+    ? "⚠️ Sicherheitsstandard"
+    : locale === "fr"
+    ? "⚠️ Norme de Sécurité"
+    : locale === "it"
+    ? "⚠️ Standard di Sicurezza"
+    : "⚠️ 安全基準";
 
   return (
     <>
@@ -45,11 +107,11 @@ export default async function GasDetailPage({ params }: Props) {
       <section className={sharedStyles.pageHero} aria-label={`${gas.title} Tanıtımı`}>
         <div className={sharedStyles.pageHeroInner}>
           <nav className={sharedStyles.pageBreadcrumb} aria-label="Sayfa konumu">
-            <Link href="/" className={sharedStyles.pageBreadcrumbLink}>Anasayfa</Link>
+            <Link href={`/${locale}`} className={sharedStyles.pageBreadcrumbLink}>{dict.nav.home}</Link>
             <span className={sharedStyles.pageBreadcrumbSep}>›</span>
-            <Link href="/urunler" className={sharedStyles.pageBreadcrumbLink}>Ürünler</Link>
+            <Link href={`/${locale}/urunler`} className={sharedStyles.pageBreadcrumbLink}>{productsLabel}</Link>
             <span className={sharedStyles.pageBreadcrumbSep}>›</span>
-            <Link href="/urunler/gazlar/sinai-gazlar" className={sharedStyles.pageBreadcrumbLink}>Sınai Gazlar</Link>
+            <Link href={`/${locale}/urunler/gazlar/sinai-gazlar`} className={sharedStyles.pageBreadcrumbLink}>{dict.gasesList.hero.title}</Link>
             <span className={sharedStyles.pageBreadcrumbSep}>›</span>
             <span>{gas.title}</span>
           </nav>
@@ -66,7 +128,7 @@ export default async function GasDetailPage({ params }: Props) {
           {/* Product Description Block */}
           {gas.content && (
             <article className={styles.sectionBlock}>
-              <h2 className={styles.blockTitle}>Ürün Açıklaması</h2>
+              <h2 className={styles.blockTitle}>{dict.gasDetail.description}</h2>
               <p style={{ color: "var(--gray-600)", lineHeight: "1.8", fontSize: "1rem" }}>
                 {gas.content}
               </p>
@@ -76,7 +138,7 @@ export default async function GasDetailPage({ params }: Props) {
           {/* Features Block */}
           {gas.features && (
             <article className={styles.sectionBlock}>
-              <h2 className={styles.blockTitle}>Öne Çıkan Özellikler</h2>
+              <h2 className={styles.blockTitle}>{dict.gasDetail.features}</h2>
               <ul className={styles.featureList} role="list" style={{ marginTop: "16px" }}>
                 {gas.features.map((feat, idx) => (
                   <li key={idx} className={styles.featureItem} style={{ fontSize: "0.98rem" }}>
@@ -91,7 +153,7 @@ export default async function GasDetailPage({ params }: Props) {
           {/* Usage Areas Block */}
           {gas.usageAreas && (
             <article className={styles.sectionBlock}>
-              <h2 className={styles.blockTitle}>Kullanım Alanları</h2>
+              <h2 className={styles.blockTitle}>{dict.gasDetail.usage}</h2>
               <div className={styles.usageGrid}>
                 {gas.usageAreas.map((area, idx) => (
                   <div key={idx} className={styles.usageItem}>
@@ -105,7 +167,7 @@ export default async function GasDetailPage({ params }: Props) {
           {/* Supply Models Block */}
           {gas.supplyModels && (
             <article className={styles.sectionBlock}>
-              <h2 className={styles.blockTitle}>Tedarik ve Depolama Modelleri</h2>
+              <h2 className={styles.blockTitle}>{supplyModelsTitle}</h2>
               <div style={{ display: "flex", flexDirection: "column", gap: "24px", marginTop: "24px" }}>
                 {gas.supplyModels.map((model, idx) => (
                   <div key={idx} className={styles.supplyModelItem}>
@@ -120,7 +182,7 @@ export default async function GasDetailPage({ params }: Props) {
           {/* Safety Warning Block */}
           {gas.safetyWarning && (
             <div className={styles.warningBox}>
-              <span className={styles.warningTitle}>⚠️ Güvenlik Standardı</span>
+              <span className={styles.warningTitle}>{safetyStandardLabel}</span>
               <p>{gas.safetyWarning}</p>
             </div>
           )}
@@ -131,7 +193,7 @@ export default async function GasDetailPage({ params }: Props) {
           {/* Specifications Block */}
           {gas.specifications && (
             <div className={styles.sectionBlock}>
-              <h2 className={styles.blockTitle}>Teknik Özellikler</h2>
+              <h2 className={styles.blockTitle}>{dict.gasDetail.specs}</h2>
               <table className={styles.specTable}>
                 <tbody>
                   {gas.specifications.map((spec, idx) => (
@@ -147,17 +209,17 @@ export default async function GasDetailPage({ params }: Props) {
 
           {/* Contact / Get Quote Widget */}
           <div className={styles.ctaWidget}>
-            <h3>Teklif Alın</h3>
+            <h3>{dict.gasDetail.ctaTitle}</h3>
             <p>
-              {gas.title} ürünü için özel fiyat ve tedarik koşullarını öğrenmek üzere hızlıca teklif isteyebilirsiniz.
+              {gas.title} {dict.gasDetail.ctaDesc}
             </p>
             <Link
-              href="/iletisim"
+              href={`/${locale}/iletisim`}
               id="get-quote-button"
               className="btn btn-white"
               style={{ width: "100%", justifyContent: "center" }}
             >
-              İletişime Geçin
+              {dict.gasDetail.ctaButton}
             </Link>
           </div>
         </aside>

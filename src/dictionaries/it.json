@@ -1,0 +1,150 @@
+{
+  "nav": {
+    "home": "Home",
+    "gases": "Gas Industriali",
+    "about": "Chi Siamo",
+    "contact": "Contatti",
+    "allProducts": "Tutti i Gas Industriali"
+  },
+  "footer": {
+    "desc": "Il partner affidabile della Turchia nella produzione di gas medici e industriali, elettricità, acciaio, bombole e macchinari pesanti. Qualità, sicurezza e innovazione sono le nostre priorità.",
+    "quick": "Accesso Rapido",
+    "products": "I Nostri Prodotti",
+    "contact": "Contatti",
+    "rights": "Tutti i diritti riservati.",
+    "privacy": "Informativa sulla Privacy",
+    "terms": "Termini di Utilizzo",
+    "address": "Kucuk Cigli, 8780/11. St. no:19, 35620 Cigli/Izmir",
+    "hours": "Lun–Gio: 08:30–17:45, Ven: 08:00–17:45"
+  },
+  "home": {
+    "hero": {
+      "badge": "Il Partner Affidabile per Soluzioni in Turchia",
+      "titlePart1": "Leader nei Gas",
+      "titleAccent": "Industriali",
+      "titlePart2": "e Medicali",
+      "desc": "Come Tinsagaz, serviamo il settore con oltre 30 anni di esperienza nei campi dei gas medici e industriali, dell'elettricità, dell'acciaio, delle bombole e dei macchinari pesanti. Qualità, sicurezza e innovazione sono sempre la nostra priorità.",
+      "cta1": "Esplora i Nostri Prodotti",
+      "cta2": "Contattaci",
+      "scrollDown": "Scorri verso il basso"
+    },
+    "services": {
+      "label": "I Nostri Prodotti & Servizi",
+      "title": "Soluzioni Industriali Complete",
+      "desc": "Serviamo tutti i settori con la nostra vasta gamma di prodotti, dai gas medici ai macchinari pesanti, dai sistemi elettrici ai prodotti in acciaio.",
+      "medikalTitle": "Gas Medicali",
+      "medikalDesc": "Ossigeno medico ad alta purezza, protossido di azoto (N₂O), anidride carbonica e gas d'aria medica. Soluzioni di gas medicale continuo certificate ISO 13485 per strutture sanitarie e cliniche.",
+      "endustriyelTitle": "Gas Industriali",
+      "endustriyelDesc": "Argon, azoto, elio, idrogeno, acetilene ad alta purezza e gas per miscele speciali di saldatura. Gas industriali di purezza ottimale per saldatura, taglio plasma/laser e processi di produzione industriale.",
+      "celikTitle": "Prodotti in Acciaio",
+      "celikDesc": "Acciaio strutturale, profili in acciaio (HEA, HEB, IPE), lamiere e prodotti industriali in acciaio senza saldatura. Soluzioni in acciaio ad alta resistenza in conformità con gli standard TS EN.",
+      "elektrikTitle": "Sistemi Elettrici",
+      "elektrikDesc": "Quadri di distribuzione elettrica, trasformatori, reti elettriche BT-MT e soluzioni per infrastrutture di controllo. Sistemi energetici chiavi in mano secondo gli standard IEC 61439 per impianti industriali.",
+      "tupTitle": "Sistemi di Bombole",
+      "tupDesc": "Bombole di gas ad alta pressione (200-300 bar), cilindri in acciaio senza saldatura, pacchi bombole (MCP/MTP) e regolatori. Testati secondo gli standard TSE con garanzia di ispezione periodica.",
+      "makineTitle": "Macchinari Pesanti",
+      "makineDesc": "Compressori d'aria industriali a vite, sistemi di pompe, carriponte e macchinari industriali personalizzati. Progettazione di attrezzature pesanti efficienti e ad alte prestazioni.",
+      "moreInfo": "Maggiori Informazioni →"
+    },
+    "stats": {
+      "experience": "Anni di Esperienza",
+      "customers": "Clienti Soddisfatti",
+      "projects": "Progetti Completati",
+      "export": "Paesi di Esportazione"
+    },
+    "whyUs": {
+      "label": "Perché Tinsagaz?",
+      "title": "Simbolo di Affidabilità e Qualità",
+      "desc": "Applichiamo i più alti standard in ogni fase per guadagnare la fiducia dei nostri clienti. Puntiamo all'eccellenza in ogni fase, dal controllo qualità alla logistica, dal supporto post-vendita alla R&S.",
+      "point1Title": "Oltre 30 Anni di Esperienza Affidabile",
+      "point1Desc": "Abbiamo realizzato con successo migliaia di progetti grazie al nostro quarto di secolo di esperienza settoriale e a processi pienamente allineati con gli standard EIGA (European Industrial Gases Association).",
+      "point2Title": "Garanzia di Qualità Certificata TSE e ISO",
+      "point2Desc": "Garantiamo il riempimento al 100% della capacità e analisi di purezza secondo gli standard TSE in tutti i riempimenti di gas.",
+      "point3Title": "Logistica Ininterrotta e Consegna Rapida",
+      "point3Desc": "Con la nostra flotta logistica e un'ampia rete di distribuzione, consegniamo tutti gli ordini, dai gas liquidi sfusi alle bombole, nei tempi previsti.",
+      "point4Title": "Supporto Tecnico e Manutenzione 24/7",
+      "point4Desc": "Offriamo supporto tecnico continuo 24 ore su 24, 7 giorni su 7 e manutenzione periodica per impianti di distribuzione del gas, sistemi di controllo della pressione e regolazione."
+    },
+    "cta": {
+      "title": "Richiedi un Preventivo per il Tuo Progetto",
+      "desc": "Il nostro team di esperti valuta le tue esigenze nel modo migliore e offre soluzioni personalizzate per te. Contattaci ora!",
+      "action1": "Richiedi Preventivo",
+      "action2": "Vedi Prodotti"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Chi Siamo",
+      "desc": "Dal 1994, siamo un'organizzazione leader che guida l'industria turca, distinguendosi per affidabilità e qualità. Scopri la nostra storia e i nostri valori."
+    },
+    "story": {
+      "label": "La Nostra Storia",
+      "title": "Oltre 30 Anni di Esperienza",
+      "p1": "Iniziando come una piccola officina a Izmir nel 1994, Tinsagaz è diventata oggi uno dei principali produttori di gas industriali e medici in Turchia.",
+      "p2": "Servendo diversi settori con un ampio portafoglio di prodotti come gas medicali, gas industriali, sistemi elettrici, prodotti in acciaio, bombole e macchinari pesanti, la nostra azienda aumenta ogni anno la sua capacità e la qualità del servizio.",
+      "p3": "Esportando in 12 paesi, servendo più di 5.000 clienti e realizzando oltre 50.000 progetti di successo, Tinsagaz ha adottato la qualità, la sicurezza, l'innovazione e la soddisfazione del cliente come propri valori fondamentali.",
+      "cta": "Mettiti in Contatto con Noi"
+    },
+    "values": {
+      "label": "I Nostri Valori Fondamentali",
+      "title": "I Valori Che Ci Distinguono",
+      "v1Title": "Standard di Qualità",
+      "v1Desc": "Produzione certificata in conformità con gli standard TSE, ISO e EIGA (European Industrial Gases Association).",
+      "v2Title": "Zero Difetti e Sicurezza sul Lavoro",
+      "v2Desc": "Politica di sicurezza sul lavoro a tolleranza zero nei processi di riempimento delle bombole di gas ad alta pressione.",
+      "v3Title": "Innovazione Tecnologica",
+      "v3Desc": "R&S continua nei pacchi bombole (MCP/MTP) e nelle tecnologie di generazione di gas in loco.",
+      "v4Title": "Garanzia di Riempimento Completo",
+      "v4Desc": "Garanzia completa del volume di gas e dell'analisi della purezza in ogni bombola che forniamo."
+    },
+    "team": {
+      "label": "Il Nostro Team",
+      "title": "Team di Leadership Esperto"
+    },
+    "milestones": {
+      "label": "Il Nostro Viaggio",
+      "title": "I Nostri Traguardi"
+    },
+    "certs": {
+      "label": "Garanzia di Qualità",
+      "title": "I Nostri Certificati"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contattaci",
+      "desc": "Mettiti in contatto con noi. Siamo qui per ascoltare le tue esigenze e offrirti le soluzioni industriali più adatte."
+    },
+    "form": {
+      "title": "Invia un Messaggio",
+      "name": "Nome e Cognome",
+      "email": "Indirizzo E-mail",
+      "phone": "Numero di Telefono",
+      "message": "Il Tuo Messaggio",
+      "send": "Invia"
+    },
+    "info": {
+      "title": "Informazioni di Contatto",
+      "addressTitle": "Indirizzo",
+      "phoneTitle": "Telefono",
+      "emailTitle": "E-mail",
+      "hoursTitle": "Orari di Lavoro"
+    }
+  },
+  "gasesList": {
+    "hero": {
+      "title": "Gas Industriali",
+      "desc": "I nostri gas industriali sono prodotti in conformità con gli standard internazionali, offrendo alta efficienza e qualità nei vostri processi industriali."
+    },
+    "detailAction": "Vedi Dettagli →"
+  },
+  "gasDetail": {
+    "description": "Descrizione del Prodotto",
+    "features": "Caratteristiche Principali",
+    "usage": "Aree di Utilizzo",
+    "specs": "Specifiche Tecniche",
+    "ctaTitle": "Richiedi un Preventivo",
+    "ctaDesc": "prodotto. Puoi richiedere rapidamente un preventivo per conoscere i prezzi personalizzati e le condizioni di fornitura.",
+    "ctaButton": "Contattaci"
+  }
+}

@@ -481,3 +481,134 @@
   background: var(--primary-50) !important;
 }
 
+/* Language Dropdown Selector Styles */
+.langSelectorItem {
+  position: relative;
+}
+
+.langSelectorBtn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.langChevron {
+  font-size: 0.7rem;
+  transition: transform var(--transition-base);
+  margin-left: 2px;
+}
+
+.langSelectorItem:hover .langChevron {
+  transform: rotate(180deg);
+}
+
+.langName {
+  font-weight: 600;
+}
+
+.langDropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 50, 100, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 50, 100, 0.15);
+  padding: 8px;
+  list-style: none;
+  min-width: 150px;
+  margin-top: 8px;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.langDropdownLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--gray-700);
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all var(--transition-fast);
+}
+
+.langDropdownLink:hover {
+  background: var(--primary-50);
+  color: var(--primary) !important;
+}
+
+.langActive {
+  background: var(--primary-50);
+  color: var(--primary) !important;
+  font-weight: 600;
+}
+
+.dropdownFlag {
+  font-size: 1.1rem;
+}
+
+/* Mobile Language Selector Styles */
+.mobileLangSelector {
+  padding: 24px 16px 40px 16px;
+  border-top: 1px solid var(--gray-200);
+  margin-top: auto;
+}
+
+.mobileLangLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gray-400);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+}
+
+.mobileLangList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mobileLangBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--gray-200);
+  background: var(--white);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--gray-700);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.mobileLangBtn:hover {
+  border-color: var(--primary);
+  color: var(--primary) !important;
+  background: var(--primary-50);
+}
+
+.mobileLangActive {
+  border-color: var(--primary);
+  color: var(--primary) !important;
+  background: var(--primary-50);
+  font-weight: 600;
+}
+
+
