@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import styles from "./iletisim.module.css";
+import { sendEmailAction } from "../../actions/sendEmail";
 
 const subjectsByLocale: Record<string, string[]> = {
   tr: ["Ürün Teklifi", "Medikal Gazlar", "Endüstriyel Gazlar", "Çelik Ürünleri", "Elektrik Sistemleri", "Tüp Sistemleri", "Ağır Makineler", "Teknik Destek", "Diğer"],
@@ -23,6 +24,7 @@ export default function ContactForm({ locale, contactDict }: { locale: string; c
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [errorMsg, setErrorMsg] = useState("");
 
   const subjects = subjectsByLocale[locale] || subjectsByLocale.tr;
 
@@ -50,13 +52,75 @@ export default function ContactForm({ locale, contactDict }: { locale: string; c
     setFormState((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    setErrorMsg("");
+
+    // Basic client-side validation
+    if (!formState.ad.trim() || !formState.soyad.trim() || !formState.email.trim() || !formState.konu.trim() || !formState.mesaj.trim()) {
+      setErrorMsg(
+        locale === "tr" ? "⚠️ Lütfen tüm zorunlu (*) alanları doldurun." :
+        locale === "en" ? "⚠️ Please fill in all required (*) fields." :
+        locale === "de" ? "⚠️ Bitte füllen Sie alle erforderlichen (*) Felder aus." :
+        locale === "fr" ? "⚠️ Veuillez remplir tous les champs obligatoires (*)." :
+        locale === "it" ? "⚠️ Si prega di compilare tutti i campi obbligatori (*)." :
+        "⚠️ すべての必須（*）項目を入力してください。"
+      );
+      return;
+    }
+
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formState.email.trim())) {
+      setErrorMsg(
+        locale === "tr" ? "⚠️ Lütfen geçerli bir e-posta adresi girin." :
+        locale === "en" ? "⚠️ Please enter a valid email address." :
+        locale === "de" ? "⚠️ Bitte geben Sie eine gültige E-Mail-Adresse ein." :
+        locale === "fr" ? "⚠️ Veuillez entrer une adresse e-mail valide." :
+        locale === "it" ? "⚠️ Inserisci un indirizzo email valido." :
+        "⚠️ 有効なメールアドレスを入力してください。"
+      );
+      return;
+    }
+
     setLoading(true);
-    setTimeout(() => {
+    try {
+      const res = await sendEmailAction({
+        ad: formState.ad.trim(),
+        soyad: formState.soyad.trim(),
+        email: formState.email.trim(),
+        telefon: formState.telefon.trim(),
+        konu: formState.konu,
+        mesaj: formState.mesaj.trim(),
+      });
+
+      if (res.success) {
+        setSubmitted(true);
+        setFormState({
+          ad: "",
+          soyad: "",
+          email: "",
+          telefon: "",
+          konu: "",
+          mesaj: "",
+        });
+      } else {
+        setErrorMsg(
+          res.error || (
+            locale === "tr" ? "❌ E-posta gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyin." :
+            locale === "en" ? "❌ An error occurred while sending email. Please try again later." :
+            locale === "de" ? "❌ Beim Senden der E-Mail ist ein Fehler aufgetreten. Bitte versuchen Sie es später noch einmal." :
+            locale === "fr" ? "❌ Une erreur s'est produite lors de l'envoi de l'e-mail. Veuillez réessayer plus tard." :
+            locale === "it" ? "❌ Si è verificato un errore durante l'invio dell'e-mail. Riprova più tardi." :
+            "❌ メールの送信中にエラーが発生しました。後でもう一度お試しください。"
+          )
+        );
+      }
+    } catch (err: any) {
+      setErrorMsg(err.message || "An unexpected error occurred.");
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-    }, 1500);
+    }
   }
 
   return (
@@ -173,6 +237,12 @@ export default function ContactForm({ locale, contactDict }: { locale: string; c
           {submitted && (
             <div className={styles.formSuccess} role="alert">
               {labels.successMsg}
+            </div>
+          )}
+
+          {errorMsg && (
+            <div className={styles.formError} role="alert">
+              {errorMsg}
             </div>
           )}
         </form>

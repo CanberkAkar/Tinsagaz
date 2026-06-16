@@ -3,6 +3,7 @@
     "home": "Home",
     "corporate": "Azienda",
     "gases": "Gas Industriali",
+    "medicalGases": "Gas Medicali",
     "about": "Chi Siamo",
     "kvkk": "Privacy KVKK",
     "gallery": "Galleria",
@@ -186,5 +187,12 @@
       "logistics": "Area Logistica di Spedizione & Stoccaggio",
       "laser_cutting": "Saldatura Industriale & Taglio Laser"
     }
+  },
+  "medicalGasesList": {
+    "hero": {
+      "title": "Gas Medicali",
+      "desc": "I nostri gas medicali e clinici ad alta purezza, prodotti in conformità con le GMP e gli standard medici internazionali per le strutture sanitarie."
+    },
+    "detailAction": "Vedi Dettagli →"
   }
 }

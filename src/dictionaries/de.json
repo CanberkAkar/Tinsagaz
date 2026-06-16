@@ -3,6 +3,7 @@
     "home": "Startseite",
     "corporate": "Unternehmen",
     "gases": "Industriegase",
+    "medicalGases": "Medizinische Gase",
     "about": "Über Uns",
     "kvkk": "KVKK Datenschutz",
     "gallery": "Galerie",
@@ -186,5 +187,12 @@
       "logistics": "Logistikversand und Lagerbereich",
       "laser_cutting": "Industrielles Schweißen und Laserschneiden"
     }
+  },
+  "medicalGasesList": {
+    "hero": {
+      "title": "Medizinische Gase",
+      "desc": "Unsere hochreinen medizinischen und klinischen Gase, hergestellt in Übereinstimmung mit GMP und internationalen medizinischen Standards für Gesundheitseinrichtungen."
+    },
+    "detailAction": "Details anzeigen →"
   }
 }

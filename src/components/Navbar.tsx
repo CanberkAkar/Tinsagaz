@@ -7,14 +7,15 @@ import { useEffect, useState, useCallback, useRef } from "react";
 import styles from "./Navbar.module.css";
 import { Locale } from "../app/[locale]/dictionaries";
 import { getGasesData } from "../app/[locale]/urunler/gazlar/sinai-gazlar/gasesData";
+import { getMedicalGasesData } from "../app/[locale]/urunler/gazlar/medikal-gazlar/medikalData";
 
 const productsLabels: Record<string, string> = {
-  tr: "Ürünler",
-  en: "Products",
-  de: "Produkte",
-  fr: "Produits",
-  it: "Prodotti",
-  ja: "製品",
+  tr: "Ürünlerimiz",
+  en: "Our Products",
+  de: "Unsere Produkte",
+  fr: "Nos Produits",
+  it: "I Nostri Prodotti",
+  ja: "製品紹介",
 };
 
 const languages = [
@@ -31,7 +32,7 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileDropdowns, setMobileDropdowns] = useState<Record<string, boolean>>({});
-  const [mobileSinaiOpen, setMobileSinaiOpen] = useState(false);
+  const [mobileSubmenus, setMobileSubmenus] = useState<Record<string, boolean>>({});
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
 
   const toggleMobileDropdown = (key: string) => {
@@ -41,8 +42,16 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
     }));
   };
 
+  const toggleMobileSubmenu = (key: string) => {
+    setMobileSubmenus((prev) => ({
+      ...prev,
+      [key]: !prev[key],
+    }));
+  };
+
   const localizedGases = getGasesData(lang);
-  const productsLabel = productsLabels[lang] || "Ürünler";
+  const localizedMedicalGases = getMedicalGasesData(lang);
+  const productsLabel = productsLabels[lang] || "Ürünlerimiz";
 
   const navLinks = [
     { href: `/${lang}`, label: navDict.home },
@@ -78,6 +87,14 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
             label: gas.title,
           })),
         },
+        {
+          label: navDict.medicalGases || "Medikal Gazlar",
+          href: `/${lang}/urunler/gazlar/medikal-gazlar`,
+          submenu: localizedMedicalGases.map((gas) => ({
+            href: `/${lang}/urunler/gazlar/medikal-gazlar/${gas.slug}`,
+            label: gas.title,
+          })),
+        },
       ],
     },
     { href: `/${lang}/iletisim`, label: navDict.contact },
@@ -97,7 +114,7 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
   useEffect(() => {
     setMenuOpen(false);
     setMobileDropdowns({});
-    setMobileSinaiOpen(false);
+    setMobileSubmenus({});
     setLangDropdownOpen(false);
   }, [pathname]);
 
@@ -124,7 +141,7 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
           {/* Logo */}
           <Link href={`/${lang}`} className={styles.navbarLogo} aria-label="Tinsagaz Anasayfa">
             <Image
-              src="/logo-tinsagaz.png"
+              src="/logo-tinsagaz-v2.png"
               alt="Tinsagaz Logo"
               width={140}
               height={48}
@@ -294,13 +311,13 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
                             <>
                               <button
                                 className={styles.mobileSubmenuHeaderToggle}
-                                onClick={() => setMobileSinaiOpen((v) => !v)}
-                                aria-expanded={mobileSinaiOpen}
+                                onClick={() => toggleMobileSubmenu(subItem.label)}
+                                aria-expanded={!!mobileSubmenus[subItem.label]}
                               >
                                 {subItem.label}
                                 <span
                                   className={`${styles.mobileSubmenuArrow} ${
-                                    mobileSinaiOpen ? styles.rotated : ""
+                                    mobileSubmenus[subItem.label] ? styles.rotated : ""
                                   }`}
                                 >
                                   ▼
@@ -308,7 +325,7 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
                               </button>
                               <div
                                 className={`${styles.mobileNestedMenu} ${
-                                  mobileSinaiOpen ? styles.mobileNestedMenuOpen : ""
+                                  mobileSubmenus[subItem.label] ? styles.mobileNestedMenuOpen : ""
                                 }`}
                               >
                                 {subItem.submenu.map((nested) => (

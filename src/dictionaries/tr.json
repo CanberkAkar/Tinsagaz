@@ -3,6 +3,7 @@
     "home": "Anasayfa",
     "corporate": "Kurumsal",
     "gases": "Sınai Gazlar",
+    "medicalGases": "Medikal Gazlar",
     "about": "Hakkımızda",
     "kvkk": "KVKK Aydınlatma",
     "gallery": "Galeri",
@@ -186,5 +187,12 @@
       "logistics": "Lojistik Sevkiyat ve Depolama Alanı",
       "laser_cutting": "Endüstriyel Kaynak ve Lazer Kesim"
     }
+  },
+  "medicalGasesList": {
+    "hero": {
+      "title": "Medikal Gazlar",
+      "desc": "Sağlık kuruluşları ve klinik uygulamalar için en yüksek saflıkta, GMP ve uluslararası medikal standartlarda üretilmiş tıbbi ve medikal gazlarımız."
+    },
+    "detailAction": "Detayları İncele →"
   }
 }

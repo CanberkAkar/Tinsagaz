@@ -3,6 +3,7 @@
     "home": "ホーム",
     "corporate": "企業情報",
     "gases": "産業ガス",
+    "medicalGases": "医療用ガス",
     "about": "会社概要",
     "kvkk": "KVKK個人情報",
     "gallery": "ギャラリー",
@@ -186,5 +187,12 @@
       "logistics": "出荷・保管物流センター",
       "laser_cutting": "産業用溶接・レーザー切断技術"
     }
+  },
+  "medicalGasesList": {
+    "hero": {
+      "title": "医療用ガス",
+      "desc": "医療機関および臨床用途向けに、GMPおよび国際医療基準に準拠して製造された高純度の医療用ガス。"
+    },
+    "detailAction": "詳細を見る →"
   }
 }

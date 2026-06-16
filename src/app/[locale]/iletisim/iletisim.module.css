@@ -245,6 +245,21 @@
   margin-top: 16px;
 }
 
+.formError {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: #ffebee;
+  border: 1px solid #ffcdd2;
+  border-radius: var(--radius-md);
+  font-size: 0.92rem;
+  color: #c62828;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+
 /* Map */
 .mapSection {
   padding: 0 0 96px;

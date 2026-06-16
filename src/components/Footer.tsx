@@ -4,12 +4,12 @@ import styles from "./Footer.module.css";
 import { Locale } from "../app/[locale]/dictionaries";
 
 const productsLabels: Record<string, string> = {
-  tr: "Ürünler",
-  en: "Products",
-  de: "Produkte",
-  fr: "Produits",
-  it: "Prodotti",
-  ja: "製品",
+  tr: "Ürünlerimiz",
+  en: "Our Products",
+  de: "Unsere Produkte",
+  fr: "Nos Produits",
+  it: "I Nostri Prodotti",
+  ja: "製品紹介",
 };
 
 const serviceLabels: Record<string, Record<string, string>> = {
@@ -91,7 +91,7 @@ export default function Footer({ lang, footerDict, navDict }: { lang: Locale; fo
         <div className={styles.footerBrand}>
           <Link href={`/${lang}`} className={styles.footerLogo}>
             <Image
-              src="/logo-tinsagaz.png"
+              src="/logo-tinsagaz-v2.png"
               alt="Tinsagaz Logo"
               width={130}
               height={44}

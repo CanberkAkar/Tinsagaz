@@ -3,6 +3,7 @@
     "home": "Home",
     "corporate": "Corporate",
     "gases": "Industrial Gases",
+    "medicalGases": "Medical Gases",
     "about": "About Us",
     "kvkk": "KVKK Privacy",
     "gallery": "Gallery",
@@ -186,5 +187,12 @@
       "logistics": "Logistics Dispatch & Warehousing Area",
       "laser_cutting": "Industrial Welding & Laser Cutting"
     }
+  },
+  "medicalGasesList": {
+    "hero": {
+      "title": "Medical Gases",
+      "desc": "Our high-purity medical and clinical gases, manufactured in compliance with GMP and international medical standards for healthcare facilities."
+    },
+    "detailAction": "View Details →"
   }
 }

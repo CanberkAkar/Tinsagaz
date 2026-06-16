@@ -22,6 +22,6 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     // Skip all internal paths, api routes, and static files
-    '/((?!api|_next/static|_next/image|favicon.ico|logo-tinsagaz.png|logo.png|hero.png|file.svg|globe.svg|next.svg|vercel.svg|window.svg|.*\\.png|.*\\.svg|.*\\.ico).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico|logo-tinsagaz-v2.png|logo-v2.png|logo-tinsagaz.png|logo.png|hero.png|file.svg|globe.svg|next.svg|vercel.svg|window.svg|.*\\.png|.*\\.svg|.*\\.ico).*)',
   ],
 };

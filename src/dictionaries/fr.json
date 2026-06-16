@@ -3,6 +3,7 @@
     "home": "Accueil",
     "corporate": "Entreprise",
     "gases": "Gaz Industriels",
+    "medicalGases": "Gaz Médicaux",
     "about": "À Propos",
     "kvkk": "Confidentialité KVKK",
     "gallery": "Galerie",
@@ -186,5 +187,12 @@
       "logistics": "Zone d'Expédition Logistique et d'Entreposage",
       "laser_cutting": "Soudage Industriel et Découpe Laser"
     }
+  },
+  "medicalGasesList": {
+    "hero": {
+      "title": "Gaz Médicaux",
+      "desc": "Nos gaz médicaux et cliniques de haute pureté, fabriqués conformément aux normes BPF/GMP et médicales internationales pour les établissements de santé."
+    },
+    "detailAction": "Voir les Détails →"
   }
 }
