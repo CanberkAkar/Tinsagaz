@@ -765,35 +765,68 @@ export default async function UrunlerPage({ params }: Props) {
 
           {/* Products Grid */}
           <div id="urunler" className={styles.productsGrid}>
-            {products.map((p) => (
-              <article
-                key={p.id}
-                id={p.cat}
-                className={styles.productCard}
-              >
-                <div className={styles.productCardImg}>
-                  {getProductIcon(p.id)}
-                  <span className={styles.productCardBadge}>{p.badge}</span>
-                </div>
-                <div className={styles.productCardBody}>
-                  <span className={styles.productCardTag}>{p.catLabel}</span>
-                  <h2 className={styles.productCardTitle}>{p.title}</h2>
-                  <p className={styles.productCardDesc}>{p.desc}</p>
-                  <ul className={styles.productCardFeatures} role="list">
-                    {p.features.map((f) => (
-                      <li key={f} className={styles.productCardFeature}>{f}</li>
-                    ))}
-                  </ul>
-                  <Link
-                    href={`/${locale}/iletisim`}
-                    id={`product-contact-${p.id}`}
-                    className={styles.productCardAction}
-                  >
-                    {actionText} →
-                  </Link>
-                </div>
-              </article>
-            ))}
+            {products.map((p) => {
+              const isGas = p.cat === "medikal-gaz" || p.cat === "endustriyel-gaz";
+              
+              let productHref = `/${locale}/iletisim`;
+              if (p.cat === "medikal-gaz") {
+                let slug = "";
+                if (p.id === "medikal-oksijen") slug = "medikal-oksijen-gazi";
+                else if (p.id === "azot-protoksit") slug = "azot-protoksit-gazi";
+                else if (p.id === "medikal-karbondioksit") slug = "medikal-karbondioksit-gazi";
+                else if (p.id === "medikal-hava") slug = "medikal-kuru-hava-gazi";
+                productHref = `/${locale}/urunler/gazlar/medikal-gazlar/${slug}`;
+              } else if (p.cat === "endustriyel-gaz") {
+                let slug = "";
+                if (p.id === "endustriyel-oksijen") slug = "oksijen-gazi";
+                else if (p.id === "argon") slug = "argon-gazi";
+                else if (p.id === "endustriyel-azot") slug = "saf-azot-gazi";
+                else if (p.id === "helyum") slug = "helyum-gazi";
+                else if (p.id === "asetilen") slug = "asetilen-gazi";
+                else if (p.id === "kaynak-karisimlari") slug = "karisim-gazlari";
+                productHref = `/${locale}/urunler/gazlar/sinai-gazlar/${slug}`;
+              }
+
+              const buttonText = isGas
+                ? (locale === "tr" ? "Detayları Gör" : locale === "en" ? "View Details" : locale === "de" ? "Details anzeigen" : locale === "fr" ? "Voir les Détails" : locale === "it" ? "Visualizza Dettagli" : "詳細を見る")
+                : actionText;
+
+              return (
+                <article
+                  key={p.id}
+                  id={p.cat}
+                  className={styles.productCard}
+                >
+                  <div className={styles.productCardImg}>
+                    <Link href={productHref} style={{ display: "contents" }}>
+                      {getProductIcon(p.id)}
+                    </Link>
+                    <span className={styles.productCardBadge}>{p.badge}</span>
+                  </div>
+                  <div className={styles.productCardBody}>
+                    <span className={styles.productCardTag}>{p.catLabel}</span>
+                    <h2 className={styles.productCardTitle}>
+                      <Link href={productHref}>
+                        {p.title}
+                      </Link>
+                    </h2>
+                    <p className={styles.productCardDesc}>{p.desc}</p>
+                    <ul className={styles.productCardFeatures} role="list">
+                      {p.features.map((f) => (
+                        <li key={f} className={styles.productCardFeature}>{f}</li>
+                      ))}
+                    </ul>
+                    <Link
+                      href={productHref}
+                      id={`product-action-${p.id}`}
+                      className={styles.productCardAction}
+                    >
+                      {buttonText} →
+                    </Link>
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>
