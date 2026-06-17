@@ -140,5 +140,40 @@ export const medikalGasesData: GasProduct[] = [
       }
     ],
     safetyWarning: "Technischer Warnhinweis & Sicherheitsstandard: Obwohl medizinisches Kohlendioxidgas selbst nicht giftig ist, ist es schwerer als Luft. Bei einer Leckage sammelt es sich am Boden an, senkt die Sauerstoffkonzentration und erzeugt ein schleichendes Erstickungsrisiko. Daher ist es eine kritische Arbeitsschutz- und Patientensicherheitsregel, in Lagerräumen für medizinische CO₂-Flaschen und -Paletten Bodenlüftungssysteme und Kohlendioxiddetektoren zu installieren."
+  },
+  {
+    slug: "medikal-sivi-azot-gazi",
+    title: "Medizinischer Flüssigstickstoff (Flüssiger Medizinstickstoff / LN₂)",
+    badge: "Medizinische Gase",
+    icon: "🏥",
+    desc: "Medizinischer Flüssigstickstoff bei -196 °C für Kryokonservierung, Nabelschnurblutlagerung und dermatologische Gefrierbehandlungen. Sichere Lieferung nach Nettogewicht (kg) in speziellen Dewar-Behältern.",
+    features: [
+      "Vollständige Einhaltung der Vorschriften des Gesundheitsministeriums, der CE-Medizin- und GMP-Standards",
+      "Befüllung und Abrechnung auf der Basis des Nettogewichts in Kilogramm (kg) auf Präzisionswaagen",
+      "Vakuumisolierte kryogene Dewar-Behälter und vakuumgemantelte Tankerlogistik"
+    ],
+    usageAreas: [
+      "Kryobanken und biologische Zelllagerung (Kryokonservierung): Bietet die absolute kryogene Umgebung in IVF-Zentren, Nabelschnurblutbanken und Stammzelllabors, um Embryonen, Sperma, Eizellen, Blut und Gewebeproben über Jahrzehnte ohne zelluläre Alterung und Schädigung aufzubewahren.",
+      "Dermatologie und Kryochirurgie (Gefrierbehandlung): Wird als primäre chirurgische Flüssigkeit in Hautkliniken und dermatologischen Abteilungen für kryotherapeutische Operationen zur Einfrierung und kontrollierten Zerstörung von Warzen, abnormalem Hautgewebe, Läsionen und bestimmten gutartigen/bösartigen Tumoren bei -196 °C verwendet.",
+      "Medizinische Geräte und Laborkühlsysteme: Dient als Kältemittel, um den stabilen Betrieb empfindlicher genetischer Analysegeräte, Röntgendetektoren und supraleitender medizinischer Geräte bei extrem niedrigen Temperaturen zu gewährleisten."
+    ],
+    specifications: [
+      { label: "Chemische Formel", value: "LN₂" },
+      { label: "Siedepunkt (bei atmosphärischem Druck)", value: "-196°C" },
+      { label: "Füll-/Liefereinheit", value: "Netto-Kilogramm (kg)" },
+      { label: "Qualitätsstandards", value: "CE Medizin / GMP / Gesundheitsministerium / ISO 13485" }
+    ],
+    content: "Medizinischer Flüssigstickstoff (Flüssiger Medizinstickstoff / LN₂), der die Erhaltung biologischer Materialien im Gesundheitssektor über Jahrzehnte ohne Vitalitätsverlust gewährleistet und als primäres Behandlungsmittel in der dermatologischen Chirurgie dient, ist ein kritisches kryogenes Produkt, das in voller Übereinstimmung mit den Vorschriften des Gesundheitsministeriums für Medizinprodukte, den CE-Medizinstandards und den GMP-Richtlinien angeboten wird. Aufgrund seiner Flüssigphasenstruktur und seiner kontinuierlichen Verdampfungsneigung (Sieden) kann dieses Produkt, das bei atmosphärischem Druck eine extreme Kälte von -196 °C aufweist, nicht in Standard-Hochdruck-Industrieflaschen gelagert werden. Wir bei Tinsa Gaz führen die Versorgung mit Flüssigstickstoff und das Logistikmanagement in unseren hochmodernen medizinischen Abfüllanlagen durch Wiegen auf Nettokilogrammbasis (kg) auf Präzisionswaagen durch und garantieren Krankenhäusern und Labors mit unserer hochisolierten Logistikinfrastruktur volle Gewichtssicherheit.",
+    supplyModels: [
+      {
+        title: "1. Vakuumisolierte kryogene Dewar-Behälter",
+        desc: "Das sicherste und am weitesten verbreitete Logistikmodell für Kliniken, Labors und Dermatologiezentren. Der Transport erfolgt in doppelwandigen, vakuum- und superisolierten Spezial-Dewar-Behältern aus Aluminium/Edelstahl, die die Verdampfungsrate von flüssigem Stickstoff minimieren. Die Abfüll- und Abrechnungsprozesse werden unter der Garantie von Tinsa Gaz durch Wiegen auf digitalen Waagen auf der Basis des Nettogewichts (kg) durchgeführt."
+      },
+      {
+        title: "2. Kryogene Flüssigtank-Versorgungslösungen",
+        desc: "Ein Logistikmodell für flüssiges Schüttgut für stationäre kryogene medizinische Tanks auf dem Gelände großer Universitätskliniken, zentraler Nabelschnurblutbanken und Gewebelager mit hohem Volumen. Die sichere Übertragung in die medizinischen Tanks der Krankenhäuser erfolgt über unsere kryogenen Tankwagen, die den medizinischen Standards entsprechen, und die Liefermenge wird auf der Grundlage einer absoluten Gewichtsmessung (kg) vor und nach der Übertragung erfasst."
+      }
+    ],
+    safetyWarning: "Technischer Warnhinweis & Sicherheitsstandard: Medizinischer Flüssigstickstoff verursacht aufgrund seiner Temperatur von -196 °C bei Kontakt mit nackter Haut innerhalb von Millisekunden irreversible, schwere kryogene Verbrennungen (Erfrierungen) und Gewebetod. Daher ist die Verwendung von kryogenen Schutzhandschuhen und Gesichtsschutzschilden eine absolute Arbeitsschutzpflicht bei Transfer und Anwendung. Da sich das ausdehnende Volumen beim Übergang von der flüssigen in die gasförmige Phase um das ca. 700-fache vergrößert, verdrängt es in geschlossenen Räumen schnell Sauerstoff, was zu einer unbemerkten plötzlichen Erstickungsgefahr führt. In Räumen, in denen medizinische Flüssigstickstoffbehälter gelagert werden und sich Biobanken befinden, sind leistungsstarke Belüftungssysteme und Sauerstoffsättigungsmessgeräte von entscheidender Bedeutung."
   }
 ];

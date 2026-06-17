@@ -140,5 +140,40 @@ export const medikalGasesData: GasProduct[] = [
       }
     ],
     safetyWarning: "Avvertenza Tecnica e Standard di Sicurezza: Sebbene l'anidride carbonica medicale non sia tossica, è un gas più pesante dell'aria. In caso di perdita si accumula a livello del suolo, abbassando la concentrazione di ossigeno e creando un rischio di asfissia. È quindi indispensabile dotare le aree di stoccaggio delle bombole e dei pacchi di sistemi di ventilazione a pavimento e rilevatori di anidride carbonica."
+  },
+  {
+    slug: "medikal-sivi-azot-gazi",
+    title: "Azoto Liquido Medicale (Azoto Medicale Liquido / LN₂)",
+    badge: "Gas Medicali",
+    icon: "🏥",
+    desc: "Azoto liquido medicale a -196°C per crioconservazione, conservazione del sangue cordonale e trattamenti dermatologici di congelamento. Consegna sicura basata sul peso netto (kg) in speciali contenitori dewar.",
+    features: [
+      "Piena conformità con gli standard del Ministero della Salute, CE Medical e GMP",
+      "Riempimento e fatturazione basati sul peso netto in chilogrammi (kg) su bilance di precisione assoluta",
+      "Contenitori Dewar criogenici isolati sotto vuoto e logistica con autocisterne con camicia a vuoto"
+    ],
+    usageAreas: [
+      "Criobanche e Conservazione di Cellule Biologiche (Crioconservazione): Fornisce l'ambiente criogenico assoluto nei centri IVF, nelle banche del sangue cordonale e nei laboratori di cellule staminali per conservare embrioni, sperma, ovociti, sangue e campioni di tessuto per decenni senza invecchiamento e danni cellulari.",
+      "Dermatologia e Criochirurgia (Trattamento di Congelamento): Utilizzato come fluido chirurgico primario nelle cliniche dermatologiche e nei reparti di dermatologia per operazioni di crioterapia, congelando e distruggendo in modo controllato verruche, tessuti cutanei anomali, lesioni e specifici tumori benigni/maligni a -196°C.",
+      "Apparecchiature Mediche e Sistemi di Raffreddamento per Laboratori: Funge da fluido refrigerante per garantire il funzionamento stabile di dispositivi sensibili di analisi genetica, rilevatori di raggi X e apparecchiature mediche superconduttrici a temperature estremamente basse."
+    ],
+    specifications: [
+      { label: "Formula Chimica", value: "LN₂" },
+      { label: "Punto di Ebollizione (a Pressione Atmosferica)", value: "-196°C" },
+      { label: "Unità di Riempimento/Consegna", value: "Chilogrammo Netto (kg)" },
+      { label: "Standard di Qualità", value: "CE Medical / GMP / Ministero della Salute / ISO 13485" }
+    ],
+    content: "L'Azoto Liquido Medicale (Azoto Medicale Liquido / LN₂), che garantisce la conservazione dei materiali biologici nel settore sanitario per decenni senza perdita di vitalità e funge da agente terapeutico primario nella chirurgia dermatologica, è un prodotto criogenico critico offerto in piena conformità con le normative sui dispositivi medici del Ministero della Salute, gli standard CE Medical e le linee guida GMP (Good Manufacturing Practices). Avendo una temperatura estremamente fredda di -196°C a pressione atmosferica, questo prodotto non può essere stoccato in bombole industriali standard ad alta pressione a causa della sua struttura in fase liquida e della continua tendenza all'evaporazione (ebollizione). Presso Tinsa Gaz, effettuiamo la fornitura e la gestione logistica dell'azoto liquido nei nostri impianti di riempimento medico ad alta tecnologia pesando al chilogrammo netto (kg) su bilance di precisione assoluta, garantendo a ospedali e laboratori la totale sicurezza del peso con la nostra infrastruttura logistica altamente isolata.",
+    supplyModels: [
+      {
+        title: "1. Contenitori Dewar Criogenici Isolati sotto Vuoto",
+        desc: "Il modello logistico più sicuro e comune per cliniche, laboratori e centri dermatologici. Spedito in speciali contenitori Dewar in alluminio/acciaio inossidabile a doppia parete, isolati sotto vuoto e super-isolati che riducono al minimo il tasso di evaporazione dell'azoto liquido. I processi di riempimento e fatturazione sono completati sotto la garanzia di Tinsa Gaz mediante pesatura su bilance digitali basate sul peso netto (kg)."
+      },
+      {
+        title: "2. Soluzioni di Fornitura di Serbatoi di Liquido Criogenico",
+        desc: "Un modello logistico di liquido sfuso offerto per serbatoi medici criogenici stazionari situati nei cortili di grandi ospedali universitari, banche centrali del sangue cordonale e strutture di stoccaggio dei tessuti ad alto volume. Il trasferimento sicuro ai serbatoi medici dell'ospedale viene effettuato tramite le nostre autocisterne criogeniche conformi agli standard medici, e la quantità consegnata viene registrata sulla base della pesatura del peso assoluto (kg) prima e dopo il trasferimento."
+      }
+    ],
+    safetyWarning: "Avvertenza Tecnica e Standard di Sicurezza: A causa della sua temperatura di -196°C, l'azoto liquido medicale provoca ustioni criogeniche gravi e irreversibili (geloni) e la morte dei tessuti in pochi millisecondi a contatto con la pelle nuda. Pertanto, l'uso di guanti protettivi criogenici e visiere è un requisito assoluto in materia di sicurezza sul lavoro durante il trasferimento e l'applicazione. Inoltre, poiché il suo volume si espande di circa 700 volte nel passaggio dalla fase liquida a quella gassosa, spiazza rapidamente l'ossigeno negli ambienti chiusi, creando un rischio di asfissia improvvisa non rilevata. È di vitale importanza disporre di sistemi di ventilazione ad alto livello e dispositivi di misurazione della saturazione di ossigeno nelle aree in cui sono stoccati i contenitori di azoto liquido medicale e dove si trovano le criobanche."
   }
 ];

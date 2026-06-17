@@ -140,5 +140,40 @@ export const medikalGasesData: GasProduct[] = [
       }
     ],
     safetyWarning: "Technical Warning & Safety Standard: Although Medical Carbon Dioxide gas is not toxic, it is heavier than air. In the event of a leak, it accumulates at ground level, lowering the oxygen concentration and creating a stealthy suffocation risk. Therefore, it is a critical OHS and patient safety rule to have ground-level ventilation systems and carbon dioxide detection detectors in areas where medical CO₂ cylinders and pallets are stored."
+  },
+  {
+    slug: "medikal-sivi-azot-gazi",
+    title: "Medical Liquid Nitrogen (Liquid Medical Nitrogen / LN₂)",
+    badge: "Medical Gases",
+    icon: "🏥",
+    desc: "Medical liquid nitrogen at -196°C for cryopreservation, cord blood storage, and dermatological freezing treatments. Secure delivery based on net weight (kg) in special dewar vessels.",
+    features: [
+      "Full compliance with Ministry of Health, CE Medical, and GMP standards",
+      "Filling and billing based on net weight in kilograms (kg) on absolute precision scales",
+      "Vacuum-insulated cryogenic Dewar cylinders and vacuum-jacketed tanker logistics"
+    ],
+    usageAreas: [
+      "Cryobanks and Biological Cell Storage (Cryopreservation): Provides the absolute cryogenic environment in IVF centers, cord blood banks, and stem cell laboratories to preserve embryos, sperm, eggs, blood, and tissue samples for decades without cellular aging and damage.",
+      "Dermatology and Cryosurgery (Freezing Treatment): Used as a primary surgical fluid in skin clinics and dermatology departments for cryotherapy operations, freezing and controlled destruction of warts, abnormal skin tissues, lesions, and certain benign/malignant tumors at -196°C.",
+      "Medical Equipment and Laboratory Cooling Systems: Serves as a refrigerant fluid to ensure stable operation of sensitive genetic analysis devices, X-ray detectors, and superconducting medical equipment at extremely low temperatures."
+    ],
+    specifications: [
+      { label: "Chemical Formula", value: "LN₂" },
+      { label: "Boiling Point (At Atmospheric Pressure)", value: "-196°C" },
+      { label: "Filling/Delivery Unit", value: "Net Kilogram (kg)" },
+      { label: "Quality Standards", value: "CE Medical / GMP / Ministry of Health / ISO 13485" }
+    ],
+    content: "Medical Liquid Nitrogen (Liquid Medical Nitrogen / LN₂), which ensures the preservation of biological materials in the healthcare sector for decades without losing viability and serves as the primary treatment agent in dermatological surgery, is a critical cryogenic product offered in full compliance with Ministry of Health medical device regulations, CE Medical standards, and GMP (Good Manufacturing Practices) guidelines. Having an extreme cold temperature of -196°C at atmospheric pressure, this product cannot be stored in standard high-pressure industrial cylinders due to its liquid phase structure and continuous evaporation (boiling) tendency. At Tinsa Gaz, we carry out liquid nitrogen supply and logistics management in our high-tech medical filling facilities by weighing on net kilograms (kg) on absolute precision scales, ensuring hospitals and laboratories full weight security with our high-insulation logistics infrastructure.",
+    supplyModels: [
+      {
+        title: "1. Vacuum-Insulated Cryogenic Dewar Vessels",
+        desc: "The safest and most common logistics model for clinics, laboratories, and dermatology centers. Shipped in double-walled, vacuum and super-insulated special aluminum/stainless steel Dewar vessels that minimize the evaporation rate of liquid nitrogen. Filling and billing processes are completed under Tinsa Gaz assurance by weighing on digital scales based on net weight (kg)."
+      },
+      {
+        title: "2. Cryogenic Liquid Tank Supply Solutions",
+        desc: "A bulk liquid logistics model offered for stationary cryogenic medical tanks located in the yards of large-scale university hospitals, central cord blood banks, and high-volume tissue storage facilities. Safe transfer is carried out to hospital medical tanks via our cryogenic tankers compliant with medical standards, and the delivery amount is recorded based on absolute weight weighing (kg) before and after transfer."
+      }
+    ],
+    safetyWarning: "Technical Warning & Safety Standard: Due to its temperature of -196°C, medical liquid nitrogen causes irreversible severe cryogenic burns (frostbite) and tissue death within milliseconds when contacting bare skin. Therefore, the use of cryogenic protective gloves and face shields is an absolute OHS requirement during transfer and application. Furthermore, since its volume expands approximately 700 times when transitioning from liquid phase to gas phase, it rapidly displaces oxygen in enclosed environments, creating an undetected risk of sudden asphyxiation. It is of vital importance to have high-level ventilation systems and oxygen saturation measurement devices in areas where medical liquid nitrogen containers are stored and biobanks are located."
   }
 ];

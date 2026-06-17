@@ -114,6 +114,13 @@ function getProductIcon(id: string) {
           <path d="M9.59 4.59A2 2 0 1 1 11 8H2M12.59 19.41A2 2 0 1 0 14 16H2M17.73 11.27A2.5 2.5 0 1 1 19.5 15H2" />
         </svg>
       );
+    case "medikal-sivi-azot":
+      return (
+        <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.9 }}>
+          <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-13-7-13S5 10.7 5 15a7 7 0 0 0 7 7z" />
+          <path d="M12 18a3 3 0 0 0 3-3c0-1.8-3-5.5-3-5.5S9 13.2 9 15a3 3 0 0 0 3 3z" />
+        </svg>
+      );
     case "endustriyel-oksijen":
       return (
         <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.9 }}>
@@ -355,6 +362,36 @@ export default async function UrunlerPage({ params }: Props) {
         : locale === "it"
         ? ["Conforme alle condutture per gas medici ISO 7396-1", "Garanzia di aria secca e priva di polvere", "Bombole e pacchi bombole adatti per sistemi ospedalieri centralizzati"]
         : ["ISO 7396-1医療用ガス配管基準準拠", "乾燥したクリスタルのような空気の保証", "中央病院システムに適したシリンダーおよびカードルパッケージ"],
+    },
+    {
+      id: "medikal-sivi-azot",
+      cat: "medikal-gaz",
+      catLabel: catLabels["medikal-gaz"],
+      icon: "❄️",
+      title: locale === "tr" ? "Medikal Sıvı Azot (LN₂)" : locale === "en" ? "Medical Liquid Nitrogen (LN₂)" : locale === "de" ? "Medizinischer Flüssigstickstoff (LN₂)" : locale === "fr" ? "Azote Liquide Médical (LN₂)" : locale === "it" ? "Azoto Liquido Medicale (LN₂)" : "医療用液体窒素 (LN₂)",
+      badge: "CE Medikal",
+      desc: locale === "tr"
+        ? "Kriyoprezervasyon, kordon kanı saklama ve dermatolojik dondurma tedavileri için -196°C medikal sıvı azot. Özel dewar kaplarında kilo (kg) bazlı güvenli teslimat."
+        : locale === "en"
+        ? "Medical liquid nitrogen at -196°C for cryopreservation, cord blood storage, and dermatological freezing treatments. Secure delivery based on net weight (kg) in special dewar vessels."
+        : locale === "de"
+        ? "Medizinischer Flüssigstickstoff bei -196 °C für Kryokonservierung, Nabelschnurblutlagerung und dermatologische Gefrierbehandlungen. Sichere Lieferung nach Nettogewicht (kg) in speziellen Dewar-Behältern."
+        : locale === "fr"
+        ? "Azote liquide médical à -196°C pour la cryopréservation, le stockage de sang de cordon et les traitements dermatologiques par le froid. Livraison sécurisée au poids net (kg) dans des récipients dewar spéciaux."
+        : locale === "it"
+        ? "Azoto liquido medicale a -196°C per crioconservazione, conservazione del sangue cordonale e trattamenti dermatologici di congelamento. Consegna sicura basata sul peso netto (kg) in speciali contenitori dewar."
+        : "凍結保存、臍帯血保存、皮膚科の凍結治療用の-196℃医療用液体窒素。専用のデュワー瓶による純重量（kg）に基づいた安全な配送。",
+      features: locale === "tr"
+        ? ["Hassas dijital terazilerde kg bazında tartım", "Yüksek yalıtımlı Dewar kapları lojistiği", "GMP ve Sağlık Bakanlığı normlarına tam uyum"]
+        : locale === "en"
+        ? ["Weighing in kg on precision digital scales", "High-insulation Dewar vessel logistics", "Full compliance with GMP & Ministry of Health norms"]
+        : locale === "de"
+        ? ["Verwiegung in kg auf Präzisionsdigitalwaagen", "Logistik für hochisolierte Dewar-Behälter", "Einhaltung der GMP- und Gesundheitsministeriums-Normen"]
+        : locale === "fr"
+        ? ["Pesage en kg sur balances numériques de précision", "Logistique des récipients Dewar à haute isolation", "Conformité aux normes GMP et du ministère de la Santé"]
+        : locale === "it"
+        ? ["Pesatura in kg su bilance digitali di precisione", "Logistica di contenitori Dewar ad alto isolamento", "Piena conformità alle norme GMP e del Ministero della Salute"]
+        : ["精密デジタル天秤による正味kg単位の計量", "高断熱デュワー容器による安全輸送", "GMPおよび保健省基準への完全準拠"],
     },
     {
       id: "endustriyel-oksijen",
@@ -775,6 +812,7 @@ export default async function UrunlerPage({ params }: Props) {
                 else if (p.id === "azot-protoksit") slug = "azot-protoksit-gazi";
                 else if (p.id === "medikal-karbondioksit") slug = "medikal-karbondioksit-gazi";
                 else if (p.id === "medikal-hava") slug = "medikal-kuru-hava-gazi";
+                else if (p.id === "medikal-sivi-azot") slug = "medikal-sivi-azot-gazi";
                 productHref = `/${locale}/urunler/gazlar/medikal-gazlar/${slug}`;
               } else if (p.cat === "endustriyel-gaz") {
                 let slug = "";

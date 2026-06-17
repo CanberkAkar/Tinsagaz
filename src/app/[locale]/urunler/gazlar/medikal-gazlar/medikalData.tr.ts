@@ -140,5 +140,40 @@ export const medikalGasesData: GasProduct[] = [
       }
     ],
     safetyWarning: "Teknik Uyarı ve Güvenlik Standardı: Medikal Karbondioksit gazı zehirli olmamasına rağmen havadan ağır bir gazdır. Olası bir kaçak durumunda zemin seviyesinde birikerek ortamdaki oksijen konsantrasyonunu aşağı çeker ve sinsi bir boğulma riski yaratır. Bu nedenle medikal CO₂ tüp ve paletlerinin depolandığı alanlarda zemin seviyesi havalandırma sistemlerinin ve karbondioksit algılama dedektörlerinin bulunması kritik bir İSG ve hasta emniyeti kuralıdır."
+  },
+  {
+    slug: "medikal-sivi-azot-gazi",
+    title: "Medikal Sıvı Azot (Likit Tıbbi Azot / LN₂)",
+    badge: "Medikal Gazlar",
+    icon: "🏥",
+    desc: "Kriyoprezervasyon, kordon kanı saklama ve dermatolojik dondurma tedavileri için -196°C medikal sıvı azot. Özel dewar kaplarında kilo (kg) bazlı güvenli teslimat.",
+    features: [
+      "Sağlık Bakanlığı, CE Medikal ve GMP standartlarına tam uyumluluk",
+      "Mutlak hassas terazilerde net kilo (kg) bazında dolum ve faturalandırma",
+      "Yüksek yalıtımlı kriyojenik Dewar kapları ve vakumlu tanker lojistiği"
+    ],
+    usageAreas: [
+      "Kriyobankalar ve Biyolojik Hücre Saklama (Kriyoprezervasyon): Tüp bebek merkezlerinde (IVF), kordon kanı bankalarında ve kök hücre laboratuvarlarında embriyo, sperm, yumurta, kan ve doku örneklerinin hücresel yaşlanmasını durdurarak çok uzun yıllar boyunca canlı ve hasarsız saklanması için mutlak kriyojenik ortamı sağlar.",
+      "Dermatoloji ve Kriyocerrahi (Dondurma Tedavisi): Cilt polikliniklerinde ve dermatoloji kliniklerinde siğillerin, anormal cilt dokularının, lezyonların ve belirli benign/malign tümörlerin -196°C soğuklukla dondurularak kontrollü bir şekilde yok edilmesi (kriyoterapi) operasyonlarında primer cerrahi sıvı olarak tüketilir.",
+      "Tıbbi Ekipman ve Laboratuvar Soğutma Sistemleri: Hassas genetik analiz cihazlarının, x-ışını detektörlerinin ve bazı süperiletken tıbbi donanımların ekstrem düşük sıcaklıklarda stabil çalışmasını sağlamak amacıyla soğutucu akışkan olarak rol alır."
+    ],
+    specifications: [
+      { label: "Kimyasal Formül", value: "LN₂" },
+      { label: "Kaynama Noktası (Atmosfer Basıncında)", value: "-196°C" },
+      { label: "Dolum/Teslimat Ölçü Birimi", value: "Net Kilogram (kg)" },
+      { label: "Kalite Standartları", value: "CE Medikal / GMP / T.C. Sağlık Bakanlığı / ISO 13485" }
+    ],
+    content: "Sağlık sektöründe biyolojik materyallerin canlılığını kaybetmeden on yıllar boyunca korunmasını sağlayan ve dermatolojik cerrahide birincil tedavi ajanı olan Medikal Sıvı Azot (Likit Tıbbi Azot / LN₂), Sağlık Bakanlığı tıbbi cihaz mevzuatlarına, CE Medikal standartlarına ve GMP (İyi İmalat Uygulamaları) yönergelerine tam uyumlu olarak sunulan kritik bir kriyojenik üründür. Atmosfer basıncında -196°C gibi ekstrem bir soğukluğa sahip olan bu ürün, sıvı faz yapısı ve sürekli buharlaşma (kaynama) eğilimi nedeniyle standart yüksek basınçlı sınai silindirlerde depolanamaz. Tinsa Gaz olarak, ileri teknoloji medikal dolum tesislerimizde, sıvı azot tedariğini ve lojistik yönetimini mutlak hassas terazilerde kilo (kg) bazında tartarak gerçekleştirmekte, hastanelerin ve laboratuvarların tam gramaj güvencesini yüksek yalıtımlı lojistik altyapımızla sağlamaktayız.",
+    supplyModels: [
+      {
+        title: "1. Vakum Yalıtımlı Kriyojenik Dewar Kapları",
+        desc: "Klinikler, laboratuvarlar ve dermatoloji merkezleri için en güvenli ve yaygın lojistik modeldir. Sıvı azotun buharlaşma hızını minimumda tutan çift cidarlı, vakum ve süper yalıtımlı özel alüminyum/paslanmaz çelik Dewar kapları ile sevk edilir. Dolum ve faturalandırma süreçleri, Tinsa Gaz güvencesiyle dijital terazilerde net kilo (kg) bazında tartılarak tamamlanır."
+      },
+      {
+        title: "2. Kriyojenik Likit Tank Tedarik Çözümleri",
+        desc: "Büyük ölçekli üniversite hastaneleri, merkezi kordon kanı bankaları ve yüksek hacimli doku saklama tesislerinin bahçelerinde bulunan sabit kriyojenik medikal tanklar için sunulan dökme likit lojistik modeldir. Tıbbi standartlara uygun kriyojenik tankerlerimiz vasıtasıyla, hastane medikal tanklarına güvenli transfer gerçekleştirilir ve teslimat miktarı transfer öncesi/sonrası mutlak ağırlık tartımı (kg) esasına göre kayıt altına alınır."
+      }
+    ],
+    safetyWarning: "Teknik Uyarı ve Güvenlik Standardı: Medikal sıvı azot -196°C sıcaklığı nedeniyle çıplak tenle temas ettiği anda milisaniyeler içinde geri dönüşsüz ağır kriyojenik yanıklara (soğuk ısırığı) ve doku ölümüne yol açar. Bu nedenle transfer ve uygulama esnasında kriyojenik koruyucu eldiven ve yüz siperliği kullanımı mutlak bir İSG zorunluluğudur. Ayrıca, sıvı fazdan gaz fazına geçerken hacmi yaklaşık 700 kat genişlediği için kapalı ortamlardaki oksijeni hızla yerinden ederek fark edilmeden ani boğulma (asfoksi) riski yaratır. Medikal sıvı azot kaplarının depolandığı ve biyobankaların bulunduğu alanlarda üst seviye havalandırma sistemlerinin ve oksijen satürasyon ölçüm cihazlarının bulunması hayati önem taşır."
   }
 ];
