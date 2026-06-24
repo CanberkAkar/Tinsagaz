@@ -40,7 +40,7 @@
 }
 
 .footerDesc {
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   line-height: 1.75;
   color: rgba(255, 255, 255, 0.62);
   margin-bottom: 24px;
@@ -75,7 +75,7 @@
 /* Col Headings */
 .footerColTitle {
   font-family: var(--font-heading);
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -94,7 +94,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   color: rgba(255, 255, 255, 0.62);
   text-decoration: none;
   transition: color var(--transition-fast);
@@ -120,10 +120,10 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   color: rgba(255, 255, 255, 0.62);
   margin-bottom: 14px;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 .footerContactIcon {
@@ -150,7 +150,7 @@
 }
 
 .footerCopy {
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   color: rgba(255, 255, 255, 0.45);
 }
 
@@ -160,7 +160,7 @@
 }
 
 .footerBottomLink {
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   color: rgba(255, 255, 255, 0.45);
   text-decoration: none;
   transition: color var(--transition-fast);
