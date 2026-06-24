@@ -22,14 +22,14 @@
 .contactInfoCol {}
 
 .contactInfoTitle {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--primary);
   margin-bottom: 12px;
 }
 
 .contactInfoDesc {
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   color: var(--gray-500);
   line-height: 1.75;
   margin-bottom: 36px;
@@ -71,7 +71,7 @@
 }
 
 .contactItemLabel {
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 700;
   color: var(--gray-400);
   text-transform: uppercase;
@@ -80,7 +80,7 @@
 }
 
 .contactItemValue {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: var(--primary);
   line-height: 1.5;
@@ -95,7 +95,7 @@
 }
 
 .workHoursTitle {
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   font-weight: 700;
   color: var(--primary);
   margin-bottom: 16px;
@@ -110,7 +110,7 @@
   align-items: center;
   padding: 8px 0;
   border-bottom: 1px solid var(--gray-100);
-  font-size: 0.88rem;
+  font-size: 0.82rem;
 }
 
 .workHourRow:last-child {
@@ -142,14 +142,14 @@
 }
 
 .contactFormTitle {
-  font-size: 1.6rem;
+  font-size: 1.45rem;
   font-weight: 800;
   color: var(--primary);
   margin-bottom: 8px;
 }
 
 .contactFormSubtitle {
-  font-size: 0.92rem;
+  font-size: 0.85rem;
   color: var(--gray-500);
   margin-bottom: 36px;
   line-height: 1.65;
@@ -173,7 +173,7 @@
 }
 
 .formLabel {
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   font-weight: 600;
   color: var(--gray-700);
 }
@@ -185,7 +185,7 @@
   border: 2px solid var(--gray-200);
   border-radius: var(--radius-md);
   font-family: var(--font-body);
-  font-size: 0.92rem;
+  font-size: 0.85rem;
   color: var(--gray-800);
   background: var(--gray-50);
   transition: all var(--transition-fast);
@@ -214,7 +214,7 @@
   border: none;
   border-radius: var(--radius-full);
   font-family: var(--font-body);
-  font-size: 1rem;
+  font-size: 0.92rem;
   font-weight: 700;
   cursor: pointer;
   transition: all var(--transition-base);

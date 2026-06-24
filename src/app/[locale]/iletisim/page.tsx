@@ -119,10 +119,8 @@ export default async function IletisimPage({ params }: Props) {
                     </div>
                     <div>
                       <div className={styles.contactItemLabel}>{item.label}</div>
-                      <div className={styles.contactItemValue}>
-                        {item.value.split("\n").map((line, i) => (
-                          <div key={i}>{line}</div>
-                        ))}
+                      <div className={styles.contactItemValue} style={{ whiteSpace: 'pre-line' }}>
+                        {item.value}
                       </div>
                     </div>
                   </div>
