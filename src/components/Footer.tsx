@@ -195,7 +195,7 @@ export default function Footer({ lang, footerDict, navDict }: { lang: Locale; fo
                 <polyline points="12 6 12 12 16 14" />
               </svg>
             </span>
-            <span>{footerDict.hours}</span>
+            <span style={{ whiteSpace: 'pre-line' }}>{footerDict.hours}</span>
           </div>
         </div>
       </div>
