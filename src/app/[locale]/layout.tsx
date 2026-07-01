@@ -3,6 +3,7 @@ import { Inter, Poppins } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { locales, Locale, getDictionary } from "./dictionaries";
 
 const inter = Inter({
@@ -95,6 +96,7 @@ export default async function RootLayout({
         <Navbar lang={currentLocale} navDict={dict.nav} />
         <main>{children}</main>
         <Footer lang={currentLocale} footerDict={dict.footer} navDict={dict.nav} />
+        <WhatsAppButton />
       </body>
     </html>
   );

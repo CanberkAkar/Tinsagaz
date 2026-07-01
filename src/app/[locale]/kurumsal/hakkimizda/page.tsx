@@ -29,7 +29,7 @@ export default async function HakkimizdaPage({ params }: Props) {
 
   const milestonesData = [
     {
-      year: "1994",
+      year: "1995",
       text: locale === "tr"
         ? "İzmir'de sınai gaz tüp dolum atölyesi olarak kurulduk."
         : locale === "en"

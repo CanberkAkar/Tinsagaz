@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirect root path (/) to the Turkish (/tr) locale directory
+RewriteRule ^$ tr/ [L,R=301]

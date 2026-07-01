@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import styles from "./iletisim.module.css";
-import { sendEmailAction } from "../../actions/sendEmail";
 
 const subjectsByLocale: Record<string, string[]> = {
   tr: ["Ürün Teklifi", "Medikal Gazlar", "Endüstriyel Gazlar", "Çelik Ürünleri", "Elektrik Sistemleri", "Tüp Sistemleri", "Ağır Makineler", "Teknik Destek", "Diğer"],
@@ -85,14 +84,22 @@ export default function ContactForm({ locale, contactDict }: { locale: string; c
 
     setLoading(true);
     try {
-      const res = await sendEmailAction({
-        ad: formState.ad.trim(),
-        soyad: formState.soyad.trim(),
-        email: formState.email.trim(),
-        telefon: formState.telefon.trim(),
-        konu: formState.konu,
-        mesaj: formState.mesaj.trim(),
+      const response = await fetch("/send-mail.php", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ad: formState.ad.trim(),
+          soyad: formState.soyad.trim(),
+          email: formState.email.trim(),
+          telefon: formState.telefon.trim(),
+          konu: formState.konu,
+          mesaj: formState.mesaj.trim(),
+        }),
       });
+
+      const res = await response.json();
 
       if (res.success) {
         setSubmitted(true);

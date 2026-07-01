@@ -4,6 +4,7 @@ import sharedStyles from "../shared.module.css";
 import styles from "./iletisim.module.css";
 import { Locale, getDictionary } from "../dictionaries";
 import ContactForm from "./ContactForm";
+import BranchMap from "./BranchMap";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const dict = await getDictionary(currentLocale);
 
   return {
-    title: `${dict.contact.hero.title} | Tinsagaz`,
+    title: "Tinsagaz",
     description: dict.contact.hero.desc,
   };
 }
@@ -45,7 +46,7 @@ export default async function IletisimPage({ params }: Props) {
         </svg>
       ),
       label: dict.contact.info.phoneTitle,
-      value: "0533 311 53 70",
+      value: "+90 252 225 55 55\n+90 533 123 45 67",
     },
     {
       id: "contact-email",
@@ -56,7 +57,7 @@ export default async function IletisimPage({ params }: Props) {
         </svg>
       ),
       label: dict.contact.info.emailTitle,
-      value: "info@tinsagaz.com\nsatis@tinsagaz.com",
+      value: "info@tinsagaz.com",
     },
   ];
 
@@ -156,19 +157,7 @@ export default async function IletisimPage({ params }: Props) {
       {/* Map */}
       <section className={styles.mapSection} aria-label="Konum haritası">
         <div className={styles.mapSectionInner}>
-          <div className={styles.mapBox}>
-            <div className={styles.mapPlaceholder}>
-              <div className={styles.mapPlaceholderIcon}>
-                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="var(--primary)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" style={{ margin: "0 auto" }}>
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                  <circle cx="12" cy="10" r="3" />
-                </svg>
-              </div>
-              <div className={styles.mapPlaceholderText}>
-                {locale === "tr" ? "Ticaret Merkezi 5. Blok No:3 Bayır / Muğla — Google Haritalar" : "Ticaret Merkezi 5. Blok No:3 Bayir / Mugla — Google Maps"}
-              </div>
-            </div>
-          </div>
+          <BranchMap locale={locale} />
         </div>
       </section>
     </>
