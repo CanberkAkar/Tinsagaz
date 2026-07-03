@@ -98,6 +98,18 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
       ],
     },
     { href: `/${lang}/bilgi-bankasi`, label: navDict.knowledgeBase || "Bilgi Bankası" },
+    {
+      key: "certificates",
+      href: "#",
+      label: navDict.certificates || "Sertifikalar",
+      dropdown: [
+        {
+          label: navDict.tubeTestCertificate || "Tüp Test Sertifikası",
+          href: "/tup-test-sertifikasi.pdf",
+          external: true,
+        },
+      ],
+    },
     { href: `/${lang}/iletisim`, label: navDict.contact },
   ];
 
@@ -162,11 +174,12 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
                   <>
                     <Link
                       href={link.href}
+                      onClick={link.href === "#" ? (e) => e.preventDefault() : undefined}
                       id={`nav-link-${link.label.toLowerCase().replace(/[^a-z]/g, "")}`}
                       className={`${styles.navbarLink} ${
                         scrolled ? styles.navbarLinkScrolled : ""
                       } ${
-                        pathname.startsWith(link.href)
+                        link.href !== "#" && pathname.startsWith(link.href)
                           ? scrolled
                             ? styles.activeScrolled
                             : styles.active
@@ -196,7 +209,12 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
                               </ul>
                             </>
                           ) : (
-                            <Link href={subItem.href} className={styles.dropdownLinkSimple}>
+                            <Link
+                              href={subItem.href}
+                              className={styles.dropdownLinkSimple}
+                              target={'external' in subItem && subItem.external ? "_blank" : undefined}
+                              rel={'external' in subItem && subItem.external ? "noopener noreferrer" : undefined}
+                            >
                               {subItem.label}
                             </Link>
                           )}
@@ -287,7 +305,7 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
                   <>
                     <button
                       className={`${styles.navbarLink} ${styles.mobileDropdownToggle} ${
-                        pathname.startsWith(link.href) ? styles.active : ""
+                        link.href !== "#" && pathname.startsWith(link.href) ? styles.active : ""
                       }`}
                       onClick={() => toggleMobileDropdown(link.key || link.label)}
                       aria-expanded={!!mobileDropdowns[link.key || link.label]}
@@ -346,6 +364,8 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
                               href={subItem.href}
                               className={styles.mobileSubmenuLinkSimple}
                               onClick={() => setMenuOpen(false)}
+                              target={'external' in subItem && subItem.external ? "_blank" : undefined}
+                              rel={'external' in subItem && subItem.external ? "noopener noreferrer" : undefined}
                             >
                               {subItem.label}
                             </Link>
