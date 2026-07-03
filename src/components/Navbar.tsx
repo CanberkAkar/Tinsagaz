@@ -97,6 +97,7 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
         },
       ],
     },
+    { href: `/${lang}/bilgi-bankasi`, label: navDict.knowledgeBase || "Bilgi Bankası" },
     { href: `/${lang}/iletisim`, label: navDict.contact },
   ];
 

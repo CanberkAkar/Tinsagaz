@@ -144,6 +144,36 @@ export default async function HakkimizdaPage({ params }: Props) {
       name: "CE / Pi Belgesi",
       body: locale === "tr" ? "Avrupa Basınçlı Ekipmanlar Uygunluk Sertifikası" : locale === "en" ? "European Pressure Equipment Conformity Certificate" : locale === "de" ? "Europäische Konformitätsbescheinigung für Druckgeräte" : locale === "fr" ? "Certificat Européen de Conformité des Équipements sous Pression" : locale === "it" ? "Certificato di Conformità Europeo per Attrezzature a Pressione" : "欧州移動式圧力容器基準（CE / Pi）適合証明",
     },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          <polyline points="9 11 11 13 15 9" />
+        </svg>
+      ),
+      name: locale === "tr" ? "Türk Loydu (TL) ADR Belgesi" : "Turk Loydu (TL) ADR Certificate",
+      body: locale === "tr" ? "ADR Kapsamında Kurum İçi Muayene Sertifikası (Tüpler ve Tüp Demetleri)" : locale === "en" ? "In-House Inspection Certificate According to ADR (Cylinders & Bundles)" : locale === "de" ? "In-House-Inspektionszertifikat nach ADR (Zylinder & Bündel)" : locale === "fr" ? "Certificat d'Inspection Interne Selon l'ADR (Bouteilles & Cadres)" : locale === "it" ? "Certificato di Ispezione Interna Secondo ADR (Bombole & Pacchi)" : "ADR規格準拠自主検査適合証明書（容器・容器バラ）",
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
+        </svg>
+      ),
+      name: locale === "tr" ? "Doğalgaz İletim ve Dağıtım Belgesi" : "Natural Gas Transmission & Distribution",
+      body: locale === "tr" ? "Doğalgaz Altyapı, Boru Hatları Tesisat Yapım, Bakım ve Onarım Yeterliliği" : locale === "en" ? "Natural Gas Infrastructure, Pipeline Construction, Maintenance & Repair Qualification" : locale === "de" ? "Qualifikation für Erdgasinfrastruktur, Pipelinebau, Wartung & Reparatur" : locale === "fr" ? "Qualification de Construction, Maintenance & Réparation de Canalisations de Gaz Naturel" : locale === "it" ? "Qualificazione per Infrastrutture di Gas Naturale, Costruzione, Manutenzione e Riparazione di Tubazioni" : "天然ガスインフラ・パイプライン建設、保守および修理資格",
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <line x1="12" y1="8" x2="12" y2="16" />
+          <line x1="8" y1="12" x2="16" y2="12" />
+        </svg>
+      ),
+      name: locale === "tr" ? "Medikal Gaz Dolum ve Satış Yetki Belgesi" : "Medical Gas Filling & Sales Authorization",
+      body: locale === "tr" ? "T.C. Sağlık Bakanlığı Onaylı Medikal Gaz Üretim, Dolum, Depolama ve Satış Yetkisi" : locale === "en" ? "Ministry of Health Approved Medical Gas Production, Filling, Storage & Sales Authorization" : locale === "de" ? "Vom Gesundheitsministerium genehmigte Produktion, Abfüllung, Lagerung & Vertrieb von medizinischen Gasen" : locale === "fr" ? "Autorisation de Production, Remplissage, Stockage & Vente de Gaz Médicaux par le Ministère de la Santé" : locale === "it" ? "Autorizzazione Ministeriale per la Produzione, il Riempimento, lo Stoccaggio e la Vendita di Gas Medicali" : "厚生労働省認可 医療用ガス製造・充填・保管・販売ライセンス",
+    },
   ];
 
   const values = [

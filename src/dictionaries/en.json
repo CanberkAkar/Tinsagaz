@@ -8,7 +8,8 @@
     "kvkk": "KVKK Privacy",
     "gallery": "Gallery",
     "contact": "Contact",
-    "allProducts": "All Industrial Gases"
+    "allProducts": "All Industrial Gases",
+    "knowledgeBase": "Knowledge Base"
   },
   "footer": {
     "desc": "Turkey's reliable solution partner in the production of medical and industrial gases, electricity, steel, cylinder systems, and heavy machinery. Quality, safety, and innovation are our priorities.",
@@ -18,7 +19,7 @@
     "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
-    "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nHeadquarters: Ticaret Merkezi 5. Blok No:3 Bayir / Mugla\n\nBranch: Ata San. Sit. 8780/11 Sk.No:19 Cigli / IZMIR\n\nBranch: Karadag Cad. Emek Mah. No:33 Milas / MUGLA\n\nBranch: Konacik San. Sit. J Blok no:6 Bodrum / MUGLA\n\nBranch: Aliaga San. Sit. Samurlu Mah. 1244 Sk No:18 Aliaga / IZMIR",
+    "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nHeadquarters: Ticaret Merkezi 5. Blok No:3 Bayir / Mugla (Tel: +90 252 225 36 63 / +90 538 644 88 12)\n\nBranch: Küçük Çiğli, 8780/11. Sk. no:19, 35620 Çiğli/İzmir, Türkiye (Tel: +90 533 311 53 70)\n\nBranch: Emek, Karadag Cd. No:33, 48200 Milas/Mugla\n\nBranch: Konacik, Konacik Industrial Site J BLOK NO 3, 48000 Bodrum/Mugla (Tel: +90 533 314 57 63)\n\nBranch: Aliaga San. Sit. Samurlu Mah. 1244 Sk No:18 Aliaga / IZMIR",
     "hours": "Mon–Thu: 08:30–17:45\nFri: 08:00–17:45\nSat: 08:30–13:00"
   },
   "home": {
@@ -35,19 +36,19 @@
     "services": {
       "label": "Our Products & Services",
       "title": "Comprehensive Industrial Solutions",
-      "desc": "We serve all sectors with our wide product range, from medical gases to heavy machinery, from electrical systems to steel products.",
+      "desc": "We serve all sectors with our wide range of services, from medical gases to dry ice, mechanical installations, fire systems, and cylinder testing.",
       "medikalTitle": "Medical Gases",
       "medikalDesc": "High purity medical oxygen, nitrous oxide (N₂O), carbon dioxide, and medical air gases. Certified ISO 13485 continuous medical gas solutions for healthcare facilities and clinics.",
       "endustriyelTitle": "Industrial Gases",
       "endustriyelDesc": "High purity argon, nitrogen, helium, hydrogen, acetylene, and special welding mixture gases. Optimum purity industrial gases for welding, plasma/laser cutting, and industrial production.",
-      "celikTitle": "Steel Products",
-      "celikDesc": "Structural steel, steel profiles (HEA, HEB, IPE), plates, and industrial seamless steel products. High-strength steel solutions in accordance with TS EN standards.",
-      "elektrikTitle": "Electrical Systems",
-      "elektrikDesc": "Power distribution panels, transformers, LV-MV electrical grids, and control infrastructure solutions. Turnkey energy systems in IEC 61439 standards for industrial facilities.",
-      "tupTitle": "Cylinder Systems",
-      "tupDesc": "High-pressure gas cylinders (200-300 bar), seamless steel cylinders, manifold cylinder packs (MCP/MTP), and regulators. Tested under TSE standards with periodic inspection warranty.",
-      "makineTitle": "Heavy Machinery",
-      "makineDesc": "Industrial rotary screw compressors, pump systems, overhead crane systems, and custom industrial machinery. Efficient and high-performance heavy equipment engineering.",
+      "mekanikTitle": "Mechanical Installation",
+      "mekanikDesc": "Design and mechanical installation services of fire protection, ventilation, plumbing, and heating-cooling systems for industrial facilities and buildings.",
+      "kuruBuzTitle": "Dry Ice",
+      "kuruBuzDesc": "High-quality, pure carbon dioxide dry ice solutions at -78.5°C for food preservation, logistics, industrial cleaning, and special effects.",
+      "tupTestTitle": "Cylinder Testing",
+      "tupTestDesc": "Hydrostatic pressure testing, internal-external cleaning, valve replacement, and periodic inspection certification of high-pressure seamless steel gas cylinders.",
+      "yanginTitle": "Fire Systems",
+      "yanginDesc": "Installation of automatic fire extinguishing systems, gaseous suppression, sprinklers, fire cabinets infrastructure, and periodic detection/suppression systems.",
       "moreInfo": "More Info →"
     },
     "stats": {

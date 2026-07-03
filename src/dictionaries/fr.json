@@ -8,7 +8,8 @@
     "kvkk": "Confidentialité KVKK",
     "gallery": "Galerie",
     "contact": "Contact",
-    "allProducts": "Tous les Gaz Industriels"
+    "allProducts": "Tous les Gaz Industriels",
+    "knowledgeBase": "Base de Connaissances"
   },
   "footer": {
     "desc": "Le partenaire de confiance de la Turquie dans la production de gaz médicaux et industriels, d'électricité, d'acier, de bouteilles et de machines lourdes. La qualité, la sécurité et l'innovation sont nos priorités.",
@@ -18,7 +19,7 @@
     "rights": "Tous droits réservés.",
     "privacy": "Politique de Confidentialité",
     "terms": "Conditions d'Utilisation",
-    "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nSiège: Ticaret Merkezi 5. Blok No:3 Bayir / Mugla\n\nSuccursale: Ata San. Sit. 8780/11 Sk.No:19 Cigli / IZMIR\n\nSuccursale: Karadag Cad. Emek Mah. No:33 Milas / MUGLA\n\nSuccursale: Konacik San. Sit. J Blok no:6 Bodrum / MUGLA\n\nSuccursale: Aliaga San. Sit. Samurlu Mah. 1244 Sk No:18 Aliaga / IZMIR",
+    "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nSiège: Ticaret Merkezi 5. Blok No:3 Bayir / Mugla (Tel: +90 252 225 36 63 / +90 538 644 88 12)\n\nSuccursale: Küçük Çiğli, 8780/11. Sk. no:19, 35620 Çiğli/İzmir, Türkiye (Tel: +90 533 311 53 70)\n\nSuccursale: Emek, Karadag Cd. No:33, 48200 Milas/Mugla\n\nSuccursale: Konacik, Konacik Industrial Site J BLOK NO 3, 48000 Bodrum/Mugla (Tel: +90 533 314 57 63)\n\nSuccursale: Aliaga San. Sit. Samurlu Mah. 1244 Sk No:18 Aliaga / IZMIR",
     "hours": "Lun–Jeu : 08:30–17:45\nVen : 08:00–17:45\nSam : 08:30–13:00"
   },
   "home": {
@@ -35,19 +36,19 @@
     "services": {
       "label": "Nos Produits & Services",
       "title": "Solutions Industrielles Complètes",
-      "desc": "Nous servons tous les secteurs avec notre large gamme de produits, des gaz médicaux aux machines lourdes, des systèmes électriques aux produits en acier.",
+      "desc": "Nous servons tous les secteurs avec notre large gamme de services, des gaz médicaux à la glace sèche, aux installations mécaniques, aux systèmes d'incendie et aux essais de bouteilles.",
       "medikalTitle": "Gaz Médicaux",
       "medikalDesc": "Oxygène médical de haute pureté, protoxyde d'azote (N₂O), dioxyde de carbone et gaz d'air médical. Solutions de gaz médicaux continus certifiées ISO 13485 pour les établissements de santé et les cliniques.",
       "endustriyelTitle": "Gaz Industriels",
       "endustriyelDesc": "Argon, azote, hélium, hydrogène, acétylène de haute pureté et mélanges de gaz de soudage spéciaux. Gaz industriels de pureté optimale pour les procédés de soudage, de coupage plasma/laser et de production industrielle.",
-      "celikTitle": "Produits en Acier",
-      "celikDesc": "Acier de construction, profilés en acier (HEA, HEB, IPE), tôles et produits en acier sans soudure industriels. Solutions d'acier à haute résistance conformes aux normes TS EN.",
-      "elektrikTitle": "Systèmes Électriques",
-      "elektrikDesc": "Tableaux de distribution électrique, transformateurs, réseaux électriques BT-MT et solutions d'infrastructures de contrôle. Systèmes d'énergie clés en main aux normes CEI 61439 pour les installations industrielles.",
-      "tupTitle": "Systèmes de Bouteilles",
-      "tupDesc": "Bouteilles de gaz haute pression (200-300 bar), cylindres en acier sans soudure, cadres de bouteilles (MCP/MTP) et détendeurs. Testés selon les normes TSE avec garantie d'inspection périodique.",
-      "makineTitle": "Machines Lourdes",
-      "makineDesc": "Compresseurs d'air industriels à vis, systèmes de pompes, ponts roulants et machines industrielles sur mesure. Ingénierie d'équipements lourds efficaces et performants.",
+      "mekanikTitle": "Installation Mécanique",
+      "mekanikDesc": "Conception et services d'installation mécanique de systèmes d'incendie, ventilation, plomberie et chauffage-climatisation pour installations industrielles et bâtiments.",
+      "kuruBuzTitle": "Glace Sèche",
+      "kuruBuzDesc": "Solutions de glace sèche de dioxyde de carbone pur de haute qualité à -78,5 °C pour la conservation des aliments, la logistique, le nettoyage industriel et les effets spéciaux.",
+      "tupTestTitle": "Test de Bouteilles",
+      "tupTestDesc": "Essai de pression hydrostatique, nettoyage interne-externe, remplacement de valve et certification d'inspection périodique des bouteilles de gaz en acier sans soudure haute pression.",
+      "yanginTitle": "Systèmes d'Incendie",
+      "yanginDesc": "Installation de systèmes d'extinction automatique d'incendie, extinction à gaz, sprinklers, armoires à incendie et systèmes de détection/extinction périodiques.",
       "moreInfo": "Plus d'infos →"
     },
     "stats": {

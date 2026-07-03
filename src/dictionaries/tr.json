@@ -8,7 +8,8 @@
     "kvkk": "KVKK Aydınlatma",
     "gallery": "Galeri",
     "contact": "İletişim",
-    "allProducts": "Tüm Sınai Gazlar"
+    "allProducts": "Tüm Sınai Gazlar",
+    "knowledgeBase": "Bilgi Bankası"
   },
   "footer": {
     "desc": "Tıbbi ve endüstriyel gaz, elektrik, çelik, tüp ve ağır makine üretiminde Türkiye'nin güvenilir çözüm ortağı. Kalite, güvenlik ve inovasyon önceliğimizdir.",
@@ -18,7 +19,7 @@
     "rights": "Tüm hakları saklıdır.",
     "privacy": "Gizlilik Politikası",
     "terms": "Kullanım Şartları",
-    "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nMerkez: Ticaret Merkezi 5. Blok No:3 Bayır / Muğla\n\nŞube: Ata San. Sit. 8780/11 Sk.No:19 Çiğli / İZMİR\n\nŞube: Karadağ Cad. Emek Mah. No:33 Milas / MUĞLA\n\nŞube: Konacık San. Sit. J Blok no:6 Bodrum / MUĞLA\n\nŞube: Aliağa San. Sit. Samurlu Mah. 1244 Sk No:18 Aliağa / İZMİR",
+    "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nMerkez: Ticaret Merkezi 5. Blok No:3 Bayır / Muğla (Tel: 0252 225 36 63 / 0538 644 88 12)\n\nŞube: Küçük Çiğli, 8780/11. Sk. no:19, 35620 Çiğli/İzmir, Türkiye (Tel: 0533 311 53 70)\n\nŞube: Emek, Karadağ Cd. No:33, 48200 Milas/Muğla\n\nŞube: Konacık, Konacık Sanayi Sitesi J BLOK NO 3, 48000 Bodrum/Muğla (Tel: 0533 314 57 63)\n\nŞube: Aliağa San. Sit. Samurlu Mah. 1244 Sk No:18 Aliağa / İZMİR",
     "hours": "Pzt–Per: 08:30–17:45\nCum: 08:00–17:45\nCmt: 08:30–13:00"
   },
   "home": {
@@ -35,19 +36,19 @@
     "services": {
       "label": "Hizmetlerimiz",
       "title": "Kapsamlı Endüstriyel Çözümler",
-      "desc": "Medikal gazlardan ağır makinelere, elektrik sistemlerinden çelik ürünlerine kadar geniş ürün yelpazemizle tüm sektörlere hizmet veriyoruz.",
+      "desc": "Medikal gazlardan kuru buza, mekanik tesisattan yangın ve tüp test sistemlerine kadar geniş yelpazemizle hizmet veriyoruz.",
       "medikalTitle": "Medikal Gazlar",
       "medikalDesc": "Yüksek saflıkta tıbbi oksijen, azot protoksit (N₂O), karbondioksit ve tıbbi hava gazları. Sağlık kuruluşları ve klinikler için ISO 13485 sertifikalı kesintisiz medikal gaz çözümleri.",
       "endustriyelTitle": "Endüstriyel Gazlar",
       "endustriyelDesc": "Yüksek saflıkta argon, azot, helyum, hidrojen, asetilen ve özel karışım kaynak gazları. Kaynak, plazma/lazer kesim ve endüstriyel üretim prosesleri için optimum saflıkta sınai gazlar.",
-      "celikTitle": "Çelik Ürünleri",
-      "celikDesc": "Yapısal çelik, çelik profiller (HEA, HEB, IPE), saclar ve sanayi tipi çelik çekme ürünleri. TS EN standartlarına uygun, yüksek mukavemetli çelik çözümleri.",
-      "elektrikTitle": "Elektrik Sistemleri",
-      "elektrikDesc": "Güç dağıtım panoları, trafolar, AG-OG elektrik şebekeleri ve kontrol altyapı çözümleri. Endüstriyel tesisler için IEC 61439 standartlarında anahtar teslim enerji sistemleri.",
-      "tupTitle": "Tüp Sistemleri",
-      "tupDesc": "Yüksek basınçlı gaz tüpleri (200-300 bar), dikişsiz çelik silindirler, manifold üniteleri (MCP/MTP) ve regülatörler. TSE standartlarında test edilmiş, periyodik muayene garantili tüp ekipmanları.",
-      "makineTitle": "Ağır Makineler",
-      "makineDesc": "Endüstriyel vidalı kompresörler, pompa sistemleri, köprülü tavan vinçleri ve özel imalat sanayi makineleri. Verimli ve yüksek performanslı ağır ekipman mühendisliği.",
+      "mekanikTitle": "Mekanik Tesisat",
+      "mekanikDesc": "Endüstriyel tesisler ve binalar için yangın, havalandırma, sıhhi tesisat ve ısıtma-soğutma sistemleri tasarımı ve mekanik kurulum hizmetleri.",
+      "kuruBuzTitle": "Kuru Buz",
+      "kuruBuzDesc": "Gıda koruma, lojistik, endüstriyel temizlik ve özel efektler için -78.5°C sıcaklıkta yüksek kaliteli, saf karbondioksit kuru buz çözümleri.",
+      "tupTestTitle": "Tüp Test",
+      "tupTestDesc": "Yüksek basınçlı dikişsiz çelik gaz silindirlerinin hidrostatik basınç testi, iç-dış temizliği, valf değişimi ve periyodik muayene belgelendirmesi.",
+      "yanginTitle": "Yangın sistemleri",
+      "yanginDesc": "Otomatik yangın söndürme sistemleri, gazlı söndürme, sprinkler, yangın dolapları altyapısı ve periyodik algılama/söndürme sistemleri kurulumu.",
       "moreInfo": "Daha Fazla Bilgi →"
     },
     "stats": {

@@ -8,7 +8,8 @@
     "kvkk": "Privacy KVKK",
     "gallery": "Galleria",
     "contact": "Contatti",
-    "allProducts": "Tutti i Gas Industriali"
+    "allProducts": "Tutti i Gas Industriali",
+    "knowledgeBase": "Centro Assistenza"
   },
   "footer": {
     "desc": "Il partner affidabile della Turchia nella produzione di gas medici e industriali, elettricità, acciaio, bombole e macchinari pesanti. Qualità, sicurezza e innovazione sono le nostre priorità.",
@@ -18,7 +19,7 @@
     "rights": "Tutti i diritti riservati.",
     "privacy": "Informativa sulla Privacy",
     "terms": "Termini di Utilizzo",
-    "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nSede: Ticaret Merkezi 5. Blok No:3 Bayir / Mugla\n\nFiliale: Ata San. Sit. 8780/11 Sk.No:19 Cigli / IZMIR\n\nFiliale: Karadag Cad. Emek Mah. No:33 Milas / MUGLA\n\nFiliale: Konacik San. Sit. J Blok no:6 Bodrum / MUGLA\n\nFiliale: Aliaga San. Sit. Samurlu Mah. 1244 Sk No:18 Aliaga / IZMIR",
+    "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nSede: Ticaret Merkezi 5. Blok No:3 Bayir / Mugla (Tel: +90 252 225 36 63 / +90 538 644 88 12)\n\nFiliale: Küçük Çiğli, 8780/11. Sk. no:19, 35620 Çiğli/İzmir, Türkiye (Tel: +90 533 311 53 70)\n\nFiliale: Emek, Karadag Cd. No:33, 48200 Milas/Mugla\n\nFiliale: Konacik, Konacik Industrial Site J BLOK NO 3, 48000 Bodrum/Mugla (Tel: +90 533 314 57 63)\n\nFiliale: Aliaga San. Sit. Samurlu Mah. 1244 Sk No:18 Aliaga / IZMIR",
     "hours": "Lun–Gio: 08:30–17:45\nVen: 08:00–17:45\nSab: 08:30–13:00"
   },
   "home": {
@@ -35,19 +36,19 @@
     "services": {
       "label": "I Nostri Prodotti & Servizi",
       "title": "Soluzioni Industriali Complete",
-      "desc": "Serviamo tutti i settori con la nostra vasta gamma di prodotti, dai gas medici ai macchinari pesanti, dai sistemi elettrici ai prodotti in acciaio.",
+      "desc": "Serviamo tutti i settori con la nostra vasta gamma di servizi, dai gas medici al ghiaccio secco, impianti meccanici, sistemi antincendio e collaudo bombole.",
       "medikalTitle": "Gas Medicali",
       "medikalDesc": "Ossigeno medico ad alta purezza, protossido di azoto (N₂O), anidride carbonica e gas d'aria medica. Soluzioni di gas medicale continuo certificate ISO 13485 per strutture sanitarie e cliniche.",
       "endustriyelTitle": "Gas Industriali",
       "endustriyelDesc": "Argon, azoto, elio, idrogeno, acetilene ad alta purezza e gas per miscele speciali di saldatura. Gas industriali di purezza ottimale per saldatura, taglio plasma/laser e processi di produzione industriale.",
-      "celikTitle": "Prodotti in Acciaio",
-      "celikDesc": "Acciaio strutturale, profili in acciaio (HEA, HEB, IPE), lamiere e prodotti industriali in acciaio senza saldatura. Soluzioni in acciaio ad alta resistenza in conformità con gli standard TS EN.",
-      "elektrikTitle": "Sistemi Elettrici",
-      "elektrikDesc": "Quadri di distribuzione elettrica, trasformatori, reti elettriche BT-MT e soluzioni per infrastrutture di controllo. Sistemi energetici chiavi in mano secondo gli standard IEC 61439 per impianti industriali.",
-      "tupTitle": "Sistemi di Bombole",
-      "tupDesc": "Bombole di gas ad alta pressione (200-300 bar), cilindri in acciaio senza saldatura, pacchi bombole (MCP/MTP) e regolatori. Testati secondo gli standard TSE con garanzia di ispezione periodica.",
-      "makineTitle": "Macchinari Pesanti",
-      "makineDesc": "Compressori d'aria industriali a vite, sistemi di pompe, carriponte e macchinari industriali personalizzati. Progettazione di attrezzature pesanti efficienti e ad alte prestazioni.",
+      "mekanikTitle": "Installazione Meccanica",
+      "mekanikDesc": "Progettazione e servizi di installazione meccanica di impianti antincendio, ventilazione, idrosanitari e riscaldamento-condizionamento per impianti industriali e installazioni civili.",
+      "kuruBuzTitle": "Ghiaccio Secco",
+      "kuruBuzDesc": "Soluzioni di ghiaccio secco ad anidride carbonica pura di alta qualità a -78.5°C per conservazione alimentare, logistica, pulizia industriale ed effetti speciali.",
+      "tupTestTitle": "Collaudo Bombole",
+      "tupTestDesc": "Prove di pressione idrostatica, pulizia interna-esterna, sostituzione valvole e certificazione di ispezione periodica per bombole di gas in acciaio senza saldatura ad alta pressione.",
+      "yanginTitle": "Sistemi Antincendio",
+      "yanginDesc": "Installazione di sistemi di estinzione automatica incendi, soppressione a gas, sprinkler, armadi antincendio e sistemi periodici di rilevamento/estinzione.",
       "moreInfo": "Maggiori Informazioni →"
     },
     "stats": {

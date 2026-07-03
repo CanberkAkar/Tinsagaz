@@ -8,7 +8,8 @@
     "kvkk": "KVKK Datenschutz",
     "gallery": "Galerie",
     "contact": "Kontakt",
-    "allProducts": "Alle Industriegase"
+    "allProducts": "Alle Industriegase",
+    "knowledgeBase": "Wissensdatenbank"
   },
   "footer": {
     "desc": "Türkeis zuverlässiger Lösungspartner bei der Produktion von medizinischen und industriellen Gasen, Elektrizität, Stahl, Flaschensystemen und schweren Maschinen. Qualität, Sicherheit und Innovation sind unsere Prioritäten.",
@@ -18,7 +19,7 @@
     "rights": "Alle Rechte vorbehalten.",
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen",
-    "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nHauptsitz: Ticaret Merkezi 5. Blok No:3 Bayir / Mugla\n\nFiliale: Ata San. Sit. 8780/11 Sk.No:19 Cigli / IZMIR\n\nFiliale: Karadag Cad. Emek Mah. No:33 Milas / MUGLA\n\nFiliale: Konacik San. Sit. J Blok no:6 Bodrum / MUGLA\n\nFiliale: Aliaga San. Sit. Samurlu Mah. 1244 Sk No:18 Aliaga / IZMIR",
+    "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nHauptsitz: Ticaret Merkezi 5. Blok No:3 Bayir / Mugla (Tel: +90 252 225 36 63 / +90 538 644 88 12)\n\nFiliale: Küçük Çiğli, 8780/11. Sk. no:19, 35620 Çiğli/İzmir, Türkiye (Tel: +90 533 311 53 70)\n\nFiliale: Emek, Karadag Cd. No:33, 48200 Milas/Mugla\n\nFiliale: Konacik, Konacik Industrial Site J BLOK NO 3, 48000 Bodrum/Mugla (Tel: +90 533 314 57 63)\n\nFiliale: Aliaga San. Sit. Samurlu Mah. 1244 Sk No:18 Aliaga / IZMIR",
     "hours": "Mo–Do: 08:30–17:45\nFr: 08:00–17:45\nSa: 08:30–13:00"
   },
   "home": {
@@ -35,19 +36,19 @@
     "services": {
       "label": "Unsere Produkte & Dienstleistungen",
       "title": "Umfassende industrielle Lösungen",
-      "desc": "Wir bedienen alle Sektoren mit unserer breiten Produktpalette, von medizinischen Gasen bis zu schweren Maschinen, von elektrischen Systemen bis zu Stahlprodukten.",
+      "desc": "Wir bedienen alle Sektoren mit unserem breiten Dienstistungsangebot, von medizinischen Gasen bis hin zu Trockeneis, mechanischen Installationen, Brandschutz und Flaschenprüfung.",
       "medikalTitle": "Medizinische Gase",
       "medikalDesc": "Hochreiner medizinischer Sauerstoff, Distickstoffmonoxid (N₂O), Kohlendioxid und medizinische Luftgase. Zertifizierte medizinische Gaslösungen nach ISO 13485 für Gesundheitseinrichtungen und Kliniken.",
       "endustriyelTitle": "Industriegase",
       "endustriyelDesc": "Hochreines Argon, Stickstoff, Helium, Wasserstoff, Acetylen und spezielle Schweißgasmischungen. Industriegase mit optimaler Reinheit für Schweiß-, Plasma-/Laserschneid- und industrielle Produktionsprozesse.",
-      "celikTitle": "Stahlprodukte",
-      "celikDesc": "Baustahl, Stahlprofile (HEA, HEB, IPE), Bleche und nahtlose Industriestahlprodukte. Hochfeste Stahllösungen gemäß TS EN-Normen.",
-      "elektrikTitle": "Elektrische Systeme",
-      "elektrikDesc": "Energieverteilerfelder, Transformatoren, NS-MS-Stromnetze und Kontrollinfrastrukturlösungen. Schlüsselfertige Energiesysteme nach IEC 61439-Standards für Industrieanlagen.",
-      "tupTitle": "Flaschensysteme",
-      "tupDesc": "Hochdruckgasflaschen (200-300 bar), nahtlose Stahlflaschen, Flaschenbündel (MCP/MTP) und Regler. Geprüft nach TSE-Normen mit regelmäßiger Inspektionsgarantie.",
-      "makineTitle": "Schwere Maschinen",
-      "makineDesc": "Industrielle Schraubenkompressoren, Pumpensysteme, Brückenkrananlagen und kundenspezifische Industriemaschinen. Effiziente und leistungsstarke Schwermaschinentechnik.",
+      "mekanikTitle": "Mechanische Installation",
+      "mekanikDesc": "Planung und mechanische Installation von Brand-, Lüftungs-, Sanitär- und Heizungs-Kühlsystemen für Industrieanlagen und Gebäude.",
+      "kuruBuzTitle": "Trockeneis",
+      "kuruBuzDesc": "Hochwertige, reine Kohlendioxid-Trockeneislösungen bei -78,5 °C für Lebensmitteleinzelhandel, Logistik, industrielle Reinigung und Spezialeffekte.",
+      "tupTestTitle": "Flaschenprüfung",
+      "tupTestDesc": "Hydrostatische Druckprüfung, Innen- und Außenreinigung, Ventilaustausch und wiederkehrende Prüfung von Hochdruck-Stahlflaschen.",
+      "yanginTitle": "Brandschutzsysteme",
+      "yanginDesc": "Installation von automatischen Feuerlöschanlagen, Gaslöschanlagen, Sprinklern, Löschwasserleitungen und Brandmeldesystemen.",
       "moreInfo": "Mehr Infos →"
     },
     "stats": {

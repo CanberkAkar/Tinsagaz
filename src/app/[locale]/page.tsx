@@ -26,17 +26,6 @@ export default async function HomePage({ params }: Props) {
 
   const services = [
     {
-      id: "medikal-gaz",
-      icon: (
-        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-        </svg>
-      ),
-      title: dict.home.services.medikalTitle,
-      desc: dict.home.services.medikalDesc,
-      href: `/${locale}/urunler#medikal-gaz`,
-    },
-    {
       id: "endustriyel-gaz",
       icon: (
         <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -49,51 +38,66 @@ export default async function HomePage({ params }: Props) {
       href: `/${locale}/urunler#endustriyel-gaz`,
     },
     {
-      id: "celik",
+      id: "medikal-gaz",
       icon: (
         <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="3" y="3" width="18" height="18" rx="2" />
-          <path d="M9 3v18M15 3v18M3 9h18M3 15h18" />
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
         </svg>
       ),
-      title: dict.home.services.celikTitle,
-      desc: dict.home.services.celikDesc,
-      href: `/${locale}/urunler#celik`,
+      title: dict.home.services.medikalTitle,
+      desc: dict.home.services.medikalDesc,
+      href: `/${locale}/urunler#medikal-gaz`,
     },
     {
-      id: "elektrik",
+      id: "mekanik-tesisat",
       icon: (
         <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
         </svg>
       ),
-      title: dict.home.services.elektrikTitle,
-      desc: dict.home.services.elektrikDesc,
-      href: `/${locale}/urunler#elektrik`,
+      title: dict.home.services.mekanikTitle,
+      desc: dict.home.services.mekanikDesc,
+      href: `/${locale}/urunler#mekanik-tesisat`,
     },
     {
-      id: "tup",
+      id: "kuru-buz",
+      icon: (
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <line x1="2" y1="12" x2="22" y2="12" />
+          <line x1="12" y1="2" x2="12" y2="22" />
+          <path d="m20 16-4-4 4-4" />
+          <path d="m4 8 4 4-4 4" />
+          <path d="m16 4-4 4-4-4" />
+          <path d="m8 20 4-4 4 4" />
+        </svg>
+      ),
+      title: dict.home.services.kuruBuzTitle,
+      desc: dict.home.services.kuruBuzDesc,
+      href: `/${locale}/urunler#kuru-buz`,
+    },
+    {
+      id: "tup-test",
       icon: (
         <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M6 9V5a3 3 0 0 1 6 0v4m-6 0h6m0-4v4" />
           <rect x="4" y="9" width="16" height="13" rx="2" />
+          <path d="m9 16 2 2 4-4" />
         </svg>
       ),
-      title: dict.home.services.tupTitle,
-      desc: dict.home.services.tupDesc,
-      href: `/${locale}/urunler#tup`,
+      title: dict.home.services.tupTestTitle,
+      desc: dict.home.services.tupTestDesc,
+      href: `/${locale}/urunler#tup-test`,
     },
     {
-      id: "agir-makine",
+      id: "yangin-sistemleri",
       icon: (
         <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <circle cx="12" cy="12" r="3" />
-          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+          <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
         </svg>
       ),
-      title: dict.home.services.makineTitle,
-      desc: dict.home.services.makineDesc,
-      href: `/${locale}/urunler#agir-makine`,
+      title: dict.home.services.yanginTitle,
+      desc: dict.home.services.yanginDesc,
+      href: `/${locale}/urunler#yangin-sistemleri`,
     },
   ];
 
@@ -200,7 +204,7 @@ export default async function HomePage({ params }: Props) {
 
           <div className={styles.heroVisual}>
             <div className={styles.heroCards}>
-              {services.slice(0, 4).map((s) => (
+              {services.map((s) => (
                 <Link key={s.id} href={s.href} className={styles.heroCard}>
                   <span className={styles.heroCardIcon}>{s.icon}</span>
                   <span className={styles.heroCardLabel}>{s.title}</span>

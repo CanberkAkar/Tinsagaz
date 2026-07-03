@@ -28,27 +28,6 @@ export default async function IletisimPage({ params }: Props) {
 
   const contactItems = [
     {
-      id: "contact-address",
-      icon: (
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-          <circle cx="12" cy="10" r="3" />
-        </svg>
-      ),
-      label: dict.contact.info.addressTitle,
-      value: dict.footer.address,
-    },
-    {
-      id: "contact-phone",
-      icon: (
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-        </svg>
-      ),
-      label: dict.contact.info.phoneTitle,
-      value: "+90 252 225 55 55\n+90 533 123 45 67",
-    },
-    {
       id: "contact-email",
       icon: (
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -101,63 +80,68 @@ export default async function IletisimPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Contact */}
+      {/* Contact Grid Section */}
       <section className={styles.contactSection} aria-label="İletişim bilgileri ve form">
         <div className={styles.contactSectionInner}>
           <div className={styles.contactGrid}>
-            {/* Info */}
-            <div className={styles.contactInfoCol}>
-              <h2 className={styles.contactInfoTitle}>{contactText.title}</h2>
-              <p className={styles.contactInfoDesc}>
-                {contactText.desc}
-              </p>
+            
+            {/* Left Column: Form */}
+            <div className={styles.contactFormCol}>
+              <ContactForm locale={locale} contactDict={dict.contact} />
 
-              <div className={styles.contactItems}>
-                {contactItems.map((item) => (
-                  <div key={item.id} id={item.id} className={styles.contactItem}>
-                    <div className={styles.contactItemIcon} aria-hidden="true">
-                      {item.icon}
-                    </div>
-                    <div>
-                      <div className={styles.contactItemLabel}>{item.label}</div>
-                      <div className={styles.contactItemValue} style={{ whiteSpace: 'pre-line' }}>
-                        {item.value}
+              <div className={styles.contactMetaRow} style={{ marginTop: '32px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                {/* Email Card */}
+                <div className={styles.contactItems} style={{ marginBottom: 0 }}>
+                  {contactItems.map((item) => (
+                    <div key={item.id} id={item.id} className={styles.contactItem}>
+                      <div className={styles.contactItemIcon} aria-hidden="true">
+                        {item.icon}
+                      </div>
+                      <div>
+                        <div className={styles.contactItemLabel}>{item.label}</div>
+                        <div className={styles.contactItemValue} style={{ whiteSpace: 'pre-line' }}>
+                          {item.value}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
 
-              {/* Working Hours */}
-              <div className={styles.workHours}>
-                <h3 className={styles.workHoursTitle} style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}>
-                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
-                    <circle cx="12" cy="12" r="10" />
-                    <polyline points="12 6 12 12 16 14" />
-                  </svg>
-                  <span>{workHoursText.title}</span>
-                </h3>
-                {workHours.map((w) => (
-                  <div key={w.day} className={styles.workHourRow}>
-                    <span className={styles.workHourDay}>{w.day}</span>
-                    <span className={w.closed ? styles.workHourClosed : styles.workHourTime}>
-                      {w.time}
-                    </span>
-                  </div>
-                ))}
+                {/* Working Hours */}
+                <div className={styles.workHours}>
+                  <h3 className={styles.workHoursTitle} style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}>
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+                      <circle cx="12" cy="12" r="10" />
+                      <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                    <span>{workHoursText.title}</span>
+                  </h3>
+                  {workHours.map((w) => (
+                    <div key={w.day} className={styles.workHourRow}>
+                      <span className={styles.workHourDay}>{w.day}</span>
+                      <span className={w.closed ? styles.workHourClosed : styles.workHourTime}>
+                        {w.time}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
 
-            {/* Form Component */}
-            <ContactForm locale={locale} contactDict={dict.contact} />
-          </div>
-        </div>
-      </section>
+            {/* Right Column: Branch Map */}
+            <div className={styles.contactInfoCol}>
+              <h2 className={styles.contactInfoTitle}>
+                {locale === "tr" ? "Şubelerimiz & Harita" : "Our Branches & Map"}
+              </h2>
+              <p className={styles.contactInfoDesc}>
+                {locale === "tr"
+                  ? "Şubelerimizin konum, adres ve telefon bilgilerine aşağıdaki sekmeden harita üzerinden ulaşabilirsiniz."
+                  : "You can find locations, addresses, and phone numbers of our branches on the map below."}
+              </p>
+              <BranchMap locale={locale} />
+            </div>
 
-      {/* Map */}
-      <section className={styles.mapSection} aria-label="Konum haritası">
-        <div className={styles.mapSectionInner}>
-          <BranchMap locale={locale} />
+          </div>
         </div>
       </section>
     </>

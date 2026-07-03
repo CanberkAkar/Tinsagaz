@@ -8,7 +8,8 @@
     "kvkk": "KVKK個人情報",
     "gallery": "ギャラリー",
     "contact": "お問い合わせ",
-    "allProducts": "すべての産業ガス"
+    "allProducts": "すべての産業ガス",
+    "knowledgeBase": "ナレッジベース"
   },
   "footer": {
     "desc": "医療用・産業用ガス、電力、鉄鋼、シリンダーシステム、重機械の製造におけるトルコの信頼できるソリューションパートナー。品質、安全性、イノベーションが私たちの最優先事項です。",
@@ -18,7 +19,7 @@
     "rights": "All rights reserved.",
     "privacy": "プライバシーポリシー",
     "terms": "利用規約",
-    "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\n本社: Ticaret Merkezi 5. Blok No:3 Bayir / Mugla\n\n支店: Ata San. Sit. 8780/11 Sk.No:19 Cigli / IZMIR\n\n支店: Karadag Cad. Emek Mah. No:33 Milas / MUGLA\n\n支店: Konacik San. Sit. J Blok no:6 Bodrum / MUGLA\n\n支店: Aliaga San. Sit. Samurlu Mah. 1244 Sk No:18 Aliaga / IZMIR",
+    "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\n本社: Ticaret Merkezi 5. Blok No:3 Bayir / Mugla (Tel: +90 252 225 36 63 / +90 538 644 88 12)\n\n支店: Küçük Çiğli, 8780/11. Sk. no:19, 35620 Çiğli/İzmir, Türkiye (Tel: +90 533 311 53 70)\n\n支店: Emek, Karadag Cd. No:33, 48200 Milas/Mugla\n\n支店: Konacik, Konacik Industrial Site J BLOK NO 3, 48000 Bodrum/Mugla (Tel: +90 533 314 57 63)\n\n支店: Aliaga San. Sit. Samurlu Mah. 1244 Sk No:18 Aliaga / IZMIR",
     "hours": "月〜木: 08:30〜17:45\n金: 08:00〜17:45\n土: 08:30〜13:00"
   },
   "home": {
@@ -35,19 +36,19 @@
     "services": {
       "label": "製品とサービス",
       "title": "包括的な産業ソリューション",
-      "desc": "医療用ガスから重機械、電気システムから鉄鋼製品まで、幅広い製品ラインナップであらゆる産業分野をサポートしています。",
+      "desc": "医療用ガスからドライアイス、機械設備工事、防災・消火システム、シリンダー検査まで、幅広いサービスでサポートしています。",
       "medikalTitle": "医療用ガス",
       "medikalDesc": "高純度医療用酸素、亜酸化窒素 (N₂O)、二酸化炭素、医療用空気ガス。医療機関やクリニック向けのISO 13485認証取得済み医療用ガス供給ソリューション。",
       "endustriyelTitle": "産業用ガス",
       "endustriyelDesc": "高純度アルゴン、窒素、ヘリウム、水素、アセチレン、および特殊溶接混合ガス。溶接、プラズマ・レーザー切断、産業生産プロセスに最適な純度の産業用ガス。",
-      "celikTitle": "鉄鋼製品",
-      "celikDesc": "構造用鋼、形鋼 (HEA, HEB, IPE)、鋼板、および産業用シームレス鋼製品。TS EN規格に準拠した高強度スチールソリューション。",
-      "elektrikTitle": "電気システム",
-      "elektrikDesc": "配電盤、変圧器、低圧・高圧電力網、制御インフラソリューション。産業施設向けのIEC 61439規格に準拠したターンキーエネルギーシステム。",
-      "tupTitle": "シリンダーシステム",
-      "tupDesc": "高圧ガスシリンダー (200-300 bar)、シームレススチールシリンダー、マニホールドシリンダー束 (MCP/MTP)、レギュレーター。定期検査保証付きのTSE規格適合のシリンダー機器。",
-      "makineTitle": "重機械",
-      "makineDesc": "産業用ロータリースクリューコンプレッサー、ポンプシステム、天井クレーンシステム、特注産業機械。高効率・高性能の重装備エンジニアリング。",
+      "mekanikTitle": "機械設備工事",
+      "mekanikDesc": "産業施設および建物向けの消火、換気、配管、冷暖房システムの設計および機械設備設置サービス。",
+      "kuruBuzTitle": "ドライアイス",
+      "kuruBuzDesc": "食品保存、物流、産業用洗浄、特殊効果向けの、-78.5℃の高品質で純粋な二酸化炭素ドライアイスソリューション。",
+      "tupTestTitle": "シリンダー検査",
+      "tupTestDesc": "高圧シームレス鋼製ガスシリンダーの水圧試験、内外部洗浄、バルブ交換、および定期検査認証。",
+      "yanginTitle": "防災・消火システム",
+      "yanginDesc": "自動消火システム、ガス消火、スプリンクラー、消火栓ボックス設備、および定期的な検知・消火システムの設置。",
       "moreInfo": "詳細はこちら →"
     },
     "stats": {

@@ -13,7 +13,7 @@
 
 .contactGrid {
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
+  grid-template-columns: 1.2fr 1fr;
   gap: 56px;
   align-items: flex-start;
 }
@@ -276,12 +276,12 @@
   overflow: hidden;
   box-shadow: var(--shadow-xl);
   border: 1px solid var(--gray-200);
-  height: 420px;
   background: var(--gray-100);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  height: 400px;
 }
 
 .mapPlaceholder {
@@ -307,23 +307,38 @@
 
 .branchTabs {
   display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
+  gap: 10px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.branchTabs::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.branchTabs {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .branchTabButton {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
+  gap: 6px;
+  padding: 10px 18px;
   border-radius: var(--radius-full);
   background: var(--white);
   border: 1px solid var(--gray-200);
   color: var(--gray-600);
   font-weight: 600;
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   cursor: pointer;
   transition: all var(--transition-base);
+  flex-shrink: 0;
 }
 
 .branchTabButton:hover {
