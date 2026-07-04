@@ -190,7 +190,12 @@ export default function KnowledgeBaseClient({ locale, labels }: Props) {
                           );
                         })}
                       </div>
-                      {(q.id === "kuru-buz-nedir" || q.id === "dry-ice-what-is") && (
+                      {q.id === "kuru-buz-nedir" && (
+                        <div className={styles.faqImageWrap}>
+                          <img src="/yangin-sondurme.jpg" alt={q.question} className={styles.faqImage} />
+                        </div>
+                      )}
+                      {q.id === "dry-ice-what-is" && (
                         <div className={styles.faqImageWrap}>
                           <img src="/kuru-buz.jpg" alt={q.question} className={styles.faqImage} />
                         </div>
