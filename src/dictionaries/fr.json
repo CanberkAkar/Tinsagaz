@@ -11,10 +11,13 @@
     "allProducts": "Tous les Gaz Industriels",
     "knowledgeBase": "Base de Connaissances",
     "certificates": "Certificats",
-    "tubeTestCertificate": "Certificat de Test de Bouteille"
+    "tubeTestCertificate": "Certificat de Test de Bouteille",
+    "isoCertificate": "Certificat ISO",
+    "dryIce": "Glace Sèche",
+    "fireSystems": "Systèmes d'Extinction de Gaz"
   },
   "footer": {
-    "desc": "Le partenaire de confiance de la Turquie dans la production de gaz médicaux et industriels, d'électricité, d'acier, de bouteilles et de machines lourdes. La qualité, la sécurité et l'innovation sont nos priorités.",
+    "desc": "Le partenaire de confiance de la Turquie pour les gaz médicaux et industriels, et les systèmes de bouteilles. La qualité, la sécurité et l'innovation sont nos priorités.",
     "quick": "Accès Rapide",
     "products": "Nos Produits",
     "contact": "Contact",
@@ -22,7 +25,7 @@
     "privacy": "Politique de Confidentialité",
     "terms": "Conditions d'Utilisation",
     "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nSiège: Ticaret Merkezi 5. Blok No:3 Bayir / Mugla (Tel: +90 252 225 36 63 / +90 538 644 88 12)\n\nSuccursale: Küçük Çiğli, 8780/11. Sk. no:19, 35620 Çiğli/İzmir, Türkiye (Tel: +90 533 311 53 70)\n\nSuccursale: Emek, Karadag Cd. No:33, 48200 Milas/Mugla\n\nSuccursale: Konacik, Konacik Industrial Site J BLOK NO 3, 48000 Bodrum/Mugla (Tel: +90 533 314 57 63)\n\nSuccursale: Aliaga San. Sit. Samurlu Mah. 1244 Sk No:18 Aliaga / IZMIR",
-    "hours": "Lun–Jeu : 08:30–17:45\nVen : 08:00–17:45\nSam : 08:30–13:00"
+    "hours": "Lun–Ven : 08:30–17:45\nSam : 08:30–13:00"
   },
   "home": {
     "hero": {
@@ -30,7 +33,7 @@
       "titlePart1": "Leader en Gaz",
       "titleAccent": "Industriels",
       "titlePart2": "et Médicaux",
-      "desc": "En tant que Tinsagaz, nous servons le secteur avec plus de 30 ans d'expérience dans les domaines des gaz médicaux et industriels, de l'électricité, de l'acier, des bouteilles et des machines lourdes. La qualité, la sécurité et l'innovation sont toujours notre priorité.",
+      "desc": "En tant que Tinsagaz, nous servons le secteur avec plus de 30 ans d'expérience dans les domaines des gaz médicaux, industriels et des systèmes de bouteilles. La qualité, la sécurité et l'innovation sont toujours notre priorité.",
       "cta1": "Découvrir Nos Produits",
       "cta2": "Contactez-nous",
       "scrollDown": "Faites défiler vers le bas"

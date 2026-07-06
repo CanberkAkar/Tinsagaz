@@ -11,10 +11,13 @@
     "allProducts": "すべての産業ガス",
     "knowledgeBase": "ナレッジベース",
     "certificates": "証明書",
-    "tubeTestCertificate": "ボンベ試験証明書"
+    "tubeTestCertificate": "ボンベ試験証明書",
+    "isoCertificate": "ISO証明書",
+    "dryIce": "ドライアイス",
+    "fireSystems": "ガス系消火設備"
   },
   "footer": {
-    "desc": "医療用・産業用ガス、電力、鉄鋼、シリンダーシステム、重機械の製造におけるトルコの信頼できるソリューションパートナー。品質、安全性、イノベーションが私たちの最優先事項です。",
+    "desc": "医療用・産業用ガスおよびシリンダーシステムの製造・供給におけるトルコの信頼できるソリューションパートナー。品質、安全性、イノベーションが私たちの最優先事項です。",
     "quick": "クイックアクセス",
     "products": "製品紹介",
     "contact": "お問い合わせ",
@@ -22,7 +25,7 @@
     "privacy": "プライバシーポリシー",
     "terms": "利用規約",
     "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\n本社: Ticaret Merkezi 5. Blok No:3 Bayir / Mugla (Tel: +90 252 225 36 63 / +90 538 644 88 12)\n\n支店: Küçük Çiğli, 8780/11. Sk. no:19, 35620 Çiğli/İzmir, Türkiye (Tel: +90 533 311 53 70)\n\n支店: Emek, Karadag Cd. No:33, 48200 Milas/Mugla\n\n支店: Konacik, Konacik Industrial Site J BLOK NO 3, 48000 Bodrum/Mugla (Tel: +90 533 314 57 63)\n\n支店: Aliaga San. Sit. Samurlu Mah. 1244 Sk No:18 Aliaga / IZMIR",
-    "hours": "月〜木: 08:30〜17:45\n金: 08:00〜17:45\n土: 08:30〜13:00"
+    "hours": "月〜金: 08:30〜17:45\n土: 08:30〜13:00"
   },
   "home": {
     "hero": {
@@ -30,7 +33,7 @@
       "titlePart1": "産業用および",
       "titleAccent": "医療用",
       "titlePart2": "ガスのリーダーシップ",
-      "desc": "Tinsagazとして、私たちは医療用ガス、産業用ガス、電力、鉄鋼、シリンダーシステム、重機械の分野で30年以上の経験を持ち、業界にサービスを提供しています。品質、安全性、そして革新を常に最優先に掲げています。",
+      "desc": "Tinsagazとして、私たちは医療用ガス、産業用ガス、およびシリンダーシステムの分野で30年以上の経験を持ち、業界にサービスを提供しています。品質、安全性、そして革新を常に最優先に掲げています。",
       "cta1": "製品を見る",
       "cta2": "お問い合わせ",
       "scrollDown": "下へスクロール"

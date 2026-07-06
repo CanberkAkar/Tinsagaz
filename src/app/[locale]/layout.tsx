@@ -33,16 +33,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const dict = await getDictionary(currentLocale);
 
   const titleText = currentLocale === "tr"
-    ? "Tinsagaz | Endüstriyel ve Medikal Gazlar, Çelik, Elektrik, Ağır Makine"
+    ? "Tinsagaz | Endüstriyel ve Medikal Gazlar, Tüp Sistemleri"
     : currentLocale === "en"
-    ? "Tinsagaz | Industrial and Medical Gases, Steel, Electricity, Heavy Machinery"
+    ? "Tinsagaz | Industrial and Medical Gases, Cylinder Systems"
     : currentLocale === "de"
-    ? "Tinsagaz | Industrie- und Medizinische Gase, Stahl, Elektrizität, Schwere Maschinen"
+    ? "Tinsagaz | Industrie- und Medizinische Gase, Flaschensysteme"
     : currentLocale === "fr"
-    ? "Tinsagaz | Gaz Industriels et Médicaux, Acier, Électricité, Machines Lourdes"
+    ? "Tinsagaz | Gaz Industriels et Médicaux, Systèmes de Bouteilles"
     : currentLocale === "it"
-    ? "Tinsagaz | Gas Industriali e Medicali, Acciaio, Elettricità, Macchinari Pesanti"
-    : "Tinsagaz | 産業用および医療用ガス、鉄鋼、電気、重機械";
+    ? "Tinsagaz | Gas Industriali e Medicali, Sistemi di Bombole"
+    : "Tinsagaz | 産業用および医療用ガス、シリンダーシステム";
 
   const descText = dict.footer.desc;
 
@@ -56,16 +56,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       "endüstriyel gaz",
       "medikal gaz",
       "tıbbi gaz",
-      "çelik üretimi",
-      "elektrik",
-      "ağır makine",
       "tüp",
       "tinsagaz",
       "sanayi",
       "industrial gas",
       "medical gas",
-      "steel production",
-      "heavy machinery",
       "argon gazı",
       "azot gazı",
       "kuru buz",

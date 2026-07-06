@@ -11,10 +11,13 @@
     "allProducts": "Tüm Sınai Gazlar",
     "knowledgeBase": "Bilgi Bankası",
     "certificates": "Sertifikalar",
-    "tubeTestCertificate": "Tüp Test Sertifikası"
+    "tubeTestCertificate": "Tüp Test Sertifikası",
+    "isoCertificate": "ISO Sertifikası",
+    "dryIce": "Kuru Buz",
+    "fireSystems": "Gazlı Yangın Söndürme Sistemleri"
   },
   "footer": {
-    "desc": "Tıbbi ve endüstriyel gaz, elektrik, çelik, tüp ve ağır makine üretiminde Türkiye'nin güvenilir çözüm ortağı. Kalite, güvenlik ve inovasyon önceliğimizdir.",
+    "desc": "Tıbbi ve endüstriyel gaz ile tüp sistemlerinde Türkiye'nin güvenilir çözüm ortağı. Kalite, güvenlik ve inovasyon önceliğimizdir.",
     "quick": "Hızlı Erişim",
     "products": "Ürünlerimiz",
     "contact": "İletişim",
@@ -22,7 +25,7 @@
     "privacy": "Gizlilik Politikası",
     "terms": "Kullanım Şartları",
     "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nMerkez: Ticaret Merkezi 5. Blok No:3 Bayır / Muğla (Tel: 0252 225 36 63 / 0538 644 88 12)\n\nŞube: Küçük Çiğli, 8780/11. Sk. no:19, 35620 Çiğli/İzmir, Türkiye (Tel: 0533 311 53 70)\n\nŞube: Emek, Karadağ Cd. No:33, 48200 Milas/Muğla\n\nŞube: Konacık, Konacık Sanayi Sitesi J BLOK NO 3, 48000 Bodrum/Muğla (Tel: 0533 314 57 63)\n\nŞube: Aliağa San. Sit. Samurlu Mah. 1244 Sk No:18 Aliağa / İZMİR",
-    "hours": "Pzt–Per: 08:30–17:45\nCum: 08:00–17:45\nCmt: 08:30–13:00"
+    "hours": "Pzt–Cum: 08:30–17:45\nCmt: 08:30–13:00"
   },
   "home": {
     "hero": {
@@ -30,7 +33,7 @@
       "titlePart1": "Endüstriyel ve",
       "titleAccent": "Medikal",
       "titlePart2": "Gazda Liderlik",
-      "desc": "Tinsagaz olarak tıbbi gaz, endüstriyel gaz, elektrik, çelik, tüp ve ağır makine üretimi alanlarında 30 yılı aşkın deneyimle sektöre hizmet veriyoruz. Kalite, güvenlik ve inovasyon her zaman önceliğimiz.",
+      "desc": "Tinsagaz olarak tıbbi gaz, endüstriyel gaz ve tüp sistemleri alanlarında 30 yılı aşkın deneyimle sektöre hizmet veriyoruz. Kalite, güvenlik ve inovasyon her zaman önceliğimiz.",
       "cta1": "Ürünlerimizi İncele",
       "cta2": "Bize Ulaşın",
       "scrollDown": "Aşağı kaydır"

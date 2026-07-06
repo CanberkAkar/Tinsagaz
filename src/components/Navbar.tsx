@@ -95,6 +95,14 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
             label: gas.title,
           })),
         },
+        {
+          label: navDict.dryIce || "Kuru Buz",
+          href: `/${lang}/urunler/kuru-buz`,
+        },
+        {
+          label: navDict.fireSystems || "Gazlı Yangın Söndürme Sistemleri",
+          href: `/${lang}/urunler/gazli-yangin-sondurme-sistemleri`,
+        },
       ],
     },
     { href: `/${lang}/bilgi-bankasi`, label: navDict.knowledgeBase || "Bilgi Bankası" },
@@ -106,6 +114,11 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
         {
           label: navDict.tubeTestCertificate || "Tüp Test Sertifikası",
           href: "/tup-test-sertifikasi.pdf",
+          external: true,
+        },
+        {
+          label: navDict.isoCertificate || "ISO Sertifikası",
+          href: "/iso-sertifikasi.pdf",
           external: true,
         },
       ],
@@ -199,7 +212,7 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
                                 <span className={styles.submenuArrow}>▶</span>
                               </Link>
                               <ul className={styles.submenuMenu} role="list">
-                                {subItem.submenu.map((nested) => (
+                                {subItem.submenu?.map((nested) => (
                                   <li key={nested.href}>
                                     <Link href={nested.href} className={styles.submenuLink}>
                                       {nested.label}
@@ -347,7 +360,7 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
                                   mobileSubmenus[subItem.label] ? styles.mobileNestedMenuOpen : ""
                                 }`}
                               >
-                                {subItem.submenu.map((nested) => (
+                                {subItem.submenu?.map((nested) => (
                                   <Link
                                     key={nested.href}
                                     href={nested.href}

@@ -11,10 +11,13 @@
     "allProducts": "All Industrial Gases",
     "knowledgeBase": "Knowledge Base",
     "certificates": "Certificates",
-    "tubeTestCertificate": "Cylinder Test Certificate"
+    "tubeTestCertificate": "Cylinder Test Certificate",
+    "isoCertificate": "ISO Certificate",
+    "dryIce": "Dry Ice",
+    "fireSystems": "Gaseous Fire Extinguishing Systems"
   },
   "footer": {
-    "desc": "Turkey's reliable solution partner in the production of medical and industrial gases, electricity, steel, cylinder systems, and heavy machinery. Quality, safety, and innovation are our priorities.",
+    "desc": "Turkey's reliable solution partner in the production and supply of medical and industrial gases, and cylinder systems. Quality, safety, and innovation are our priorities.",
     "quick": "Quick Access",
     "products": "Our Products",
     "contact": "Contact",
@@ -22,7 +25,7 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
     "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nHeadquarters: Ticaret Merkezi 5. Blok No:3 Bayir / Mugla (Tel: +90 252 225 36 63 / +90 538 644 88 12)\n\nBranch: Küçük Çiğli, 8780/11. Sk. no:19, 35620 Çiğli/İzmir, Türkiye (Tel: +90 533 311 53 70)\n\nBranch: Emek, Karadag Cd. No:33, 48200 Milas/Mugla\n\nBranch: Konacik, Konacik Industrial Site J BLOK NO 3, 48000 Bodrum/Mugla (Tel: +90 533 314 57 63)\n\nBranch: Aliaga San. Sit. Samurlu Mah. 1244 Sk No:18 Aliaga / IZMIR",
-    "hours": "Mon–Thu: 08:30–17:45\nFri: 08:00–17:45\nSat: 08:30–13:00"
+    "hours": "Mon–Fri: 08:30–17:45\nSat: 08:30–13:00"
   },
   "home": {
     "hero": {
@@ -30,7 +33,7 @@
       "titlePart1": "Leadership in",
       "titleAccent": "Industrial",
       "titlePart2": "and Medical Gases",
-      "desc": "As Tinsagaz, we serve the sector with more than 30 years of experience in the fields of medical gas, industrial gas, electricity, steel, cylinder systems, and heavy machinery. Quality, safety, and innovation are always our priority.",
+      "desc": "As Tinsagaz, we serve the sector with more than 30 years of experience in the fields of medical gas, industrial gas, and cylinder systems. Quality, safety, and innovation are always our priority.",
       "cta1": "Explore Our Products",
       "cta2": "Contact Us",
       "scrollDown": "Scroll down"

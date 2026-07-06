@@ -41,8 +41,7 @@ export default async function IletisimPage({ params }: Props) {
   ];
 
   const workHoursText = {
-    monThu: locale === "tr" ? "Pazartesi – Perşembe" : locale === "en" ? "Monday – Thursday" : locale === "de" ? "Montag – Donnerstag" : locale === "fr" ? "Lundi – Jeudi" : locale === "it" ? "Lunedì – Giovedì" : "月曜日 – 木曜日",
-    fri: locale === "tr" ? "Cuma" : locale === "en" ? "Friday" : locale === "de" ? "Freitag" : locale === "fr" ? "Vendredi" : locale === "it" ? "Venerdì" : "金曜日",
+    monFri: locale === "tr" ? "Pazartesi – Cuma" : locale === "en" ? "Monday – Friday" : locale === "de" ? "Montag – Freitag" : locale === "fr" ? "Lundi – Vendredi" : locale === "it" ? "Lunedì – Venerdì" : "月曜日 – 金曜日",
     sat: locale === "tr" ? "Cumartesi" : locale === "en" ? "Saturday" : locale === "de" ? "Samstag" : locale === "fr" ? "Samedi" : locale === "it" ? "Sabato" : "土曜日",
     sun: locale === "tr" ? "Pazar" : locale === "en" ? "Sunday" : locale === "de" ? "Sonntag" : locale === "fr" ? "Dimanche" : locale === "it" ? "Domenica" : "日曜日",
     closed: locale === "tr" ? "Kapalı" : locale === "en" ? "Closed" : locale === "de" ? "Geschlossen" : locale === "fr" ? "Fermé" : locale === "it" ? "Chiuso" : "休業日",
@@ -50,8 +49,7 @@ export default async function IletisimPage({ params }: Props) {
   };
 
   const workHours = [
-    { day: workHoursText.monThu, time: "08:30 – 17:45" },
-    { day: workHoursText.fri, time: "08:00 – 17:45" },
+    { day: workHoursText.monFri, time: "08:30 – 17:45" },
     { day: workHoursText.sat, time: "08:30 – 13:00" },
     { day: workHoursText.sun, time: workHoursText.closed, closed: true },
   ];

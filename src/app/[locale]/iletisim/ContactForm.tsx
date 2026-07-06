@@ -4,12 +4,12 @@ import { useState } from "react";
 import styles from "./iletisim.module.css";
 
 const subjectsByLocale: Record<string, string[]> = {
-  tr: ["Ürün Teklifi", "Medikal Gazlar", "Endüstriyel Gazlar", "Çelik Ürünleri", "Elektrik Sistemleri", "Tüp Sistemleri", "Ağır Makineler", "Teknik Destek", "Diğer"],
-  en: ["Product Quote", "Medical Gases", "Industrial Gases", "Steel Products", "Electrical Systems", "Cylinder Systems", "Heavy Machinery", "Technical Support", "Other"],
-  de: ["Produktangebot", "Medizinische Gase", "Industriegase", "Stahlprodukte", "Elektrosysteme", "Flaschensysteme", "Schwere Maschinen", "Technischer Support", "Andere"],
-  fr: ["Devis de Produit", "Gaz Médicaux", "Gaz Industriels", "Produits en Acier", "Systèmes Électriques", "Systèmes de Bouteilles", "Machines Lourdes", "Support Technique", "Autre"],
-  it: ["Preventivo Prodotto", "Gas Medicali", "Gas Industriali", "Prodotti in Acciaio", "Sistemi Elettrici", "Sistemi di Bombole", "Macchinari Pesanti", "Supporto Tecnico", "Altro"],
-  ja: ["製品のお見積り", "医療用ガス", "産業用ガス", "鉄鋼製品", "電気システム", "高圧シリンダーシステム", "重機械", "技術サポート", "その他"],
+  tr: ["Ürün Teklifi", "Medikal Gazlar", "Endüstriyel Gazlar", "Tüp Sistemleri", "Teknik Destek", "Diğer"],
+  en: ["Product Quote", "Medical Gases", "Industrial Gases", "Cylinder Systems", "Technical Support", "Other"],
+  de: ["Produktangebot", "Medizinische Gase", "Industriegase", "Flaschensysteme", "Technischer Support", "Andere"],
+  fr: ["Devis de Produit", "Gaz Médicaux", "Gaz Industriels", "Systèmes de Bouteilles", "Support Technique", "Autre"],
+  it: ["Preventivo Prodotto", "Gas Medicali", "Gas Industriali", "Sistemi di Bombole", "Supporto Tecnico", "Altro"],
+  ja: ["製品のお見積り", "医療用ガス", "産業用ガス", "高圧シリンダーシステム", "技術サポート", "その他"],
 };
 
 export default function ContactForm({ locale, contactDict }: { locale: string; contactDict: any }) {

@@ -73,7 +73,7 @@ export default async function HomePage({ params }: Props) {
       ),
       title: dict.home.services.kuruBuzTitle,
       desc: dict.home.services.kuruBuzDesc,
-      href: `/${locale}/urunler#kuru-buz`,
+      href: `/${locale}/urunler/kuru-buz`,
     },
     {
       id: "tup-test",
@@ -97,7 +97,7 @@ export default async function HomePage({ params }: Props) {
       ),
       title: dict.home.services.yanginTitle,
       desc: dict.home.services.yanginDesc,
-      href: `/${locale}/urunler#yangin-sistemleri`,
+      href: `/${locale}/urunler/gazli-yangin-sondurme-sistemleri`,
     },
   ];
 
@@ -147,7 +147,7 @@ export default async function HomePage({ params }: Props) {
   const stats = [
     { num: "30+", label: dict.home.stats.experience },
     { num: "5.000+", label: dict.home.stats.customers },
-    { num: "50.000+", label: dict.home.stats.projects },
+    { num: "3.000+", label: dict.home.stats.projects },
     { num: "12", label: dict.home.stats.export },
   ];
 

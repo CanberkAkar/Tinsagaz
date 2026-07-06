@@ -11,10 +11,13 @@
     "allProducts": "Alle Industriegase",
     "knowledgeBase": "Wissensdatenbank",
     "certificates": "Zertifikate",
-    "tubeTestCertificate": "Flaschenprüfzertifikat"
+    "tubeTestCertificate": "Flaschenprüfzertifikat",
+    "isoCertificate": "ISO-Zertifikat",
+    "dryIce": "Trockeneis",
+    "fireSystems": "Gas-Löschanlagen"
   },
   "footer": {
-    "desc": "Türkeis zuverlässiger Lösungspartner bei der Produktion von medizinischen und industriellen Gasen, Elektrizität, Stahl, Flaschensystemen und schweren Maschinen. Qualität, Sicherheit und Innovation sind unsere Prioritäten.",
+    "desc": "Türkeis zuverlässiger Partner für medizinische und industrielle Gase sowie Flaschensysteme. Qualität, Sicherheit und Innovation sind unsere Prioritäten.",
     "quick": "Schnellzugriff",
     "products": "Unsere Produkte",
     "contact": "Kontakt",
@@ -22,7 +25,7 @@
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen",
     "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nHauptsitz: Ticaret Merkezi 5. Blok No:3 Bayir / Mugla (Tel: +90 252 225 36 63 / +90 538 644 88 12)\n\nFiliale: Küçük Çiğli, 8780/11. Sk. no:19, 35620 Çiğli/İzmir, Türkiye (Tel: +90 533 311 53 70)\n\nFiliale: Emek, Karadag Cd. No:33, 48200 Milas/Mugla\n\nFiliale: Konacik, Konacik Industrial Site J BLOK NO 3, 48000 Bodrum/Mugla (Tel: +90 533 314 57 63)\n\nFiliale: Aliaga San. Sit. Samurlu Mah. 1244 Sk No:18 Aliaga / IZMIR",
-    "hours": "Mo–Do: 08:30–17:45\nFr: 08:00–17:45\nSa: 08:30–13:00"
+    "hours": "Mo–Fr: 08:30–17:45\nSa: 08:30–13:00"
   },
   "home": {
     "hero": {
@@ -30,7 +33,7 @@
       "titlePart1": "Führung bei",
       "titleAccent": "Industrie-",
       "titlePart2": "und Medizingasen",
-      "desc": "Als Tinsagaz bedienen wir den Sektor mit mehr als 30 Jahren Erfahrung in den Bereichen Medizinisches Gas, Industriegas, Elektrizität, Stahl, Flaschensysteme und schwere Maschinen. Qualität, Sicherheit und Innovation stehen bei uns immer an erster Stelle.",
+      "desc": "Als Tinsagaz bedienen wir die Branche mit über 30 Jahren Erfahrung in den Bereichen medizinische Gase, Industriegase und Flaschensysteme. Qualität, Sicherheit und Innovation stehen bei uns immer an erster Stelle.",
       "cta1": "Unsere Produkte ansehen",
       "cta2": "Kontaktieren Sie uns",
       "scrollDown": "Nach unten scrollen"

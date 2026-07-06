@@ -11,10 +11,13 @@
     "allProducts": "Tutti i Gas Industriali",
     "knowledgeBase": "Centro Assistenza",
     "certificates": "Certificati",
-    "tubeTestCertificate": "Certificato di Collaudo Bombole"
+    "tubeTestCertificate": "Certificato di Collaudo Bombole",
+    "isoCertificate": "Certificato ISO",
+    "dryIce": "Ghiaccio Secco",
+    "fireSystems": "Sistemi di Estinzione a Gas"
   },
   "footer": {
-    "desc": "Il partner affidabile della Turchia nella produzione di gas medici e industriali, elettricità, acciaio, bombole e macchinari pesanti. Qualità, sicurezza e innovazione sono le nostre priorità.",
+    "desc": "Il partner affidabile in Turchia per la fornitura di gas medici e industriali e sistemi di bombole. Qualità, sicurezza e innovazione sono le nostre priorità.",
     "quick": "Accesso Rapido",
     "products": "I Nostri Prodotti",
     "contact": "Contatti",
@@ -22,7 +25,7 @@
     "privacy": "Informativa sulla Privacy",
     "terms": "Termini di Utilizzo",
     "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nSede: Ticaret Merkezi 5. Blok No:3 Bayir / Mugla (Tel: +90 252 225 36 63 / +90 538 644 88 12)\n\nFiliale: Küçük Çiğli, 8780/11. Sk. no:19, 35620 Çiğli/İzmir, Türkiye (Tel: +90 533 311 53 70)\n\nFiliale: Emek, Karadag Cd. No:33, 48200 Milas/Mugla\n\nFiliale: Konacik, Konacik Industrial Site J BLOK NO 3, 48000 Bodrum/Mugla (Tel: +90 533 314 57 63)\n\nFiliale: Aliaga San. Sit. Samurlu Mah. 1244 Sk No:18 Aliaga / IZMIR",
-    "hours": "Lun–Gio: 08:30–17:45\nVen: 08:00–17:45\nSab: 08:30–13:00"
+    "hours": "Lun–Ven: 08:30–17:45\nSab: 08:30–13:00"
   },
   "home": {
     "hero": {
@@ -30,7 +33,7 @@
       "titlePart1": "Leader nei Gas",
       "titleAccent": "Industriali",
       "titlePart2": "e Medicali",
-      "desc": "Come Tinsagaz, serviamo il settore con oltre 30 anni di esperienza nei campi dei gas medici e industriali, dell'elettricità, dell'acciaio, delle bombole e dei macchinari pesanti. Qualità, sicurezza e innovazione sono sempre la nostra priorità.",
+      "desc": "Come Tinsagaz, serviamo il settore con oltre 30 anni di esperienza nei campi dei gas medici, industriali e sistemi di bombole. Qualità, sicurezza e innovazione sono sempre la nostra priorità.",
       "cta1": "Esplora i Nostri Prodotti",
       "cta2": "Contattaci",
       "scrollDown": "Scorri verso il basso"

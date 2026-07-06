@@ -53,31 +53,11 @@ function getCategoryIcon(id: string) {
           <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
         </svg>
       );
-    case "celik":
-      return (
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
-          <rect x="3" y="3" width="18" height="18" rx="2" />
-          <path d="M9 3v18M15 3v18M3 9h18M3 15h18" />
-        </svg>
-      );
-    case "elektrik":
-      return (
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
-          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
-        </svg>
-      );
     case "tup":
       return (
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
           <path d="M6 9V5a3 3 0 0 1 6 0v4m-6 0h6m0-4v4" />
           <rect x="4" y="9" width="16" height="13" rx="2" />
-        </svg>
-      );
-    case "agir-makine":
-      return (
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
-          <circle cx="12" cy="12" r="3" />
-          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
         </svg>
       );
     default:
@@ -162,20 +142,6 @@ function getProductIcon(id: string) {
           <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
         </svg>
       );
-    case "celik-profil":
-      return (
-        <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.9 }}>
-          <path d="M6 3h12M6 21h12M12 3v18M6 3v18M18 3v18" />
-        </svg>
-      );
-    case "elektrik-panel":
-      return (
-        <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.9 }}>
-          <rect x="4" y="3" width="16" height="18" rx="2" />
-          <path d="m13 7-4 5h6l-4 5" />
-          <path d="M9 3v18" />
-        </svg>
-      );
     case "basinc-tup":
       return (
         <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.9 }}>
@@ -196,21 +162,6 @@ function getProductIcon(id: string) {
           <circle cx="18" cy="12" r="0.8" fill="var(--primary)" />
         </svg>
       );
-    case "kompressor":
-      return (
-        <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.9 }}>
-          <circle cx="12" cy="12" r="9" />
-          <circle cx="12" cy="12" r="3" />
-          <path d="M12 3v6M12 15v6M3 12h6M15 12h6" />
-        </svg>
-      );
-    case "vinc":
-      return (
-        <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.9 }}>
-          <path d="M3 21h18M5 21V6M19 21V6M4 6h16M12 6v6" />
-          <rect x="10" y="12" width="4" height="4" rx="1" />
-        </svg>
-      );
     default:
       return null;
   }
@@ -225,19 +176,13 @@ export default async function UrunlerPage({ params }: Props) {
     { id: "tumu", label: locale === "tr" ? "Tümü" : locale === "en" ? "All" : locale === "de" ? "Alle" : locale === "fr" ? "Tout" : locale === "it" ? "Tutti" : "すべて" },
     { id: "medikal-gaz", label: locale === "tr" ? "Medikal Gaz" : locale === "en" ? "Medical Gas" : locale === "de" ? "Medizinische Gase" : locale === "fr" ? "Gaz Médical" : locale === "it" ? "Gas Medicale" : "医療用ガス" },
     { id: "endustriyel-gaz", label: locale === "tr" ? "Endüstriyel Gaz" : locale === "en" ? "Industrial Gas" : locale === "de" ? "Industriegase" : locale === "fr" ? "Gaz Industriel" : locale === "it" ? "Gas Industriale" : "産業用ガス" },
-    { id: "celik", label: locale === "tr" ? "Çelik" : locale === "en" ? "Steel" : locale === "de" ? "Stahl" : locale === "fr" ? "Acier" : locale === "it" ? "Acciaio" : "鉄鋼" },
-    { id: "elektrik", label: locale === "tr" ? "Elektrik" : locale === "en" ? "Electricity" : locale === "de" ? "Elektrizität" : locale === "fr" ? "Électricité" : locale === "it" ? "Elettricità" : "電気" },
     { id: "tup", label: locale === "tr" ? "Tüp" : locale === "en" ? "Cylinder" : locale === "de" ? "Flaschen" : locale === "fr" ? "Bouteille" : locale === "it" ? "Bombola" : "高圧シリンダー" },
-    { id: "agir-makine", label: locale === "tr" ? "Ağır Makine" : locale === "en" ? "Heavy Machinery" : locale === "de" ? "Schwere Maschinen" : locale === "fr" ? "Machines Lourdes" : locale === "it" ? "Macchinari Pesanti" : "重機械" },
   ];
 
   const catLabels: Record<string, string> = {
     "medikal-gaz": categories[1].label,
     "endustriyel-gaz": categories[2].label,
-    "celik": categories[3].label,
-    "elektrik": categories[4].label,
-    "tup": categories[5].label,
-    "agir-makine": categories[6].label,
+    "tup": categories[3].label,
   };
 
   const actionText = locale === "tr" ? "Teklif İste" : locale === "en" ? "Request Quote" : locale === "de" ? "Angebot anfordern" : locale === "fr" ? "Demander un devis" : locale === "it" ? "Richiedi Preventivo" : "見積もりを依頼";
@@ -574,66 +519,6 @@ export default async function UrunlerPage({ params }: Props) {
         : ["82%アルゴン - 18%CO₂および特殊配合比率対応", "溶接後の清掃・スラグ除去工程の削減", "溶接部の高い引張強度特性"],
     },
     {
-      id: "celik-profil",
-      cat: "celik",
-      catLabel: catLabels["celik"],
-      icon: "🏗️",
-      title: locale === "tr" ? "Yapısal Çelik & Profil" : locale === "en" ? "Structural Steel & Profiles" : locale === "de" ? "Baustahl & Profile" : locale === "fr" ? "Acier Structurel & Profilés" : locale === "it" ? "Acciaio Strutturale & Profili" : "構造用鋼材および形鋼",
-      badge: "TS EN 10025",
-      desc: locale === "tr"
-        ? "İnşaat, ağır sanayi ve endüstriyel tesis projelerinde kullanılmak üzere S235, S275 ve S355 kalitelerinde sıcak haddelenmiş yapısal çelik profiller (HEA, HEB, IPE, UPN, IPN)."
-        : locale === "en"
-        ? "Hot-rolled structural steel profiles (HEA, HEB, IPE, UPN, IPN) in S235, S275, and S355 grades for use in construction, heavy industry, and industrial plant projects."
-        : locale === "de"
-        ? "Warmgewalzte Baustahlprofile (HEA, HEB, IPE, UPN, IPN) in den Güten S235, S275 und S355 zur Verwendung in Bau-, Schwerindustrie- und Industrieanlagenprojekten."
-        : locale === "fr"
-        ? "Profilés en acier de construction laminés à chaud (HEA, HEB, IPE, UPN, IPN) dans les nuances S235, S275 et S355 pour des projets de construction, d'industrie lourde et d'installations industrielles."
-        : locale === "it"
-        ? "Profili in acciaio strutturale laminati a caldo (HEA, HEB, IPE, UPN, IPN) nei gradi S235, S275 e S355 per l'uso in progetti di costruzione, industria pesante e impianti industriali."
-        : "建設、重工業、および産業プラントプロジェクトで使用するための、S235、S275、およびS355グレードの熱間圧延構造用形鋼（HEA、HEB、IPE、UPN、IPNなど）。",
-      features: locale === "tr"
-        ? ["CE sertifikalı çelik hammaddesi", "İstenen boy ve ebatta hassas kesim imkanı", "Deprem yönetmeliğine uygun yüksek mukavemet"]
-        : locale === "en"
-        ? ["CE certified steel raw material", "Precise cutting opportunity in desired length and size", "High strength in accordance with earthquake regulations"]
-        : locale === "de"
-        ? ["CE-zertifizierter Stahlrohstoff", "Präziser Zuschnitt in gewünschter Länge und Größe", "Hohe Festigkeit gemäß den Erdbebenvorschriften"]
-        : locale === "fr"
-        ? ["Matière première d'acier certifiée CE", "Possibilité de coupe précise à la longueur et aux dimensions souhaitées", "Haute résistance conforme aux normes parasismiques"]
-        : locale === "it"
-        ? ["Materia prima in acciaio certificata CE", "Possibilità di taglio preciso nella lunghezza e dimensione desiderate", "Elevata resistenza in conformità con le normative antisismiche"]
-        : ["CEマーク認証済みの高品質鋼材", "任意の長さおよびサイズへの精密切断対応", "耐震基準に適合した高い強度特性"],
-    },
-    {
-      id: "elektrik-panel",
-      cat: "elektrik",
-      catLabel: catLabels["elektrik"],
-      icon: "⚡",
-      title: locale === "tr" ? "Güç Dağıtım Panoları" : locale === "en" ? "Power Distribution Panels" : locale === "de" ? "Energieverteiler" : locale === "fr" ? "Armoires de Distribution d'Énergie" : locale === "it" ? "Quadri di Distribuzione Energia" : "配電盤・制御盤",
-      badge: "IEC 61439",
-      desc: locale === "tr"
-        ? "Sanayi tesisleri, şantiyeler ve fabrikalar için tasarlanmış yüksek güvenlikli alçak ve orta gerilim güç dağıtım ve kontrol panoları. Toz ve su sızdırmazlık korumalı tasarımlar."
-        : locale === "en"
-        ? "High-safety low and medium voltage power distribution and control panels designed for industrial plants, construction sites, and factories. Dust and water tightness protected designs."
-        : locale === "de"
-        ? "Hochsichere Niederspannungs- und Mittelspannungs-Energieverteiler- und Steuerungstafeln für Industrieanlagen, Baustellen und Fabriken. Staub- und wasserdicht geschützte Ausführungen."
-        : locale === "fr"
-        ? "Armoires de distribution et de commande basse et moyenne tension haute sécurité conçues pour les installations industrielles, les chantiers et les usines. Modèles protégés contre la poussière et l'eau."
-        : locale === "it"
-        ? "Quadri di distribuzione e controllo dell'energia a bassa e media tensione ad alta sicurezza progettati per impianti industriali, cantieri e fabbriche. Design protetti da polvere e acqua."
-        : "産業プラント、建設現場、および工場向けに設計された、高安全な低圧・高圧配電盤および制御盤。防塵・防滴構造設計。",
-      features: locale === "tr"
-        ? ["IEC 61439-1/2 standartlarına tam uyum", "Kısa devre ve aşırı yük koruma sistemleri", "Yerinde montaj ve devreye alma desteği"]
-        : locale === "en"
-        ? ["Full compliance with IEC 61439-1/2 standards", "Short circuit and overload protection systems", "On-site assembly and commissioning support"]
-        : locale === "de"
-        ? ["Vollständige Einhaltung der Normen IEC 61439-1/2", "Kurzschluss- und Überlastschutzsysteme", "Unterstützung bei Montage und Inbetriebnahme vor Ort"]
-        : locale === "fr"
-        ? ["Conformité totale aux normes IEC 61439-1/2", "Systèmes de protection contre les courts-circuits et les surcharges", "Support pour montage et mise en service sur site"]
-        : locale === "it"
-        ? ["Piena conformità agli standard IEC 61439-1/2", "Sistemi di protezione da cortocircuito e sovraccarico", "Supporto per installazione e messa in servizio in loco"]
-        : ["IEC 61439-1/2規格への完全準拠", "短絡および過負荷保護システムの装備", "オンサイトでの設置・試運転調整サポート"],
-    },
-    {
       id: "basinc-tup",
       cat: "tup",
       catLabel: catLabels["tup"],
@@ -693,66 +578,6 @@ export default async function UrunlerPage({ params }: Props) {
         ? ["Uscita gas ad alta portata da un unico punto", "Facile infrastruttura di trasporto con carrello elevatore e gru", "Sistema che riduce al minimo i tempi di cambio bombola"]
         : ["単一箇所からの高流量ガス出力", "フォークリフトやクレーンで吊り上げ可能な輸送構造フレーム", "容器交換の手間と時間ロスを排除するシステム"],
     },
-    {
-      id: "kompressor",
-      cat: "agir-makine",
-      catLabel: catLabels["agir-makine"],
-      icon: "🏭",
-      title: locale === "tr" ? "Endüstriyel Vidalı Kompresörler" : locale === "en" ? "Industrial Rotary Screw Compressors" : locale === "de" ? "Industrielle Schraubenkompressoren" : locale === "fr" ? "Compresseurs à Vis Industriels" : locale === "it" ? "Compressori a Vite Industriali" : "産業用スクリューコンプレッサー",
-      badge: locale === "tr" ? "CE Belgeli" : locale === "en" ? "CE Certified" : locale === "de" ? "CE-zertifiziert" : locale === "fr" ? "Certifié CE" : locale === "it" ? "Certificato CE" : "CEマーク認証",
-      desc: locale === "tr"
-        ? "Fabrikalarda pnömatik sistemler ve hava hatları için yüksek verimlilikte basınçlı hava üreten, uzun ömürlü ve düşük gürültülü endüstriyel vidalı hava kompresörleri."
-        : locale === "en"
-        ? "Long-lasting and low-noise industrial rotary screw air compressors producing highly efficient compressed air for pneumatic systems and air lines in factories."
-        : locale === "de"
-        ? "Langlebige und geräuscharme industrielle Schraubenkompressoren zur hocheffizienten Erzeugung von Druckluft für pneumatische Systeme und Luftleitungen in Fabriken."
-        : locale === "fr"
-        ? "Compresseurs d'air à vis industriels durables et silencieux, produisant de l'air comprimé à haute efficacité pour les systèmes pneumatiques et les conduites d'air dans les usines."
-        : locale === "it"
-        ? "Compressori d'aria a vite industriali a lunga durata e bassa rumorosità che producono aria compressa ad alta efficienza per sistemi pneumatici e linee d'aria nelle fabbriche."
-        : "工場のエアラインや空気圧（ニューマチック）システム向けに、高効率な圧縮空気を発生させる、低騒音・長寿命設計の産業用スクリューコンプレッサー。",
-      features: locale === "tr"
-        ? ["Inverter ile enerji tasarruflu çalışma", "Akıllı uzaktan izleme ve kontrol paneli", "Geniş servis ağı ve yedek parça desteği"]
-        : locale === "en"
-        ? ["Energy saving operation with inverter", "Smart remote monitoring and control panel", "Wide service network and spare parts support"]
-        : locale === "de"
-        ? ["Energiesparender Betrieb mit Frequenzumrichter", "Intelligentes Fernüberwachungs- und Kontrollpanel", "Breites Servicenetzwerk und Ersatzteilunterstützung"]
-        : locale === "fr"
-        ? ["Fonctionnement économe en énergie avec variateur de vitesse", "Panneau de commande et de surveillance à distance intelligent", "Large réseau de service et disponibilité des pièces de rechange"]
-        : locale === "it"
-        ? ["Funzionamento a risparmio energetico con inverter", "Pannello di controllo e monitoraggio remoto intelligente", "Ampia rete di assistenza e supporto ricambi"]
-        : ["インバーター制御による省エネ運転対応", "スマート遠隔監視・統合操作パネル", "充実したメンテナンスサービス体制と予備部品サポート"],
-    },
-    {
-      id: "vinc",
-      cat: "agir-makine",
-      catLabel: catLabels["agir-makine"],
-      icon: "🏗️",
-      title: locale === "tr" ? "Köprülü Tavan Vinçleri" : locale === "en" ? "Overhead Crane Systems" : locale === "de" ? "Brückenkrane" : locale === "fr" ? "Ponts Roulants" : locale === "it" ? "Carriponte (Gru a Ponte)" : "天井クレーン・橋形クレーン",
-      badge: "FEM 1.001",
-      desc: locale === "tr"
-        ? "Ağır sanayi, çelik depolama ve dökümhaneler için 1 tondan 50 tona kadar kaldırma kapasitesine sahip, çift veya tek kirişli yüksek emniyetli gezer köprülü vinç sistemleri."
-        : locale === "en"
-        ? "Double or single girder high-safety overhead traveling crane systems with lifting capacities from 1 ton to 50 tons for heavy industry, steel storage, and foundries."
-        : locale === "de"
-        ? "Zwei- oder Einträger-Brückenlaufkrane mit hoher Sicherheit und Tragfähigkeiten von 1 bis 50 Tonnen für Schwerindustrie, Stahllagerung und Gießereien."
-        : locale === "fr"
-        ? "Ponts roulants monopoutre ou bipoutre haute sécurité avec des capacités de levage de 1 à 50 tonnes pour l'industrie lourde, le stockage de l'acier et les fonderies."
-        : locale === "it"
-        ? "Gru a ponte bitrave o monotrave ad alta sicurezza con capacità di sollevamento da 1 a 50 tonnellate per industria pesante, stoccaggio acciaio e fonderie."
-        : "重工業、鋼材倉庫、および鋳造所向けに設計された、吊り上げ荷重1トンから50トンまでの、高安全なシングル・ダブルガーダー天井クレーン。",
-      features: locale === "tr"
-        ? ["FEM ve DIN standartlarında tasarım", "Aşırı yük limit siviçleri ile maksimum iş güvenliği", "Pürüzsüz kalkış ve duruş için frekans kontrollü motorlar"]
-        : locale === "en"
-        ? ["Design in FEM and DIN standards", "Maximum work safety with overload limit switches", "Frequency controlled motors for smooth start and stop"]
-        : locale === "de"
-        ? ["Design nach FEM- und DIN-Standards", "Maximale Arbeitssicherheit durch Überlastgrenzschalter", "Frequenzgesteuerte Motoren für sanften Anlauf und Stopp"]
-        : locale === "fr"
-        ? ["Conception selon les normes FEM et DIN", "Sécurité de travail maximale avec interrupteurs de fin de course de surcharge", "Moteurs à commande de fréquence pour démarrages et arrêts en douceur"]
-        : locale === "it"
-        ? ["Progettazione in standard FEM e DIN", "Massima sicurezza sul lavoro con interruttori di sovraccarico", "Motori controllati in frequenza per avviamento e arresto fluidi"]
-        : ["FEMおよびDIN設計基準に完全準拠", "過負荷防止リミットスイッチによる安全性の確保", "滑らかな加減速動作のための周波数（インバータ）制御モータ"],
-    },
   ];
 
   return (
@@ -768,16 +593,16 @@ export default async function UrunlerPage({ params }: Props) {
           <h1 className={sharedStyles.pageHeroTitle}>{locale === "tr" ? "Ürünlerimiz" : locale === "en" ? "Our Products" : locale === "de" ? "Unsere Produkte" : locale === "fr" ? "Nos Produits" : locale === "it" ? "I Nostri Prodotti" : "製品ラインナップ"}</h1>
           <p className={sharedStyles.pageHeroDesc}>
             {locale === "tr"
-              ? "Medikal gazlardan ağır makinelere, elektrik sistemlerinden çelik ürünlerine kadar tüm sektörlere kapsamlı endüstriyel çözümler sunuyoruz."
+              ? "Medikal ve endüstriyel gazlar ile yüksek basınçlı tüp sistemlerinde tüm sektörlere kapsamlı çözümler sunuyoruz."
               : locale === "en"
-              ? "We offer comprehensive industrial solutions to all sectors, from medical gases to heavy machinery, from electrical systems to steel products."
+              ? "We offer comprehensive solutions to all sectors in medical and industrial gases and high-pressure cylinder systems."
               : locale === "de"
-              ? "Wir bieten umfassende industrielle Lösungen für alle Branchen, von medizinischen Gasen bis hin zu schweren Maschinen, von elektrischen Systemen bis hin zu Stahlprodukten."
+              ? "Wir bieten umfassende Lösungen für alle Branchen in den Bereichen medizinische und industrielle Gase sowie Hochdruckflaschensysteme."
               : locale === "fr"
-              ? "Nous proposons des solutions industrielles complètes à tous les secteurs, des gaz médicaux aux machines lourdes, des systèmes électriques aux produits sidérurgiques."
+              ? "Nous proposons des solutions complètes à tous les secteurs en matière de gaz médicaux, industriels et de systèmes de bouteilles à haute pression."
               : locale === "it"
-              ? "Offriamo soluzioni industriali complete per tutti i settori, dai gas medicali ai macchinari pesanti, dai sistemi elettrici ai prodotti in acciaio."
-              : "医療用ガスから重機械、電気システムから鉄鋼製品まで、あらゆる産業に包括的な産業用ソリューションを提供します。"}
+              ? "Offriamo soluzioni complete a tutti i settori nei gas medicali, industriali e sistemi di bombole ad alta pressione."
+              : "医療用・産業用ガスおよび高圧シリンダーシステムにおいて、あらゆる産業に包括的なソリューションを提供します。"}
           </p>
         </div>
       </section>
