@@ -598,19 +598,20 @@ export default async function DryIcePage({ params }: Props) {
       <section className={styles.detailContainer} aria-label={`${data.title} Ürün Detayları`}>
         {/* Left Column */}
         <div className={styles.mainContent}>
-          {/* Product Image */}
-          <div style={{ position: "relative", width: "100%", height: "320px", borderRadius: "var(--radius-lg)", overflow: "hidden", boxShadow: "var(--shadow-sm)", marginBottom: "16px" }}>
-            <Image
-              src="/kuru-buz.jpg"
-              alt={data.title}
-              fill
-              style={{ objectFit: "cover" }}
-              priority
-            />
-          </div>
-
           <article className={styles.sectionBlock}>
             <h2 className={styles.blockTitle}>{dict.gasDetail.description}</h2>
+            
+            {/* Product Image */}
+            <div style={{ position: "relative", width: "100%", height: "320px", borderRadius: "var(--radius-lg)", overflow: "hidden", boxShadow: "var(--shadow-sm)", margin: "20px 0" }}>
+              <Image
+                src="/kuru-buz.jpg"
+                alt={data.title}
+                fill
+                style={{ objectFit: "cover" }}
+                priority
+              />
+            </div>
+
             <div style={{ display: "flex", flexDirection: "column", gap: "16px", color: "var(--gray-600)", lineHeight: "1.8", fontSize: "1rem" }}>
               {Array.isArray(data.content) ? (
                 data.content.map((paragraph, idx) => (
