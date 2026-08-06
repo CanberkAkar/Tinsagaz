@@ -82,6 +82,22 @@ function getGasIcon(slug: string) {
           <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
         </svg>
       );
+    case "klor-tanki":
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <rect x="6" y="7" width="12" height="14" rx="2" />
+          <path d="M9 7V5a3 3 0 0 1 6 0v2" />
+          <line x1="6" y1="12" x2="18" y2="12" />
+        </svg>
+      );
+    case "yuksek-saflikta-gazlar":
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M9 2v6L4 18a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3l-5-10V2" />
+          <path d="M9 2h6" />
+          <path d="M6 15h12" />
+        </svg>
+      );
     default:
       return (
         <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

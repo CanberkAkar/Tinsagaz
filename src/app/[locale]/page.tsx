@@ -14,7 +14,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const dict = await getDictionary(currentLocale);
 
   return {
-    title: "Tinsagaz",
     description: dict.footer.desc,
   };
 }

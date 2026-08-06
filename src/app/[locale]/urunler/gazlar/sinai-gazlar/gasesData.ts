@@ -18,6 +18,7 @@ export interface GasProduct {
   content?: string;
   supplyModels?: { title: string; desc: string }[];
   safetyWarning?: string;
+  gallery?: { src: string; alt: string; caption?: string }[];
 }
 
 // Fallback to Turkish

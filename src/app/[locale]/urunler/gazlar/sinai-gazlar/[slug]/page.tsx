@@ -5,6 +5,7 @@ import sharedStyles from "../../../../shared.module.css";
 import styles from "../sinai-gazlar.module.css";
 import { getGasesData } from "../gasesData";
 import { locales, Locale, getDictionary } from "../../../../dictionaries";
+import GasGallery from "../GasGallery";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
@@ -139,6 +140,13 @@ export default async function GasDetailPage({ params }: Props) {
               <p style={{ color: "var(--gray-600)", lineHeight: "1.8", fontSize: "1rem" }}>
                 {gas.content}
               </p>
+            </article>
+          )}
+
+          {/* Gallery Block */}
+          {gas.gallery && (
+            <article className={styles.sectionBlock}>
+              <GasGallery images={gas.gallery} />
             </article>
           )}
 

@@ -10,6 +10,7 @@ export interface GasProduct {
   content?: string;
   supplyModels?: { title: string; desc: string }[];
   safetyWarning?: string;
+  gallery?: { src: string; alt: string; caption?: string }[];
 }
 
 export const gasesData: GasProduct[] = [
@@ -342,5 +343,110 @@ export const gasesData: GasProduct[] = [
       }
     ],
     safetyWarning: "Teknik Uyarı ve Güvenlik Standardı: CNG (Sıkıştırılmış Doğalgaz) yüksek oranda metan içerdiği için son derece yanıcı ve parlayıcı bir gazdır. Havadan hafif olması sebebiyle olası bir kaçak durumunda hızla yukarı doğru yükselir; bu yüzden kapalı depolama alanlarında mutlaka üst (çatı) seviye havalandırma sistemleri ve doğalgaza duyarlı ex-proof (kıvılcım önleyici) gaz algılama dedektörleri bulunmalıdır. Tinsa Gaz olarak teslim ettiğimiz tüm CNG tüp ve palet sistemleri, yüksek basınç emniyet ventilleri ve ani basınç düşürücü çekvalf mekanizmalarıyla donatılmıştır."
+  },
+  {
+    slug: "klor-tanki",
+    title: "Klor Tankı ve Tüpleri (Cl₂)",
+    badge: "Sınai Gazlar",
+    icon: "🧪",
+    desc: "Klor tankı, sıvı veya gaz halindeki klorun güvenli şekilde depolanmasını, taşınmasını ve dozajlanmasını sağlayan, yüksek basınca dayanıklı özel basınçlı kaplardır. Klorun aşındırıcı ve tehlikeli yapısı nedeniyle bu tank ve tüpler, EN 14208 ve EN 13322-1 standartlarına uygun özel alaşımlı malzemelerden üretilir, sızdırmazlık testlerinden geçirilir ve sıkı kalite kontrollerine tabi tutulur.",
+    features: [
+      "EN 14208 standardına uygun üretim",
+      "Yüksek dayanımlı özel alaşımlı malzeme",
+      "Sızdırmazlık testleri ile maksimum güvenlik",
+      "Modern laboratuvarlarda test ve kalite kontrol",
+      "Yasal periyodik muayene ve yeniden test süreçleriyle takip"
+    ],
+    usageAreas: [
+      "İçme Suyu ve Atık Su Arıtma Tesisleri (klorlama ve dezenfeksiyon)",
+      "Kimya ve Petrokimya Tesisleri",
+      "Yüzme Havuzları ve Toplu Kullanım Alanları",
+      "Kağıt Sanayi ve Endüstriyel Üretim Tesisleri"
+    ],
+    specifications: [
+      { label: "Kimyasal Formül", value: "Cl₂" },
+      { label: "Üretim Standardı", value: "EN 14208 (büyük hacim) / EN 13322-1 (küçük hacim)" },
+      { label: "Çap Aralığı", value: "Ø254 mm – Ø610 mm" },
+      { label: "Su Kapasitesi", value: "22 – 840 Litre" },
+      { label: "Klor Dolum Kapasitesi", value: "22 – 1050 kg (dolum faktörü 1,25 kg/lt)" },
+      { label: "Test Basıncı", value: "36 – 48 Bar" },
+      { label: "Ambalaj Modeli", value: "Dikişli Klor Tüpü / Yatay Klor Tankı" }
+    ],
+    gallery: [
+      {
+        src: "/klor-tupleri.jpg",
+        alt: "Dikişli Klor Tüpleri - EN 14208 standardına uygun üretim",
+        caption: "Dikişli Klor Tüpleri (Ø254 – Ø510 mm)"
+      },
+      {
+        src: "/klor-tanklari.jpg",
+        alt: "Klor Tankları ve Tüpleri - EN 14208 standardına uygun üretim",
+        caption: "Klor Tankları (Ø510 – Ø610 mm)"
+      }
+    ],
+    content: "Klor tankı, sıvı veya gaz halindeki klorun güvenli şekilde depolanması, taşınması ve kullanılmasını sağlayan, yüksek basınca dayanıklı özel basınçlı kaplardır. Klor gazının aşındırıcı ve tehlikeli yapısı nedeniyle bu tanklar; uluslararası standartlara uygun malzemelerden üretilir, sızdırmazlık testlerinden geçirilir ve sıkı kalite kontrollerine tabi tutulur. Tank içerisindeki sıvılaştırılmış klor, ihtiyaç duyulan proseslerde uygun vana, regülatör ve dozaj ekipmanları aracılığıyla kontrollü olarak sisteme aktarılır. Doğru tasarlanmış ve standartlara uygun üretilmiş bir klor tankı, hem işletme güvenliğini artırır hem de üretim süreçlerinin kesintisiz devam etmesini sağlar.",
+    supplyModels: [
+      {
+        title: "1. Dikişli Klor Tüpleri (Ø254 – Ø510 mm)",
+        desc: "22-150 litre su kapasiteli, EN 13322-1 standardına uygun üretilen klor tüpleri; düşük ve orta hacimli klor ihtiyacı olan işletmeler, küçük ölçekli su arıtma tesisleri ve laboratuvarlar için ideal, kolay taşınabilir bir çözümdür."
+      },
+      {
+        title: "2. Klor Tankları (Ø510 – Ø610 mm)",
+        desc: "150-600+ litre kapasiteli, EN 14208 standardına uygun üretilen büyük hacimli klor tankları; su arıtma tesisleri ve endüstriyel klorlama sistemleri gibi yüksek klor tüketimi olan tesisler için tasarlanmıştır. 620-1630 mm uzunluk aralığında ve 400-840 litre su kapasitesinde üretilen tanklar 36-48 bar test basıncına dayanıklıdır; 1,25 kg/lt dolum faktörü ile 500-1050 kg klor kapasitesi sunar."
+      }
+    ],
+    safetyWarning: "Teknik Uyarı ve Güvenlik Standardı: Klor, yüksek konsantrasyonlarda toksik ve tahriş edici bir gazdır; bu nedenle klor tankı ve tüplerinin taşınması, depolanması ve kullanımı sıkı güvenlik prosedürlerine tabidir. Tanklar iyi havalandırılan, doğrudan güneş ışığından korunan alanlarda, dik konumda ve darbelerden korunacak şekilde muhafaza edilmelidir. Tinsa Gaz olarak sevk ettiğimiz tüm klor tankı ve tüpleri, EN 14208 standardına uygun periyodik sızdırmazlık testlerinden ve yasal muayene süreçlerinden geçirilerek teslim edilmektedir."
+  },
+  {
+    slug: "yuksek-saflikta-gazlar",
+    title: "Yüksek Saflıkta Gazlar",
+    badge: "Sınai Gazlar",
+    icon: "🔬",
+    desc: "Safsızlık oranlarının minimum seviyeye indirildiği, kritik endüstriyel prosesler ile hassas laboratuvar uygulamaları için özel olarak üretilen yüksek saflıkta gaz çözümleri. Analitik doğruluğun, proses güvenilirliğinin ve ürün kalitesinin doğrudan gaz kalitesine bağlı olduğu sektörler için %99,9'dan %99,9999'a kadar farklı saflık seviyelerinde tedarik edilir.",
+    gallery: [
+      {
+        src: "/yuksek-saflikta-gazlar-1.jpg",
+        alt: "Yüksek Saflıkta Gazlar - Azot, Oksijen, Argon, Helyum, Hidrojen, Karbondioksit tüpleri",
+        caption: "Yüksek Saflıkta Gaz Portföyümüz (N₂, O₂, Ar, He, H₂, CO₂)"
+      },
+      {
+        src: "/yuksek-saflikta-gazlar-2.jpg",
+        alt: "Yüksek Saflıkta Gazlar - Kalite, Saflık ve Güven",
+        caption: "Kalite, Saflık ve Güven — Laboratuvar ve Ar-Ge Uygulamaları"
+      }
+    ],
+    features: [
+      "%99,9'dan %99,9999'a kadar farklı saflık seviyelerinde gaz çözümleri",
+      "Her parti için analiz sertifikası (CoA)",
+      "Lot bazlı izlenebilir üretim ve dolum süreçleri",
+      "ISO 9001 kalite yönetim prensiplerine uygun süreç yaklaşımı",
+      "ADR kurallarına uygun güvenli depolama ve sevkiyat"
+    ],
+    usageAreas: [
+      "Laboratuvar Analizleri (GC, GC-MS, ICP-OES, ICP-MS, AAS, FTIR)",
+      "Ar-Ge ve Eğitim Kurumları",
+      "Yarı İletken ve Elektronik Üretimi",
+      "İlaç ve Biyoteknoloji Sanayi",
+      "Petrokimya ve Kimya Sanayi",
+      "Enerji ve Çevre Teknolojileri, Kalibrasyon ve Kalite Kontrol"
+    ],
+    specifications: [
+      { label: "Saflık Aralığı", value: "%99,9 – %99,9999" },
+      { label: "Ürün Portföyü", value: "Azot (N₂), Oksijen (O₂), Argon (Ar), Helyum (He), Hidrojen (H₂), Karbondioksit (CO₂)" },
+      { label: "Kalite Belgesi", value: "Analiz Sertifikası (CoA), talebe bağlı uygunluk belgeleri" },
+      { label: "Ambalaj Modeli", value: "Tüp, Demet Tüp (Bundle), Kriyojenik Tank, Dökme Gaz" }
+    ],
+    content: "Yüksek saflıkta gazlar, safsızlık oranlarının minimum seviyeye indirildiği ve kritik endüstriyel prosesler ile hassas laboratuvar uygulamaları için özel olarak üretilen gazlardır. Analitik doğruluğun, proses güvenilirliğinin ve ürün kalitesinin doğrudan gaz kalitesine bağlı olduğu sektörlerde kullanılan bu gazlar; araştırma laboratuvarlarından yarı iletken üretimine, ilaç sanayinden petrokimya tesislerine kadar geniş bir kullanım alanına sahiptir. Tinsa Gaz olarak, uluslararası kalite standartlarına uygun yüksek saflıkta gaz çözümleri sunarak müşterilerimizin üretim, analiz ve Ar-Ge süreçlerinde maksimum güvenilirlik sağlamayı hedefliyoruz. Gaz saflığı, nem oranı, hidrokarbon içeriği ve diğer kritik parametreler gelişmiş analiz yöntemleriyle kontrol edilmekte, her parti ürün izlenebilir kalite prosedürleri kapsamında değerlendirilmektedir.",
+    supplyModels: [
+      {
+        title: "1. Yüksek Basınçlı Tüpler ve Demet Tüp (Bundle) Sistemleri",
+        desc: "Laboratuvar, Ar-Ge merkezleri ve orta ölçekli analiz ihtiyaçları için tüp veya çok tüplü demet (bundle) sistemleriyle tedarik edilir. Her sevkiyat, talebe bağlı analiz sertifikası (CoA) ile birlikte teslim edilebilir."
+      },
+      {
+        title: "2. Kriyojenik Tank ve Dökme Gaz Sistemleri",
+        desc: "Yüksek ve kesintisiz gaz tüketimi olan yarı iletken, ilaç ve petrokimya tesisleri için kriyojenik sıvı tank veya dökme gaz sistemleriyle merkezi gaz dağıtımı sağlanır; proses optimizasyonu için mühendislik desteği sunulur."
+      }
+    ],
+    safetyWarning: "Kalite ve Güvenlik Standardı: Yüksek saflıkta gazların depolanması, taşınması ve sevkiyat süreçleri ADR taşımacılık kuralları ile yürürlükteki güvenlik ve kalite uygulamalarına uygun şekilde yürütülür. Tinsa Gaz olarak, ISO 9001 Kalite Yönetim Sistemi prensipleri doğrultusunda yönetilen süreçlerle ürün bütünlüğünü koruyor ve talep halinde her parti için analiz sertifikası (CoA) sağlıyoruz."
   }
 ];
