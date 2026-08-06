@@ -14,7 +14,9 @@
     "tubeTestCertificate": "Tüp Test Sertifikası",
     "isoCertificate": "ISO Sertifikası",
     "dryIce": "Kuru Buz",
-    "fireSystems": "Gazlı Yangın Söndürme Sistemleri"
+    "fireSystems": "Gazlı Yangın Söndürme Sistemleri",
+    "chlorineTanks": "Klor Tankı ve Tüpleri",
+    "highPurityGases": "Yüksek Saflıkta Gazlar"
   },
   "footer": {
     "desc": "Tıbbi ve endüstriyel gaz ile tüp sistemlerinde Türkiye'nin güvenilir çözüm ortağı. Kalite, güvenlik ve inovasyon önceliğimizdir.",

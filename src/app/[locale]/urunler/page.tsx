@@ -162,6 +162,14 @@ function getProductIcon(id: string) {
           <circle cx="18" cy="12" r="0.8" fill="var(--primary)" />
         </svg>
       );
+    case "klor-tanki":
+      return (
+        <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.9 }}>
+          <rect x="5" y="7" width="14" height="14" rx="3" />
+          <path d="M9 7V4a2 2 0 0 1 4 0v3" />
+          <line x1="5" y1="12" x2="19" y2="12" />
+        </svg>
+      );
     default:
       return null;
   }
@@ -578,6 +586,36 @@ export default async function UrunlerPage({ params }: Props) {
         ? ["Uscita gas ad alta portata da un unico punto", "Facile infrastruttura di trasporto con carrello elevatore e gru", "Sistema che riduce al minimo i tempi di cambio bombola"]
         : ["単一箇所からの高流量ガス出力", "フォークリフトやクレーンで吊り上げ可能な輸送構造フレーム", "容器交換の手間と時間ロスを排除するシステム"],
     },
+    {
+      id: "klor-tanki",
+      cat: "tup",
+      catLabel: catLabels["tup"],
+      icon: "🧪",
+      title: locale === "tr" ? "Klor Tankı ve Tüpleri (Cl₂)" : locale === "en" ? "Chlorine Tanks & Cylinders (Cl₂)" : locale === "de" ? "Chlortanks & Zylinder (Cl₂)" : locale === "fr" ? "Réservoirs & Bouteilles de Chlore (Cl₂)" : locale === "it" ? "Serbatoi e Bombole di Cloro (Cl₂)" : "塩素タンクおよびシリンダー (Cl₂)",
+      badge: "EN 14208",
+      desc: locale === "tr"
+        ? "Sıvı ve gaz halindeki klorun emniyetli depolanması ve dozajlanması için EN 14208 ve EN 13322-1 standartlarına uygun yüksek basınca dayanıklı özel basınçlı kaplar ve klor tüpleri."
+        : locale === "en"
+        ? "Specialized high-pressure vessels and chlorine cylinders compliant with EN 14208 and EN 13322-1 standards for safe storage and dosing of liquid and gaseous chlorine."
+        : locale === "de"
+        ? "Spezielle Hochdruckbehälter und Chlorgasflaschen gemäß EN 14208 und EN 13322-1 zur sicheren Lagerung und Dosierung von flüssigem und gasförmigem Chlor."
+        : locale === "fr"
+        ? "Récipients à haute pression et bouteilles de chlore conformes aux normes EN 14208 et EN 13322-1 pour le stockage et le dosage sûrs du chlore liquide et gazeux."
+        : locale === "it"
+        ? "Recipienti a pressione speciali e bombole di cloro conformi alle norme EN 14208 e EN 13322-1 per lo stoccaggio e il dosaggio sicuro di cloro liquido e gassoso."
+        : "液体および気体塩素の安全な保管と注入のために、EN 14208およびEN 13322-1規格に準拠した高耐圧特殊圧力容器および塩素シリンダー。",
+      features: locale === "tr"
+        ? ["EN 14208 ve EN 13322-1 standart uyumluluğu", "36 - 48 bar test basıncı dayanımı", "Klorlama ve su arıtma tesislerine özel tasarım"]
+        : locale === "en"
+        ? ["EN 14208 & EN 13322-1 compliance", "36 - 48 bar test pressure resistance", "Custom design for chlorination and water treatment"]
+        : locale === "de"
+        ? ["Konformität mit EN 14208 & EN 13322-1", "Beständigkeit gegen 36 - 48 bar Prüfdruck", "Spezialdesign für Chlorierungs- und Wasseraufbereitungsanlagen"]
+        : locale === "fr"
+        ? ["Conformité aux normes EN 14208 & EN 13322-1", "Résistance à une pression d'essai de 36 à 48 bars", "Conception spéciale pour la chloration et le traitement de l'eau"]
+        : locale === "it"
+        ? ["Conformità EN 14208 e EN 13322-1", "Resistenza alla pressione di prova di 36 - 48 bar", "Design speciale per la clorazione e il trattamento delle acque"]
+        : ["EN 14208およびEN 13322-1規格適合", "36 - 48 bar耐圧テスト認証", "塩素消毒・水処理プラント向け専用設計"],
+    },
   ];
 
   return (
@@ -628,10 +666,14 @@ export default async function UrunlerPage({ params }: Props) {
           {/* Products Grid */}
           <div id="urunler" className={styles.productsGrid}>
             {products.map((p) => {
-              const isGas = p.cat === "medikal-gaz" || p.cat === "endustriyel-gaz";
+              const isGas = p.cat === "medikal-gaz" || p.cat === "endustriyel-gaz" || p.id === "klor-tanki";
               
               let productHref = `/${locale}/iletisim`;
-              if (p.cat === "medikal-gaz") {
+              if (p.id === "klor-tanki") {
+                productHref = `/${locale}/urunler/klor-tanki`;
+              } else if (p.id === "yuksek-saflikta-gazlar") {
+                productHref = `/${locale}/urunler/yuksek-saflikta-gazlar`;
+              } else if (p.cat === "medikal-gaz") {
                 let slug = "";
                 if (p.id === "medikal-oksijen") slug = "medikal-oksijen-gazi";
                 else if (p.id === "azot-protoksit") slug = "azot-protoksit-gazi";

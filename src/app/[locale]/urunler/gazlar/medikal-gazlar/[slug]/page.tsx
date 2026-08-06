@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import sharedStyles from "../../../../shared.module.css";
 import styles from "../medikal-gazlar.module.css";
 import { getMedicalGasesData } from "../medikalData";
+import GasGallery from "../../sinai-gazlar/GasGallery";
 import { locales, Locale, getDictionary } from "../../../../dictionaries";
 
 type Props = {
@@ -139,6 +140,13 @@ export default async function MedicalGasDetailPage({ params }: Props) {
               <p style={{ color: "var(--gray-600)", lineHeight: "1.8", fontSize: "1rem" }}>
                 {gas.content}
               </p>
+            </article>
+          )}
+
+          {/* Gallery Block */}
+          {gas.gallery && (
+            <article className={styles.sectionBlock}>
+              <GasGallery images={gas.gallery} />
             </article>
           )}
 

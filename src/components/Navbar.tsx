@@ -96,6 +96,14 @@ export default function Navbar({ lang, navDict }: { lang: Locale; navDict: any }
           })),
         },
         {
+          label: navDict.highPurityGases || "Yüksek Saflıkta Gazlar",
+          href: `/${lang}/urunler/yuksek-saflikta-gazlar`,
+        },
+        {
+          label: navDict.chlorineTanks || "Klor Tankı ve Tüpleri",
+          href: `/${lang}/urunler/klor-tanki`,
+        },
+        {
           label: navDict.dryIce || "Kuru Buz",
           href: `/${lang}/urunler/kuru-buz`,
         },

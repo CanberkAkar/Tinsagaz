@@ -20,7 +20,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/urunler/gazlar/medikal-gazlar",
     "/urunler/gazlar/sinai-gazlar",
     "/urunler/gazli-yangin-sondurme-sistemleri",
+    "/urunler/klor-tanki",
     "/urunler/kuru-buz",
+    "/urunler/yuksek-saflikta-gazlar",
   ];
 
   const sitemapEntries: MetadataRoute.Sitemap = [];

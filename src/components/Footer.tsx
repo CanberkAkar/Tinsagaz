@@ -61,6 +61,10 @@ export default function Footer({ lang, footerDict, navDict }: { lang: Locale; fo
   const products = [
     { href: `/${lang}/urunler/gazlar/sinai-gazlar`, label: navDict.gases },
     { href: `/${lang}/urunler/gazlar/medikal-gazlar`, label: navDict.medicalGases || "Medikal Gazlar" },
+    { href: `/${lang}/urunler/yuksek-saflikta-gazlar`, label: navDict.highPurityGases || "Yüksek Saflıkta Gazlar" },
+    { href: `/${lang}/urunler/klor-tanki`, label: navDict.chlorineTanks || "Klor Tankı ve Tüpleri" },
+    { href: `/${lang}/urunler/kuru-buz`, label: navDict.dryIce || "Kuru Buz" },
+    { href: `/${lang}/urunler/gazli-yangin-sondurme-sistemleri`, label: navDict.fireSystems || "Gazlı Yangın Söndürme Sistemleri" },
   ];
 
   return (
