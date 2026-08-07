@@ -227,6 +227,19 @@
   padding: 14px 20px;
   border-radius: var(--radius-md);
   font-size: 1rem;
+  color: var(--gray-800) !important;
+}
+
+.navbarMobile .navbarLink:hover {
+  color: var(--primary) !important;
+  background: var(--primary-50) !important;
+}
+
+.navbarMobile .navbarLink.active,
+.navbarMobile .navbarLink.activeScrolled {
+  color: var(--primary) !important;
+  background: var(--primary-50) !important;
+  font-weight: 600 !important;
 }
 
 .navbarMobile .navbarCta {
@@ -235,6 +248,13 @@
   text-align: center;
   display: block;
   padding: 14px 24px !important;
+  background: var(--primary) !important;
+  color: var(--white) !important;
+}
+
+.navbarMobile .navbarCta:hover {
+  background: var(--primary-light) !important;
+  color: var(--white) !important;
 }
 
 @media (max-width: 900px) {
